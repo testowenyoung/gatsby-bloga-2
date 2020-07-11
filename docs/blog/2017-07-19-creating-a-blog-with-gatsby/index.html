@@ -1,0 +1,654 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Creating a Blog with Gatsby | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Gatsby is an incredible static site generator that allows for React to be used
+as the underlying rendering engine to scaffold out a static site that truly has…"/><meta data-react-helmet="true" property="og:title" content="Creating a Blog with Gatsby"/><meta data-react-helmet="true" property="og:description" content="Gatsby is an incredible static site generator that allows for React to be used
+as the underlying rendering engine to scaffold out a static site that truly has…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Creating a Blog with Gatsby"/><meta data-react-helmet="true" name="twitter:description" content="Gatsby is an incredible static site generator that allows for React to be used
+as the underlying rendering engine to scaffold out a static site that truly has…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2017-07-19-creating-a-blog-with-gatsby/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Creating a Blog with Gatsby</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">July 19, 2017</p></header><section><p>Gatsby is an incredible static site generator that allows for React to be used
+as the underlying rendering engine to scaffold out a static site that truly has
+all the benefits expected in a modern web application. It does this by rendering
+dynamic React components into static HTML content via <a href="https://reactjs.org/docs/react-dom-server.html">server side
+rendering</a> at build time. This means that your users get all
+the benefits of a static site such as the ability to work without JavaScript,
+search engine friendliness, speedy load times, etc. without losing the dynamism
+and interactivity that is expected of the modern web. Once rendered to static
+HTML, client-side React/JavaScript <em>can</em> take over (if creating stateful
+components or logic in <code class="language-text">componentDidMount</code>) and add dynamism to the statically
+generated content.</p>
+<p>Gatsby <a href="/gatsby-bloga-2/blog/gatsby-v1/">recently released</a> a v1.0.0 with a bunch of new
+features, including (but not limited to) the ability to create content queries
+with GraphQL, integration with various CMSs—including WordPress, Contentful,
+Drupal, etc., and route based code splitting to keep the end user experience as
+snappy as possible. In this post, we’ll take a deep dive into Gatsby and some of
+these new features by creating a static blog. Let’s get on it!</p>
+<h2>Getting started</h2>
+<h3>Using the CLI</h3>
+<p>Gatsby ships with a great CLI (command line interface) that contains the
+functionality of scaffolding out a working site as well as commands to help
+develop the site once created.</p>
+<p><code class="language-text">gatsby new personal-blog &amp;&amp; cd $_</code></p>
+<p>This command will create the folder <code class="language-text">personal-blog</code> and then change into that
+directory. A working <code class="language-text">gatsby</code> statically generated application can now be
+developed upon. The CLI generates common development scripts to help you get started.
+For example you can run <code class="language-text">npm run build</code> (build a production, statically generated version of the project) or <code class="language-text">npm run develop</code> (launch a hot-reload enabled web development server),
+etc.</p>
+<p>You can now begin the exciting task of <em>actually</em> developing on the site and
+creating a functional, modern blog. You’ll generally want to use <code class="language-text">npm run develop</code> to launch the local development server to validate functionality as you
+progress through the steps.</p>
+<h2>Adding necessary plugins</h2>
+<p>Gatsby supports a <a href="/gatsby-bloga-2/docs/plugins/">rich plugin interface</a>, and many incredibly
+useful plugins have been authored to make accomplishing common tasks a breeze.
+Plugins can be broken up into three main categories: <strong>functional</strong> plugins,
+<strong>source</strong> plugins, and <strong>transformer</strong> plugins.</p>
+<h3>Functional plugins</h3>
+<p>Functional plugins either implement some functionality (e.g. offline support,
+generating a sitemap, etc.) <em>or</em> they extend Gatsby’s webpack configuration
+adding support for TypeScript, Sass, etc.</p>
+<p>For this particular blog post, you will make a single page app-like feel (without page
+reloads) as well as the ability to dynamically change the <code class="language-text">title</code> tag within
+the <code class="language-text">head</code> tags. As noted, the Gatsby plugin ecosystem is rich, vibrant, and
+growing, so oftentimes a plugin already exists that solves the particular
+problem you’re trying to solve. To address the functionality you want for <em>this</em>
+blog, you can use the following plugins:</p>
+<ul>
+<li>
+<p><a href="/gatsby-bloga-2/packages/gatsby-plugin-catch-links/"><code class="language-text">gatsby-plugin-catch-links</code></a></p>
+<ul>
+<li>implements the history <code class="language-text">pushState</code> API and does not require a page reload
+on navigating to a different page in the blog</li>
+</ul>
+</li>
+<li>
+<p><a href="/gatsby-bloga-2/packages/gatsby-plugin-react-helmet/"><code class="language-text">gatsby-plugin-react-helmet</code></a></p>
+<ul>
+<li><a href="https://github.com/nfl/react-helmet">react-helmet</a> is a tool that allows for modification of the
+<code class="language-text">head</code> tags; Gatsby statically renders any of these <code class="language-text">head</code> tag changes</li>
+</ul>
+</li>
+</ul>
+<p>with the following command:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> gatsby-plugin-catch-links gatsby-plugin-react-helmet</code></pre></div>
+<p>You will be using <a href="https://yarnpkg.com/en/">yarn</a>, but npm can just as easily be used with <code class="language-text">npm i --save [deps]</code>.</p>
+<p>After installing each of these functional plugins, edit
+<code class="language-text">gatsby-config.js</code>, which Gatsby loads at build-time to implement the exposed
+functionality of the specified plugins.</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  siteMetadata: {
+    title: `Your Name - Blog`,
+    author: `Your Name`,
+  },
+  // highlight-start
+  plugins: [&quot;gatsby-plugin-catch-links&quot;, &quot;gatsby-plugin-react-helmet&quot;],
+}
+// highlight-end</code></pre></div>
+<p>Without any additional work besides a <code class="language-text">yarn install</code> and editing a config file,
+you now have the ability to edit your site’s head tags as well as implement a
+single page app feel without reloads. Now, let’s enhance the base functionality
+by implementing a source plugin which can load blog posts from your local file
+system.</p>
+<h3>Source plugins</h3>
+<p>Source plugins create <em>nodes</em> which can then be transformed into a usable format
+(if not already usable) by a transformer plugin. For instance, a typical
+workflow often involves using
+<a href="/gatsby-bloga-2/packages/gatsby-source-filesystem/"><code class="language-text">gatsby-source-filesystem</code></a>, which loads files off of
+disk—e.g. Markdown files—and then specifying a Markdown transformer to
+transform the Markdown into HTML.</p>
+<p>Since the bulk of the blog’s content and each article will be authored in
+Markdown, let’s add that <a href="/gatsby-bloga-2/packages/gatsby-source-filesystem/"><code class="language-text">gatsby-source-filesystem</code></a>
+plugin. Similarly to the previous step, install the plugin and then inject
+into your <code class="language-text">gatsby-config.js</code>, like so:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> gatsby-source-filesystem</code></pre></div>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  // previous configuration
+  plugins: [
+    &quot;gatsby-plugin-catch-links&quot;,
+    &quot;gatsby-plugin-react-helmet&quot;,
+    // highlight-start
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: &quot;pages&quot;,
+      },
+    },
+    // highlight-end
+  ],
+}</code></pre></div>
+<p>Some explanation will be helpful here! An <code class="language-text">options</code> object can be passed to a
+plugin, and you’re passing the filesystem <code class="language-text">path</code> (which is where your Markdown files
+will be located) and then a <code class="language-text">name</code> for the source files. Now that Gatsby knows
+about your source files, you can begin applying some useful transformers to
+convert those files into usable data!</p>
+<h3>Transformer plugins</h3>
+<p>As mentioned, a transformer plugin takes some underlying data format that is not
+inherently usable in its current form (e.g. Markdown, json, yaml, etc.) and
+transforms it into a format that Gatsby can understand and that you can query
+against with GraphQL. Jointly, the filesystem source plugin will load file nodes
+(as Markdown) off of your filesystem, and then the Markdown transformer will take
+over and convert to usable HTML.</p>
+<p>You only need one transformer plugin (for Markdown), so let’s get that
+installed.</p>
+<ul>
+<li>
+<p><a href="/gatsby-bloga-2/packages/gatsby-transformer-remark/">gatsby-transformer-remark</a></p>
+<ul>
+<li>Uses the <a href="https://github.com/wooorm/remark">remark</a> Markdown parser to transform <code class="language-text">.md</code> files on disk
+into HTML; additionally, this transformer can optionally take plugins to
+further extend functionality—e.g. add syntax highlighting with
+<code class="language-text">gatsby-remark-prismjs</code>, <code class="language-text">gatsby-remark-copy-linked-files</code> to copy relative
+files specified in markdown, <code class="language-text">gatsby-remark-images</code> to compress images and
+add responsive images with <code class="language-text">srcset</code>, etc.</li>
+</ul>
+</li>
+</ul>
+<p>The process should be familiar by now, install and then add to config.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> gatsby-transformer-remark</code></pre></div>
+<p>and editing <code class="language-text">gatsby-config.js</code></p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  // previous setup
+  plugins: [
+    &quot;gatsby-plugin-catch-links&quot;,
+    &quot;gatsby-plugin-react-helmet&quot;,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: &quot;pages&quot;,
+      },
+    },
+    // highlight-start
+    {
+      resolve: &quot;gatsby-transformer-remark&quot;,
+      options: {
+        plugins: [], // just in case those previously mentioned remark plugins sound cool :)
+      },
+    },
+    // highlight-end
+  ],
+}</code></pre></div>
+<p>Whew! Seems like a lot of set up, but collectively these plugins are going to
+super charge Gatsby and give us an incredibly powerful (yet relatively simple!)
+development environment. There is one more setup step and it’s an easy one.
+You’re simply going to create a Markdown file that will contain the content of
+your first blog post. Let’s get to it.</p>
+<h2>Writing your first Markdown blog post</h2>
+<p>The <code class="language-text">gatsby-source-filesystem</code> plugin you configured earlier expects your content
+to be in <code class="language-text">src/pages</code>, so that’s exactly where it needs to be put in!</p>
+<p>Gatsby is not at all prescriptive in naming conventions, but a typical practice
+for blog posts is to name the folder something like <code class="language-text">MM-DD-YYYY-title</code>, e.g.
+<code class="language-text">07-12-2017-hello-world</code>. Let’s do just that. Create the folder
+<code class="language-text">src/pages/07-12-2017-getting-started</code> and place an <code class="language-text">index.md</code> inside!</p>
+<p>The content of this Markdown file will be your blog post, authored in Markdown
+(of course!). Here’s what it’ll look like:</p>
+<div class="gatsby-highlight" data-language="markdown:title=src/pages/07-12-2017-getting-started/index.md"><pre class="language-markdown:title=src/pages/07-12-2017-getting-started/index.md"><code class="language-markdown:title=src/pages/07-12-2017-getting-started/index.md">---
+path: &quot;/hello-world&quot;
+date: 2017-07-12T17:12:33.962Z
+title: &quot;My First Gatsby Post&quot;
+---
+
+Oooooh-weeee, my first blog post!</code></pre></div>
+<p><em>Fairly</em> typical stuff, except for the block surrounded in dashes. What is that?
+That is what is referred to as <a href="https://jekyllrb.com/docs/frontmatter/"><code class="language-text">frontmatter</code></a>, and the contents of
+the block can be used to inject React components with the specified data, e.g.
+path, date, title, etc. Any piece of data can be injected here (e.g. tags,
+sub-title, draft, etc.), so feel free to experiment and find what necessary
+pieces of frontmatter are required to achieve an ideal blogging system for your
+usage. One important note is that <code class="language-text">path</code> will be used when you dynamically create
+your pages to specify the URL/path to render the file (in a later step!). In this
+instance, <code class="language-text">http://localhost:8000/hello-world</code> will be the path to this file.</p>
+<p>Now that you have created a blog post with frontmatter and some content, you can
+begin actually writing some React components that will display this data!</p>
+<h2>Creating the (React) template</h2>
+<p>As Gatsby supports server side rendering (to string) of React components, you can
+write your template in… you guessed it, React! (Or
+<a href="/gatsby-bloga-2/packages/gatsby-plugin-preact/">Preact</a>, if that’s more your style)</p>
+<p>You should create the file <code class="language-text">src/templates/blog-post.js</code> (please create the
+<code class="language-text">src/templates</code> folder if it does not yet exist!).</p>
+<div class="gatsby-highlight" data-language="javascript:title=src/templates/blog-post.js"><pre class="language-javascript:title=src/templates/blog-post.js"><code class="language-javascript:title=src/templates/blog-post.js">import React from &quot;react&quot;
+import { Helmet } from &quot;react-helmet&quot;
+
+// import &#39;../css/blog-post.css&#39;; // make it pretty!
+
+export default function Template({
+  data, // this prop will be injected by the GraphQL query we&#39;ll write in a bit
+}) {
+  const { markdownRemark: post } = data // data.markdownRemark holds your post data
+  return (
+    &lt;div className=&quot;blog-post-container&quot;&gt;
+      &lt;Helmet title={`Your Blog Name - ${post.frontmatter.title}`} /&gt;
+      &lt;div className=&quot;blog-post&quot;&gt;
+        &lt;h1&gt;{post.frontmatter.title}&lt;/h1&gt;
+        &lt;div
+          className=&quot;blog-post-content&quot;
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}</code></pre></div>
+<p>Whoa, neat! This React component will be rendered to a static HTML string (for
+each route/blog post you define), which will serve as the basis of your
+routing/navigation for your blog.</p>
+<p>At this point, there is a reasonable level of confusion and “magic” occurring,
+particularly with the props injection. What is <code class="language-text">markdownRemark</code>? Where is this
+<code class="language-text">data</code> prop injected from? All good questions, so let’s answer them by writing a
+GraphQL query to seed your <code class="language-text">&lt;Template /&gt;</code> component with content!</p>
+<h3>Writing the GraphQL query</h3>
+<p>Below the <code class="language-text">Template</code> declaration, you’ll want to add a GraphQL query. This is an
+incredibly powerful utility provided by Gatsby which lets us pick and choose
+very simply the pieces of data that you want to display for your blog post. Each
+piece of data your query selects will be injected via the <code class="language-text">data</code> property that you
+specified earlier.</p>
+<div class="gatsby-highlight" data-language="javascript:title=src/templates/blog-post.js"><pre class="language-javascript:title=src/templates/blog-post.js"><code class="language-javascript:title=src/templates/blog-post.js">import React from &quot;react&quot;
+import { Helmet } from &quot;react-helmet&quot;
+import { graphql } from &quot;gatsby&quot;
+
+// import &#39;../css/blog-post.css&#39;;
+
+export default function Template({ data }) {
+  const { markdownRemark: post } = data
+  return (
+    &lt;div className=&quot;blog-post-container&quot;&gt;
+      &lt;Helmet title={`Your Blog Name - ${post.frontmatter.title}`} /&gt;
+      &lt;div className=&quot;blog-post&quot;&gt;
+        &lt;h1&gt;{post.frontmatter.title}&lt;/h1&gt;
+        &lt;div
+          className=&quot;blog-post-content&quot;
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}
+
+// highlight-start
+export const pageQuery = graphql`
+  query BlogPostByPath($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: &quot;MMMM DD, YYYY&quot;)
+        path
+        title
+      }
+    }
+  }
+`
+// highlight-end</code></pre></div>
+<p>If you’re not familiar with GraphQL, this may seem slightly confusing, but you can
+break down what’s going down here piece by piece.</p>
+<p><em>Note: To learn more about GraphQL, consider this <a href="https://www.howtographql.com">excellent
+resource</a></em></p>
+<p>The underlying query name <code class="language-text">BlogPostByPath</code> (note: these query names need to be
+unique!) will be injected with the current path, e.g. the specific blog post we
+are viewing. This path will be available as <code class="language-text">$path</code> in your query. For instance,
+if you were viewing your previously created blog post, the path of the file that
+data will be pulled from will be <code class="language-text">/hello-world</code>.</p>
+<p><code class="language-text">markdownRemark</code> will be the injected property available via the prop <code class="language-text">data</code>, as
+named in the GraphQL query. Each property you pull via the GraphQL query will be
+available under this <code class="language-text">markdownRemark</code> property. For example, to access the
+transformed HTML, you would access the <code class="language-text">data</code> prop via <code class="language-text">data.markdownRemark.html</code>.</p>
+<p><code class="language-text">frontmatter</code>, is of course the data structure we provided at the beginning of
+the Markdown file. Each key you define there will be available to be injected
+into the query.</p>
+<p>At this point, you have a bunch of plugins installed to load files off of disk,
+transform Markdown to HTML, and other utilities. You have a single, lonely
+Markdown file that will be rendered as a blog post. Finally, you have a React
+template for blog posts as well as a wired up GraphQL query to query for a blog
+post and inject the React template with the queried data. Next up:
+programmatically creating the necessary static pages (and injecting the
+templates) with Gatsby’s Node API. Let’s get down to it.</p>
+<p>An important note to make at this point is that the GraphQL query takes place at
+<strong>build</strong> time. The component is injected with the <code class="language-text">data</code> prop that is seeded by
+the GraphQL query. Unless anything dynamic (e.g. logic in <code class="language-text">componentDidMount</code>,
+state changes, etc.) occurs, this component will be pure, rendered HTML
+generated via the React rendering engine, GraphQL, and Gatsby!</p>
+<h2>Creating the static pages</h2>
+<p>Gatsby exposes a powerful Node API, which allows for functionality such as
+creating dynamic pages (blog posts!), extending the babel or webpack configs,
+modifying the created nodes or pages, etc. This API is exposed in the
+<code class="language-text">gatsby-node.js</code> file in the root directory of your project—e.g. at the same
+level as <code class="language-text">gatsby-config.js</code>. Each export found in this file will be parsed by
+Gatsby, as detailed in its <a href="/gatsby-bloga-2/docs/node-apis/">Node API specification</a>. However, you only need to
+care about one particular API in this instance, <code class="language-text">createPages</code>.</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-node.js"><pre class="language-javascript:title=gatsby-node.js"><code class="language-javascript:title=gatsby-node.js">const path = require(&quot;path&quot;)
+
+exports.createPages = async ({ actions, graphql }) =&gt; {
+  const { createPage } = actions
+
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+}</code></pre></div>
+<p>Nothing super complex yet! You’re using the <code class="language-text">createPages</code> API (which Gatsby will
+call at build time with injected parameters). You’re also grabbing the <em>path</em> to
+your blogPostTemplate that you created earlier. Finally, you’re using the <code class="language-text">createPage</code>
+action creator/function made available in actions. Gatsby uses Redux
+internally to manage its state, and <code class="language-text">actions</code> are simply the exposed
+action creators of Gatsby, of which <code class="language-text">createPage</code> is one of the action creators!
+For the full list of exposed action creators, check out <a href="/gatsby-bloga-2/docs/actions/">Gatsby’s
+documentation</a>. You can now construct the GraphQL
+query, which will fetch all of your Markdown posts.</p>
+<h3>Querying for posts</h3>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-node.js"><pre class="language-javascript:title=gatsby-node.js"><code class="language-javascript:title=gatsby-node.js">const path = require(&quot;path&quot;)
+
+exports.createPages = async ({ actions, graphql, reporter }) =&gt; {
+  const { createPage } = actions
+
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+
+  // highlight-start
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+}
+// highlight-end</code></pre></div>
+<p>You’re using GraphQL to get all Markdown nodes and making them available under
+the <code class="language-text">allMarkdownRemark</code> GraphQL property. Each exposed property (on <code class="language-text">node</code>) is
+made available for querying against. You’re effectively seeding a GraphQL
+“database” that you can then query against via page-level GraphQL queries. One
+note here is that the <code class="language-text">exports.createPages</code> API expects a Promise to be
+returned, so it works seamlessly with the <code class="language-text">graphql</code> function, which returns a
+Promise (although note a callback API is also available if that’s more your
+thing).</p>
+<p>One cool note here is that the <code class="language-text">gatsby-plugin-remark</code> plugin exposes some useful
+data for us to query with GraphQL, e.g. <code class="language-text">excerpt</code> (a short snippet to display as
+a preview), <code class="language-text">id</code> (a unique identifier for each post), etc.</p>
+<p>You now have your query written, but are yet programmatically created the
+pages (with the <code class="language-text">createPage</code> action creator). Let’s do that!</p>
+<h3>Creating the pages</h3>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-node.js"><pre class="language-javascript:title=gatsby-node.js"><code class="language-javascript:title=gatsby-node.js">const path = require(&quot;path&quot;)
+
+exports.createPages = async ({ actions, graphql, reporter }) =&gt; {
+  const { createPage } = actions
+
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+
+  const result = await graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  // highlight-start
+  result.data.allMarkdownRemark.edges.forEach(({ node }) =&gt; {
+    createPage({
+      path: node.frontmatter.path,
+      component: blogPostTemplate,
+      context: {}, // additional data can be passed via context
+    })
+  })
+  // highlight-end
+}</code></pre></div>
+<p>You’ve now tied into the Promise chain exposed by the <code class="language-text">graphql</code> query. The actual
+posts are available via the path <code class="language-text">result.data.allMarkdownRemark.edges</code>. Each
+edge contains an internal node, and this node holds the useful data that you will
+use to construct a page with Gatsby. Your GraphQL “shape” is directly reflected
+in this data object, so each property you pulled from that query will be
+available when you are querying in your GraphQL blog post template.</p>
+<p>The <code class="language-text">createPage</code> API accepts an object which requires <code class="language-text">path</code> and <code class="language-text">component</code>
+properties to be defined, which you have done above. Additionally, an optional
+property <code class="language-text">context</code> can be used to inject data and make it available to the blog
+post template component via injected props (log out props to see each available
+prop!). Each time you build with Gatsby, <code class="language-text">createPage</code> will be called, and Gatsby
+will create a static HTML file of the path you specified in the post’s
+frontmatter—the result of which will be your stringified and parsed React
+template injected with the data from your GraphQL query. Whoa, it’s actually
+starting to come together!</p>
+<p>You can run <code class="language-text">yarn develop</code> at this point and then navigate to
+<code class="language-text">http://localhost:8000/hello-world</code> to see your first blog post, which should
+look something like below:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/2bf90/my-first-blog-post.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABuklEQVQ4y7WSXUvbYBTH40SQqikyp2B13u6zCLu3Mu/2AbwXI36CsU292NVermonejE7LOIbFqUqbbQ2TUKqlZbiNvBC07w9OceTTEGhtdaXP/w4ecI5vwN5winq+phayk4c5PYE5TgjFP/khZNTTSj9OxJKf+/FOM1MSpo42vXqZTO3tZjBvWUNt2M53I1rmF4tEMcorhVQpGev7q+dVEUkvF5ps4xLkS2T7wh2cEOhj8bIwLQzPhi1Jt7+tN+/+WK/65+2R17P+Az3fbbDvZ/scKgm1nBoCodCH4otTa08tzF3yBLzMi5HUrASTcPSj12IfUvC7+87EPuahPVoBhILMiTmc7Vwk7+OcHX2oNwWaOc5RGQESkoG1HwOZS2LWWUf1byEWkFBFy2sE/eqloPBIM9ZpsUAEPULHSoVAyu6gRfnOroM/C6gdua4d+ELaa7MUzjHcdjVBri5FmiLS71evT5XC733haZp3hbC/+BNrkW1ZHWF+IA8v9CmeDL6XnQ50DA053hCwzBKvhCfKIyxM/+3kWV5R1EUkUgR6Uah+ZSqqoeSJMUDgUA7R+kieojuR+DNdxIvLgHJLXzzjVMp9wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="My first blog post with Gatsby"
+        title="My first blog post with Gatsby"
+        src="/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/fcda8/my-first-blog-post.png"
+        srcset="/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/12f09/my-first-blog-post.png 148w,
+/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/e4a3f/my-first-blog-post.png 295w,
+/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/fcda8/my-first-blog-post.png 590w,
+/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/efc66/my-first-blog-post.png 885w,
+/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/c83ae/my-first-blog-post.png 1180w,
+/gatsby-bloga-2/static/deb7f0d56ec7013985a6053e9c88601d/2bf90/my-first-blog-post.png 2592w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>At this point, you’ve created a single static blog post as an HTML file, which
+was created by a React component and several GraphQL queries. However, this
+isn’t a blog! You can’t expect your users to guess the path of each post, you need
+to have an index or listing page, where you display each blog post, a short
+snippet, and a link to the full blog post. Wouldn’t you know it, this can be done
+incredibly easily with Gatsby, using a similar strategy that was used in the blog
+template, i.e. a React component and a GraphQL query.</p>
+<h2>Creating the Blog Listing</h2>
+<p>I won’t go into quite as much detail for this section because we’ve already
+done something very similar for our blog template! Look at us, we’re pro
+Gatsby-ers at this point!</p>
+<p>Gatsby has a standard for “listing pages,” and they’re placed in the root of our
+filesystem we specified in <code class="language-text">gatsby-source-filesystem</code>, e.g.
+<code class="language-text">src/pages/index.js</code>. So, create that file if it does not exist, and let’s get it
+working! Additionally, note that any static JavaScript files (that export a React
+component!) will get a corresponding static HTML file. For instance, if we
+create <code class="language-text">src/pages/tags.js</code>, the path <code class="language-text">http://localhost:8000/tags/</code> will be
+available within the browser and the statically generated site.</p>
+<div class="gatsby-highlight" data-language="javascript:title=src/pages/index.js"><pre class="language-javascript:title=src/pages/index.js"><code class="language-javascript:title=src/pages/index.js">import React from &quot;react&quot;
+import { Link, graphql } from &quot;gatsby&quot;
+import { Helmet } from &quot;react-helmet&quot;
+
+// import &#39;../css/index.css&#39;; // add some style if you want!
+
+export default function Index({ data }) {
+  const { edges: posts } = data.allMarkdownRemark
+  return (
+    &lt;div className=&quot;blog-posts&quot;&gt;
+      {posts
+        .filter(post =&gt; post.node.frontmatter.title.length &gt; 0)
+        .map(({ node: post }) =&gt; {
+          return (
+            &lt;div className=&quot;blog-post-preview&quot; key={post.id}&gt;
+              &lt;h1&gt;
+                &lt;Link to={post.frontmatter.path}&gt;{post.frontmatter.title}&lt;/Link&gt;
+              &lt;/h1&gt;
+              &lt;h2&gt;{post.frontmatter.date}&lt;/h2&gt;
+              &lt;p&gt;{post.excerpt}&lt;/p&gt;
+            &lt;/div&gt;
+          )
+        })}
+    &lt;/div&gt;
+  )
+}
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          excerpt(pruneLength: 250)
+          id
+          frontmatter {
+            title
+            date(formatString: &quot;MMMM DD, YYYY&quot;)
+            path
+          }
+        }
+      }
+    }
+  }
+`</code></pre></div>
+<p>OK! So we’ve followed a similar approach to your blog post template, so this
+should hopefully seem pretty familiar. Once more we’re exporting <code class="language-text">pageQuery</code>
+which contains a GraphQL query. Note that we’re pulling a slightly different
+data set — specifically, we are pulling an <code class="language-text">excerpt</code> of 250 characters rather than
+the full HTML as we are formatting the pulled date with a format
+string! GraphQL is awesome.</p>
+<p>The actual React component is fairly trivial, but one important note should be
+made. It’s important that when linking to internal content, e.g. other blog
+links, that you should always use <code class="language-text">Link</code> from <code class="language-text">gatsby</code>. Gatsby does not work if pages
+are not routed via this utility. Additionally, this utility also works with
+<code class="language-text">pathPrefix</code>, which allows for a Gatsby site to be deployed on a non-root domain.
+This is useful if this blog will be hosted on something like GitHub Pages or
+perhaps hosted at <code class="language-text">/blog</code>.</p>
+<p>Now, this is getting exciting and it feels like we’re finally getting somewhere!
+At this point, we have a fully functional blog generated by Gatsby, with real
+content authored in Markdown, a blog listing, and the ability to navigate around
+in the blog. If you run <code class="language-text">yarn develop</code>, <code class="language-text">http://localhost:8000</code> should display a
+preview of each blog post, and each post title links to the content of the blog
+post. A real blog!</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/2bf90/blog-listing.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.56756756756756%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABwklEQVQ4y62STUsbURSGxxahpDpB1HYR0aX/pfQHqLWb/gL36pT+goJaulZBiCK6sAurNBISBS1NJjGdzIyTLxMHrRJoRufrzjmeGV1oq2ls+8LDe5l7zsNdDCcrW+PK4f7b9PddoVDNC2eGLpR1VaidloTaj2IrTFZPCu8kTRzr6e1+zG2vZfHrxgHufMpj+ksZc4kj6hKKWxUUY+WgM/fg36VjJZQSOq5Hdyy+M9zJDUWmzNcDH9yJF1F78mXUeTP40Rnpm3ZG+2ecV4R/Ho5MNcMeiczgUOR9tb3tCc/Fl3MsuSJjfFGCxHIeYgs52JgVYXM+A5tzGYgvSZBclSG5kr8Pb3etiLHFrP401MFziMgIVL5VQU3V/MZi5hjL+ydYzB4jeIB/iHfdejgc5jnbcphHS5qmgaYVsFKpoG3byNjVnEfN3KYEgxfnps5TONd1gxc2fjbAMAw0GgbW6/VA6gcAbvWvoe+B0LKs20L/7o7hO88tCeEqeJNmopaE+Bf5TehQfJnneYzqwdCe6wtN06wFQvxPYYzVg99GluU9RVFEIkWkHwrtp1RVzUmS9DkUCnVwlB7iOfHsH/D3u4hHlzt7fCu6aFqPAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Blog listing"
+        title="Blog listing"
+        src="/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/fcda8/blog-listing.png"
+        srcset="/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/12f09/blog-listing.png 148w,
+/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/e4a3f/blog-listing.png 295w,
+/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/fcda8/blog-listing.png 590w,
+/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/efc66/blog-listing.png 885w,
+/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/c83ae/blog-listing.png 1180w,
+/gatsby-bloga-2/static/2a8d86802d4b0d0a8d662e1281b0f522/2bf90/blog-listing.png 2592w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>It’s now on you to make something incredible with the knowledge you’ve gained in
+following along with this tutorial! You can not only make it pretty and style
+with CSS (or <a href="https://github.com/styled-components/styled-components">styled-components</a>!), but you could improve it
+functionally by implementing some of the following:</p>
+<ul>
+<li>
+<p>Add a tag listing and tag search page</p>
+<ul>
+<li>hint: the <code class="language-text">createPages</code> API in <code class="language-text">gatsby-node.js</code> file is useful here, as is
+frontmatter</li>
+</ul>
+</li>
+<li>adding navigation between a specific blog post and past/present blog posts
+(the <code class="language-text">context</code> API of <code class="language-text">createPages</code> is useful here), etc.</li>
+</ul>
+<p>With your new found knowledge of Gatsby and its API, you should feel empowered to
+begin to utilize Gatsby to its fullest potential. A blog is just the starting
+point; Gatsby’s rich ecosystem, extensible API, and advanced querying
+capabilities provide a powerful toolset for building truly incredible,
+performant sites.</p>
+<p>Now go build something great.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/2fa75/dream-bigger.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 47.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAcchCo4f/8QAGxAAAQQDAAAAAAAAAAAAAAAAAwABAhEhMkH/2gAIAQEAAQUCaVqNWTJB79X/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAEBAAMBAAAAAAAAAAAAAAABABAhMUH/2gAIAQEABj8CfXhblIz/AP/EABoQAQACAwEAAAAAAAAAAAAAAAEAERAhQTH/2gAIAQEAAT8hJUFTRGL8cYappcQ8Rn//2gAMAwEAAgADAAAAEPMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHhAAAgIBBQEAAAAAAAAAAAAAAREAIaExQWFxsYH/2gAIAQEAAT8QFIqjFUke6l8XoIUS+IQTXgqmcfDMybfvpn//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Dream Bigger"
+        title="Dream Bigger"
+        src="/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/1c72d/dream-bigger.jpg"
+        srcset="/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/a80bd/dream-bigger.jpg 148w,
+/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/1c91a/dream-bigger.jpg 295w,
+/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/1c72d/dream-bigger.jpg 590w,
+/gatsby-bloga-2/static/1eb72aab7f753fd71411e0b504f13608/2fa75/dream-bigger.jpg 721w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Links</h2>
+<ul>
+<li>
+<p><a href="https://github.com/dschau/gatsby-blog-starter-kit"><code class="language-text">@dschau/gatsby-blog-starter-kit</code></a></p>
+<ul>
+<li>A working repo demonstrating all of the aforementioned functionality of
+Gatsby</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/DSchau/create-gatsby-blog-post"><code class="language-text">@dschau/create-gatsby-blog-post</code></a></p>
+<ul>
+<li>A utility and CLI I created to scaffold out a blog post following the
+predefined Gatsby structure with frontmatter, date, path, etc.</li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/dschau/blog">Source code for my blog</a></p>
+<ul>
+<li>The source code for my blog, which takes the gatsby-starter-blog-post
+(previous link), and expands upon it with a bunch of features and some more
+advanced functionality</li>
+</ul>
+</li>
+</ul></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/gatsby-v1/">← <!-- -->Announcing Gatsby 1.0.0 🎉🎉🎉</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2017-09-13-why-is-gatsby-so-fast/">Web Performance 101—also, why is Gatsby so fast?<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2017-07-19-creating-a-blog-with-gatsby/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

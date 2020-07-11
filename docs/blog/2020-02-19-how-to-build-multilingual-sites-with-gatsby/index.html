@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">How to Build Multilingual Sites with Gatsby | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Multilingual websites are never easy. Soon after you start adding languages, you discover things like language fallbacks, ISO codes, language-sensitive…"/><meta data-react-helmet="true" property="og:title" content="How to Build Multilingual Sites with Gatsby"/><meta data-react-helmet="true" property="og:description" content="Multilingual websites are never easy. Soon after you start adding languages, you discover things like language fallbacks, ISO codes, language-sensitive…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="How to Build Multilingual Sites with Gatsby"/><meta data-react-helmet="true" name="twitter:description" content="Multilingual websites are never easy. Soon after you start adding languages, you discover things like language fallbacks, ISO codes, language-sensitive…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2020-02-19-how-to-build-multilingual-sites-with-gatsby/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">How to Build Multilingual Sites with Gatsby</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">February 19, 2020</p></header><section><p>Multilingual websites are never easy. Soon after you start adding languages, you discover things like language fallbacks, ISO codes, language-sensitive restrictions for editors - you encounter all these obstacles before you even implement a thing. What should you know upfront to avoid running into a trap?</p>
+<p>In this article, I will shed some light on the essential topics around multilingual sites, present some of the key questions you should ask before you start implementing multilingual support, and touch a bit on the Gatsby implementation as well.</p>
+<p>The first part of the article will be CMS agnostic. For the basics, it doesn’t matter whether you use Contentful, Kontent, Prismic, or any other CMS. It’s more about the expectations of your customers. In the second part, I will talk about Kontent source plugin specifics and how to handle language fallbacks.</p>
+<h2>ISO Codes or Codenames</h2>
+<p>When you work with multiple languages, each content piece needs to be flagged with a language. Languages like English and German make this straightforward, you can use their ISO codes as flags. But sometimes you need to distinguish between countries that speak the same language, such as Portugal and Brazil. We also have ISO codes for countries, and together with their language they form a language code (<code class="language-text">en-US</code>, <code class="language-text">cs-CZ</code>, and so on). Many CMSs use that to identify content for that specific part of the world. It’s important to be able to extend this list, though.</p>
+<p>Why?</p>
+<p>Let me tell you a story about a Zoo in Brno, my hometown. It’s not a particularly special one. It’s normal in size, there is not really anything that would attract visitors from long distances. So they try to get creative with marketing. You can always find signs near enclosures presenting the displayed animal including some facts about its life. They translated those signs into a local dialect and even though no one really speaks that dialect anymore, a lot of people understand it and consider it funny.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/00597/zoo-sign.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECBQP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB2JZ0azgq1iLiv//EABoQAAICAwAAAAAAAAAAAAAAAAABAgMREkH/2gAIAQEAAQUCYhLB227WdE1OvukW0sH/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAEAAQMFAAAAAAAAAAAAAAABAAIQESExMnGR/9oACAEBAAY/At2cm6FQdkyWzg8mk//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExcVFhsf/aAAgBAQABPyG9v0htrWUKte48z3Mc1R2gKSajeGfNIAoB1P/aAAwDAQACAAMAAAAQlMj8/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EMIz/8QAFxEBAAMAAAAAAAAAAAAAAAAAAREgIf/aAAgBAgEBPxCA2n//xAAcEAEAAgMBAQEAAAAAAAAAAAABABEhMVGxQYH/2gAIAQEAAT8QYuAXQq8ggh5trH5Oy927ZmxoYcIhKJemdRCRLpTpuG53cYLv0j5KIDgqf//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Zoo sign"
+        title="Zoo sign"
+        src="/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/1c72d/zoo-sign.jpg"
+        srcset="/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/a80bd/zoo-sign.jpg 148w,
+/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/1c91a/zoo-sign.jpg 295w,
+/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/1c72d/zoo-sign.jpg 590w,
+/gatsby-bloga-2/static/d5d79e6f5cca2d271acf54bea1004f0c/00597/zoo-sign.jpg 678w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>This led to a very positive reaction from their visitors. Of course, I don’t know if that caused better conversions regarding ticket sales, but I’m trying to focus on the lingual part here. There is no language code for the local dialect they used. So if they decided to put the translations online, they’d have to store them under <em>something</em>. A codename.</p>
+<h2>Language Fallbacks</h2>
+<p>Let’s say you implemented a website with one language for a friend, we’ll call him Matt. After some time, he comes back to you saying he’d like to add a Czech translation as he receives some traffic from central Europe. OK, no problem, we add a new language, Matt handles content translations and the job is done.</p>
+<p>It takes one week for him to find out that keeping content in both languages is quite a time-demanding task. So he decides that if he adds some content in English only, it should be also displayed on the Czech site as it’s better to have the untranslated content there than a blank page. So far, so good.</p>
+<p>In another half a year, he wants to add Slovak. And you start getting the feeling this will never stop and you should not have agreed to build his website in exchange for three beers. The thing is, Slovak is very similar to Czech and therefore it’s likely that more people from Slovakia will understand Czech rather than English. That’s why Slovak will fallback to Czech and Czech will fallback to English.</p>
+<p>This is still configurable in a headless CMS. But you need to think about how your website will render such content. Most content items contain links to other content or include it directly. Do you want to let your visitors know that linked content is available in a different language only, mix the content, or not display it at all?</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 538px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/c16680fedb49f16cc9b03b16e76b3199/9516f/link-with-desc.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 13.513513513513512%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAfklEQVQI103OyxLCIAwFUP7//2rtRAo0PFoF10AKSHGc8SxubrIKI6JSClHucU1Ko5805CGlRCPzT4yxJwMAvgopDQAivgTX91nI7dAaNaIxZndOKeWstW7HDfsagu8XH95M43Y8/SoKAE3TyR9lvtGyXO90tdbWWh2+pf35AKguqUnJuK+zAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Linked content is only available in a different language"
+        title="Linked content is only available in a different language"
+        src="/gatsby-bloga-2/static/c16680fedb49f16cc9b03b16e76b3199/9516f/link-with-desc.png"
+        srcset="/gatsby-bloga-2/static/c16680fedb49f16cc9b03b16e76b3199/12f09/link-with-desc.png 148w,
+/gatsby-bloga-2/static/c16680fedb49f16cc9b03b16e76b3199/e4a3f/link-with-desc.png 295w,
+/gatsby-bloga-2/static/c16680fedb49f16cc9b03b16e76b3199/9516f/link-with-desc.png 538w"
+        sizes="(max-width: 538px) 100vw, 538px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>And what if the linked content is available only in a language different from the default one (in this case, English)? A typical example of this is a blog post and its author. When the blog post is in English and the author’s bio only in Czech, what will you display?</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 480px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/645ac281279266b6e9b51e463e3bdc22/e85cb/required-field.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 22.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAe0lEQVQI132N0Q7DIAhF/f+f3MPaKaNWFGzcrHO0iXvrzsMJueGCEZHFr1sKMt/Qh5TSa1BKUfcLWmuGha21DwuzAwegZUS0zsET79OEuPT+uSy/B/pEXWv9zQf73kQaAhMxc6QYAtHpnDejkfwhZ46R/XqsR6JAYaA3vtoH5cfeqzfAAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Author field is required"
+        title="Author field is required"
+        src="/gatsby-bloga-2/static/645ac281279266b6e9b51e463e3bdc22/e85cb/required-field.png"
+        srcset="/gatsby-bloga-2/static/645ac281279266b6e9b51e463e3bdc22/12f09/required-field.png 148w,
+/gatsby-bloga-2/static/645ac281279266b6e9b51e463e3bdc22/e4a3f/required-field.png 295w,
+/gatsby-bloga-2/static/645ac281279266b6e9b51e463e3bdc22/e85cb/required-field.png 480w"
+        sizes="(max-width: 480px) 100vw, 480px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>You see, fallbacks are not just about content and its presentation online. It’s also about content creation and applied restrictions. Some fields need to be filled, some fields require editors to link an item or two. You need to define what content is allowed and what content is invalid based on the requirements of your client.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/00d43/rich-text.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 13.513513513513512%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAd0lEQVQI142OSwrCQBBEc/qcxZ2XyA3EjQay0ZlI+jOxZ0i6G9Exiyxc+aCKoqCgmvcfqPksrytwezoe+k7zkkupfVPkKZJxfOA0pZSYGQAIkZmQEACrqg83Ol9CnCktsq7q7t9xDPcYgqq6mW/Yxp73XtV+Hn0AQ/qr6nmbVoMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Linked item in free text field"
+        title="Linked item in free text field"
+        src="/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/fcda8/rich-text.png"
+        srcset="/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/12f09/rich-text.png 148w,
+/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/e4a3f/rich-text.png 295w,
+/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/fcda8/rich-text.png 590w,
+/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/efc66/rich-text.png 885w,
+/gatsby-bloga-2/static/2f6448159e9ef0aab7fb7831f4eb5c6f/00d43/rich-text.png 1000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Implementation</h2>
+<p>The more time you invest in gathering requirements, the less time you will need to spend on implementation. So what do we need to implement?</p>
+<ul>
+<li>Localize URLs</li>
+<li>Identify user locale</li>
+<li>Generate language-specific dynamic pages</li>
+<li>Generate language-specific static pages</li>
+<li>Update components</li>
+</ul>
+<p>To illustrate these steps, I used a sample intranet app that was built on Gatsby and Kentico Kontent and used only a single language - English. You can <a href="https://github.com/Simply007/kontent-sample-app-gatsby-intranet">find it on GitHub</a>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/2c95d/intranet.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABkUlEQVQoz42Sv07CUBTG+xIU0arUFiSlSKKJoC+gq4FSjE7GxInJJxCjC4kLiW/gIKvBTTcHQuJC4uKERiewhdL/7a2nQEgpGPvlDPd89/zy3dx7sev9rb2d7d1MlqTiOYYY8ITAr4jcknCAzy2xQAiH5OAk+c7RWIZlNlOpdDJJLEe57IZWLUm359LNWb/M9y+Lo+pdFPvl8dr1r46lyumgWsKYBJOgYzRJRvAwzxUcxzEMw7QsCzmjQs5YE8eyERTMYGmWTTPsOkVHQnghl4chhCbzrrpdsdl8az2/aqrh9p5NjIpGITZO0Yv4QiHPeeHRolar39/VjyoPjy8taG0beeDVKFSMXFvEw7PJcPx2+0NVtMZT4/vzy7f7D2zbtizLiqKYmoq8oUHgET8U8vmBYLEndjod4UcwTfNvOBTm83kgNU3Tg2kKhmSAwTWCyZfMAQwumhFcO5xo0sKMPg3jAMPNwKnnwKYJt25Pm34YLFVVnRlBMryZ9wl0TffDMOS+KgTNSJIk99sPZei6Isu/ehSQ+9tJnFAAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Intranet app preview"
+        title="Intranet app preview"
+        src="/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/fcda8/intranet.png"
+        srcset="/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/12f09/intranet.png 148w,
+/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/e4a3f/intranet.png 295w,
+/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/fcda8/intranet.png 590w,
+/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/efc66/intranet.png 885w,
+/gatsby-bloga-2/static/396039fe128f5b1bda5efe7c3a48d102/2c95d/intranet.png 1099w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The app contains a list of employees and a profile page for every one of them.</p>
+<p>Before we jump into code, it’s essential to mention plugins. They greatly help with handling multilingual websites in Gatsby, so it would be a waste of time to try and reinvent the wheel here. For the full list, see <a href="/gatsby-bloga-2/docs/localization-i18n/">Gatsby docs</a>. I chose the <a href="https://github.com/angeloocana/gatsby-plugin-i18n">gatsby-plugin-i18n</a> as it is capable of automatic locale identification, handles language-specific static pages, and lets me configure the basics.</p>
+<div class="gatsby-highlight" data-language="js:title=gatsby-config.js"><pre class="language-js:title=gatsby-config.js"><code class="language-js:title=gatsby-config.js">{
+  resolve: `gatsby-plugin-i18n`,
+  options: {
+    langKeyDefault: &#39;en&#39;,
+    langKeyForNull: &#39;en&#39;,
+    prefixDefault: false,
+    useLangKeyLayout: false,
+  },
+},</code></pre></div>
+<p>This configuration (in <code class="language-text">gatsby-config.js</code>) tells the plugin to use <code class="language-text">&#39;en&#39;</code> as the default language code (<code class="language-text">langKeyDefault</code>, <code class="language-text">langKeyForNull</code>) and no prefix (<code class="language-text">prefixDefault</code>). The last option (<code class="language-text">useLangKeyLayout</code>) specifies that the used layout is language invariant.</p>
+<h3>Localize URLs</h3>
+<p>Right at the beginning, we need to think about URLs. Do you want the language code in the URL all the time? Should the default language be accessible without language code?</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">╔════════════════════════════════════════════════════╗
+║       All languages use language code in URL       ║
+╠════════════════════════════════════════════════════╣
+║ /en-US/home                                        ║
+║ /cs-CZ/home                                        ║
+║ /sk-SK/home                                        ║
+╚════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════╗
+║ Default language does not use language code in URL ║
+╠════════════════════════════════════════════════════╣
+║ /home                                              ║
+║ /cs-CZ/home                                        ║
+║ /sk-SK/home                                        ║
+╚════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════╗
+║          Only simple language code in URL          ║
+╠════════════════════════════════════════════════════╣
+║ /en/home                                           ║
+║ /cs/home                                           ║
+║ /sk/home                                           ║
+╚════════════════════════════════════════════════════╝</code></pre></div>
+<p>I chose the variant with default language having no prefix in the URL.</p>
+<h3>Identify User Locale</h3>
+<p>If your website is not Google Maps, people most likely won’t share their location with you. Therefore, when identifying where a visitor is geographically, we rely on the information browsers send in the first request. That can be obtained via <code class="language-text">window.navigator.language</code>, but we typically don’t implement this part ourselves. In my case, it’s a job that is handled by the aforementioned <code class="language-text">gatsby-plugin-i18n</code>.</p>
+<h3>Generate Language-specific Dynamic Pages</h3>
+<p>As I mentioned already, the intranet app contains profile pages for all employees. They are generated dynamically because, well, the list of employees is also dynamic. This code piece that sits in <code class="language-text">gatsby-node.js</code>’s <code class="language-text">createPages</code> generates pages in the original implementation:</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token function">graphql</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+  query peoplePortalList {
+    allKontentItemPerson() {
+      nodes {
+        elements {
+          urlslug {
+            value
+          }
+        }
+      }
+    }
+  }
+</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+
+<span class="token comment">// ...</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> person <span class="token keyword">of</span> nodes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">createPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">employees/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>person<span class="token punctuation">.</span>elements<span class="token punctuation">.</span>urlslug<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./src/templates/person.js</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    context<span class="token operator">:</span> <span class="token punctuation">{</span>
+      slug<span class="token operator">:</span> person<span class="token punctuation">.</span>elements<span class="token punctuation">.</span>urlslug<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>We will need to adjust both the GraphQL query and the code that generates pages.</p>
+<p>During the build time, the <a href="/gatsby-bloga-2/docs/sourcing-from-kentico-kontent/">Kontent source plugin</a> generates one Gatsby node per each content item - language combination. To distinguish these nodes, they always contain two fields:</p>
+<ul>
+<li><strong>preferred_language</strong>
+This field is mainly used for filtering and describes the language the item is intended for. For example, if you want Czech content, you want to filter for <code class="language-text">preferred_language=&#39;cs&#39;</code> provided you use the codename <code class="language-text">&#39;cs&#39;</code> for Czech.</li>
+<li><strong>system.language</strong>
+This is the actual content item language. If you filter items based on <code class="language-text">preferred_language=&#39;cs&#39;</code>, you will get <code class="language-text">system.language=&#39;cs&#39;</code> if the item is translated. Otherwise, the item content will be in English, and <code class="language-text">system.language</code> will be <code class="language-text">&#39;default&#39;</code> (here, it’s English).</li>
+</ul>
+<p>In my case, I am happy with language fallbacks for items that are not translated. That means I can use <code class="language-text">preferred_language</code> and treat all items as if they were translated.</p>
+<div class="gatsby-highlight" data-language="graphql"><pre class="language-graphql"><code class="language-graphql"><span class="token keyword">query</span> PeoplePortalList <span class="token punctuation">{</span>
+  allKontentItemPerson<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    nodes <span class="token punctuation">{</span>
+      elements <span class="token punctuation">{</span>
+        urlslug <span class="token punctuation">{</span>
+          value
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      preferred_language
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>If you don’t want to display items that fallback to parent language, just compare <code class="language-text">preferred_language</code> and <code class="language-text">system.language</code>. If they are not the same, it’s a fallback.</p>
+<p>Let’s define here a new variable <code class="language-text">lang</code> that will hold the language code for the current item’s <code class="language-text">preferred_language</code>. I will use it in the <code class="language-text">createPage</code> method call to place the newly generated page on the right URL.</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> person <span class="token keyword">of</span> nodes<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> lang <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>person<span class="token punctuation">.</span>preferred_language<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/</span><span class="token template-punctuation string">`</span></span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>person<span class="token punctuation">.</span>preferred_language <span class="token operator">===</span> <span class="token string">"default"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    lang <span class="token operator">=</span> <span class="token string">"/"</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">createPage</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    path<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>lang<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">employees/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>person<span class="token punctuation">.</span>elements<span class="token punctuation">.</span>urlslug<span class="token punctuation">.</span>value<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+    component<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./src/templates/person.js</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    context<span class="token operator">:</span> <span class="token punctuation">{</span>
+      slug<span class="token operator">:</span> person<span class="token punctuation">.</span>elements<span class="token punctuation">.</span>urlslug<span class="token punctuation">.</span>value<span class="token punctuation">,</span>
+      lang<span class="token operator">:</span> person<span class="token punctuation">.</span>preferred_language<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h3>Generate Language-specific Static Pages</h3>
+<p>Apart from dynamic pages, there are always some static pages. They include <code class="language-text">index.js</code> and <code class="language-text">employees.js</code> that handle the homepage and employees page respectively. The <code class="language-text">gatsby-plugin-i18n</code> will place them on the right language-specific URLs if you follow the defined language convention-the filename suffix needs to contain the language code.</p>
+<ul>
+<li>
+<p><code class="language-text">index.js</code> -></p>
+<ul>
+<li><code class="language-text">index.en.js</code></li>
+<li><code class="language-text">index.cs.js</code></li>
+</ul>
+</li>
+<li>
+<p><code class="language-text">employees.js</code> -></p>
+<ul>
+<li><code class="language-text">employees.en.js</code></li>
+<li><code class="language-text">employees.cs.js</code></li>
+</ul>
+</li>
+</ul>
+<p>It’s also necessary to adjust the content of each of the new files to reflect its new language. That includes component properties. Take a look at this part of my index.js:</p>
+<div class="gatsby-highlight" data-language="jsx:title=index.js"><pre class="language-jsx:title=index.js"><code class="language-jsx:title=index.js">&lt;Layout location={location} title={title}&gt;
+  &lt;IndexContent /&gt;
+&lt;/Layout&gt;</code></pre></div>
+<p>Once this file becomes <code class="language-text">index.cs.js</code>, I need to adjust it to:</p>
+<div class="gatsby-highlight" data-language="jsx:title=index.cs.js"><pre class="language-jsx:title=index.cs.js"><code class="language-jsx:title=index.cs.js">&lt;Layout location={location} title={title} lang=&quot;cs&quot;&gt;
+  &lt;IndexContent lang=&quot;cs&quot; /&gt;
+&lt;/Layout&gt;</code></pre></div>
+<h3>Update Components</h3>
+<p>That takes us to components and selected language propagation. Every component you use on your site that has anything to do with links or languages needs to know what is the current language. Take a language selector as an example. Sure, you can render it as a simple list of supported languages, but, usually, you want a bit better UX. The current language should be hidden, and switching to another language should not lose the context of the current page (very annoying behavior).</p>
+<p>There are multiple ways to handle the language propagation. They are ranging from storing it in site configuration and accessing it from components using GraphQL queries to wrapping all components in a language-specific wrapper or creating a special object just for this use case (for example, <code class="language-text">gatsby-plugin-intl</code> plugin does it this way).</p>
+<p>I always aim to keep things simple. In my case, the language travels through components from top to bottom. The language-specific <code class="language-text">index</code> page defines the language code for the <code class="language-text">IndexContent</code> component. If a child component requires the current language, it will receive it from its parent the same way.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">function</span> <span class="token function">Content</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> classes<span class="token punctuation">,</span> lang <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token operator">...</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">EmployeeList</span></span> <span class="token attr-name">lang</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>lang<span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span>
+  <span class="token operator">...</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>The last part of this multilingual adjustment tutorial is the language selector. It’s a brand new component that needs to know the current language and also the current URL path. That way, it can render links that keep the context of the current page when switching between languages.</p>
+<p>A very simple implementation featuring just two languages (Czech and English) can look like this:</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> PropTypes <span class="token keyword">from</span> <span class="token string">"prop-types"</span>
+<span class="token keyword">import</span> React<span class="token punctuation">,</span> <span class="token punctuation">{</span> Component <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"react"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Location <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@reach/router"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Link <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"gatsby"</span>
+
+<span class="token keyword">function</span> <span class="token function">LanguageSelector</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> classes<span class="token punctuation">,</span> lang<span class="token punctuation">,</span> location<span class="token punctuation">,</span> className <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>lang <span class="token operator">===</span> <span class="token string">"default"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Link</span></span> <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>className<span class="token punctuation">}</span></span> <span class="token attr-name">to</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">/cs/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>location<span class="token punctuation">.</span>pathname<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        čeština
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Link</span></span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Link</span></span>
+        <span class="token attr-name">className</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>className<span class="token punctuation">}</span></span>
+        <span class="token attr-name">to</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>location<span class="token punctuation">.</span>pathname<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token string">"/"</span> <span class="token operator">+</span> lang <span class="token operator">+</span> <span class="token string">"/"</span><span class="token punctuation">,</span> <span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span>
+      <span class="token punctuation">></span></span><span class="token plain-text">
+        english
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Link</span></span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> LanguageSelector</code></pre></div>
+<p>If the current language is English, there is no language prefix in the URL and we can directly use <code class="language-text">location.pathname</code> to render the language-specific link. In any other case, we first need to remove the language prefix from the path.</p>
+<p>In the case of catering for more than just two languages, you will probably be better off defining the list of available languages in a separate file.</p>
+<h2>Summary</h2>
+<p>You see that adding multiple languages to sites is not as simple as it seems at the start. It mainly requires you to define how the website should behave and what the content restrictions are. The implementation is made easier by many available plugins that help you do the job.</p>
+<p>Have you published a multilingual website on Gatsby? Let me know how you implemented it and what your experience was like on <a href="https://twitter.com/ondrabus">Twitter</a>.</p>
+<p>You can also check out <a href="https://github.com/ondrabus/kontent-sample-app-gatsby-intranet/tree/multilingual">this implementation on GitHub in a separate branch of the forked source repository</a> or the <a href="/gatsby-bloga-2/docs/sourcing-from-kentico-kontent/">Kontent source plugin page</a> in the docs.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/100days/accessibility/">← <!-- -->Challenge 8 - Make Your Forms and Images Accessible to Everyone</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/100days/seo/">Challenge 9 - Optimize Your Website for Search Engines (SEO)<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2020-02-19-how-to-build-multilingual-sites-with-gatsby/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

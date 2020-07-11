@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Deploying a Gatsby blog to Azure | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="In this post we will walk through the process of deploying a Gatsby blog to Microsoft Azure Storage using VS Code. Prerequisites To complete this tutorial you…"/><meta data-react-helmet="true" property="og:title" content="Deploying a Gatsby blog to Azure"/><meta data-react-helmet="true" property="og:description" content="In this post we will walk through the process of deploying a Gatsby blog to Microsoft Azure Storage using VS Code. Prerequisites To complete this tutorial you…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Deploying a Gatsby blog to Azure"/><meta data-react-helmet="true" name="twitter:description" content="In this post we will walk through the process of deploying a Gatsby blog to Microsoft Azure Storage using VS Code. Prerequisites To complete this tutorial you…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2018-11-05-deploying-gatsby-to-azure/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Deploying a Gatsby blog to Azure</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">November 05, 2018</p></header><section><p>In this post we will walk through the process of deploying a Gatsby blog to Microsoft Azure Storage using VS Code.</p>
+<h2>Prerequisites</h2>
+<p>To complete this tutorial you will need the following tools:</p>
+<ul>
+<li>Node - To run the rest of the tools</li>
+<li>Gatsby CLI - To create your blazingly fast blog!</li>
+<li>VS Code - as a code editor</li>
+</ul>
+<h3>Prerequisites Installation</h3>
+<p>Install Node from the <a href="https://nodejs.org/en/">Node website</a> and check it’s installed by checking the version from your terminal.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">node -v
+v10.9.0</code></pre></div>
+<p>Install VS Code from the <a href="https://code.visualstudio.com/">VS Code website</a>.</p>
+<p>Next, we can install the important part! <a href="https://gatsbyjs.org/">Gatsby</a> from your terminal, run:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> --global gatsby-cli
++ gatsby-cli@2.4.2
+updated <span class="token number">1</span> package <span class="token keyword">in</span> <span class="token number">4</span>.868s</code></pre></div>
+<h2>Creating your blog</h2>
+<p>Next you will create the blog from the handy <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Gatsby Starter Blog</a>.</p>
+<blockquote>
+<p>If you already have a site you want to deploy, skip forwards to <a href="#setting-up-azure">Setting up Azure</a></p>
+</blockquote>
+<p>From your terminal run</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby new azure-blog https://github.com/gatsbyjs/gatsby-starter-blog
+
+info Creating new site from git: https://github.com/gatsbyjs/gatsby-starter-blog.git
+Cloning into <span class="token string">'azure-blog'</span><span class="token punctuation">..</span>.
+remote: Enumerating objects: <span class="token number">1</span>, done.
+remote: Counting objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">1</span>/1<span class="token punctuation">)</span>, done.
+remote: Total <span class="token number">1139</span> <span class="token punctuation">(</span>delta <span class="token number">0</span><span class="token punctuation">)</span>, reused <span class="token number">0</span> <span class="token punctuation">(</span>delta <span class="token number">0</span><span class="token punctuation">)</span>, pack-reused <span class="token number">1138</span>
+Receiving objects: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">1139</span>/1139<span class="token punctuation">)</span>, <span class="token number">2.14</span> MiB <span class="token operator">|</span> <span class="token number">2.95</span> MiB/s, done.
+Resolving deltas: <span class="token number">100</span>% <span class="token punctuation">(</span><span class="token number">636</span>/636<span class="token punctuation">)</span>, done.
+success Created starter directory layout
+info Installing packages<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.</code></pre></div>
+<p>You can now view your website by running</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> azure-blog
+<span class="token function">npm</span> run develop</code></pre></div>
+<p>You should now see your blog in the flesh!</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/764be/blogstarter.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 106.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABYlAAAWJQFJUiTwAAACg0lEQVQ4y6VUyW4aQRDlp7k5vmMZ4ZOPnPkAK1xyziE5RAbZWEY2MPsMs8AMsy/PVQ3N4sSJHbf0pqub7kf1q6UFGk3TIEkSVFWFoiiQ57kAjziOkaapsLMsQ13X4jzP8u7xaPGHya6vr3F1dYVer4eLiwu0220MBgN0Oh2cn5+j2+3i8vJSrPv9vvjjNwnZs5ubGwyHQ4xGIzw+PmI8HuPu7g5BEEDTNEynUziOg/l8DtM09wSSUM4t+ZQvZ2fCgzOa2Zt/DSaQOCFsXrm92Wxg2zY+Mo7vt+Ti+7evGE8eEPg+XNfDYrHAfDaDYdqwaW0td3BcLL0ANtmu6+6Dd/BwZ9z/+gFl9iQO2bZDei3hkKeWH0HzEyhuDNWLYQSJgE7I8oKI6teEYoXPjJMn86fmPCxqxHmFTcYokRaV2G/eCUksCMuqwcSMcKuF+KnQbMS4t5P/8nLrIWW977mk3xJhGGITRQgJHHFGRDYnv1xz9fC59XqN1Wp9EpjW1qhFIDRdh2lZ0A2DomvC0A2R1JzIuqbD4H0Cr6MwEiXJ5GVZHggPglK0RMSaPdhzWbtcTXIt6/gvT24wMhPSLcWEcGskeHDSz2lo2C5Mx0MQbrCKSK8k23ed1+DGwOXK4Gcfd549oaaqQi9FUQgLWKwbaaooKlT+TdXEbNCeTtpyJXHj4MCcaohdYtclmopRkFmSJ4U4yN5ISA/ZM9m+/vjkijR89nLM/RxPbgY7Kj6k3W+JzUGZ6j6erRW0IEWY1e8ikRlw2D8KiutYWFomHIJl7vKQcs6ivFRJP9aTbZ105gYSBCtK6hV83zvp3i1phJSoMvN9EpsF5wuyIsJoOzNYw7dq+QVA9kxIShzQXQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gatsby blog starter"
+        title="Gatsby blog starter"
+        src="/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/fcda8/blogstarter.png"
+        srcset="/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/12f09/blogstarter.png 148w,
+/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/e4a3f/blogstarter.png 295w,
+/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/fcda8/blogstarter.png 590w,
+/gatsby-bloga-2/static/e119e57300994aad03e625bbe1dc0ac1/764be/blogstarter.png 806w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Setting up Azure</h2>
+<p>Microsoft Azure is a cloud hosting provider which offers a wide range of tools and services. Today you are going to use Azure Storage to host our static Gatsby blog.</p>
+<blockquote>
+<p>If you don’t have an Azure account, <a href="https://azure.microsoft.com/en-us/free/">sign up today</a> for a free 30 day account with $200 in Azure credits.</p>
+</blockquote>
+<blockquote>
+<p>Note: You will need to verify your identity with a credit card, but will not be charged unless you begin to use paid service and exceed the free allowance. The cost per GB for storage is in the region of £0.04 so it should last a while.</p>
+</blockquote>
+<p>As part of this tutorial you will:</p>
+<ul>
+<li>Create an <code class="language-text">Azure Storage Account</code> for our blog</li>
+<li>Install the <code class="language-text">Azure Storage</code> VS Code extension</li>
+<li>Create a production build of your blog</li>
+<li>Deploy your blog to Azure</li>
+</ul>
+<h3>Create the Azure Storage Account</h3>
+<p>Login to the <a href="https://azure.microsoft.com/en-gb/features/azure-portal/">Azure Web Portal</a> and select <code class="language-text">+ Create a Resource</code>, find and select <code class="language-text">Storage Account</code> in the list.</p>
+<p>Fill in the form by selecting your subscription, creating a new resource group if you don’t have one and giving your storage account a name and region. Your form should look something like this.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/8ea22/createstorageaccount.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.54054054054053%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAADCElEQVQ4y3VU2U7bUBD1f/BQEjaBCCQsIYEQYkISlqosidp+Vh9aqWRpP6AqUFFaqU/9gv5A3yFktbM43k9nruOwFK58NNej8bkzc+Zamp+fRzQaxdzsLMbGxpBIJPD6zVvk8wXkT05wfHwsUMjnPRQKODo6wqdKBVffL3F+9hUX52e4/HaBnz+uIIUjISQ21gUmggGUy2Voho2bag3X19eo1WowTRO8HNcVoAcG+XTdgG4MQfuBrkNaj69if38XsbUoJonwlAh5dTUDmunAcACTCGgLMiM8XuyjEEjxpIx0ehvx2JrI8GOxCFVVcX1Tw229heptHdVak9BAq9lEk9BqKwKdTgeqogh0u124jgMplUng4GAPW8lNBAPjKJbKsCwbt7dVKEr7AdptD2pXQ6c3wGBwB4PK5lZI8k4ayc0ElpcimCBCzlDTNCJQRO84WKfe8J7BH+rsGxJxLMO2bVG6lDo4FKptp7YwORFEadjDXq9HmVpwqAy2rVYLjUZD+A3DI74PPpRJpUQ6C1mWsS2nMDszTYQVQWgMA3x1660ukfWFjw95DP9wKZmWcfjqJXZzWcxMTeK0WIJFH3E25nA0BgST+sp+y+LS+d0UJGy9vUk9dCHFNmLY2ZY9lamHp6WSKKlarQpFFWp+U+mT2godoqJPgjA0FqVPPex5e7Z8gCTn9rC7mxM9nJmeJJVLokweVg4QJdsOWo02eir1b0AZ6ZTZwPLsEIbmxUuZ3Bqy2TQ21uNiDov3RPEXl9tWVDpEp/IHVJpDg+ze9ZDebccelpxYQTazIxCan0OpUvmPkIVoNpqo1+to1Bti8HlULNPyQJmNVE7JW9jLZbAejyE4/mKUYZduga8yW0XtCPizx5b9PkYqR8IhQcaiBAMvRhnybHGAuKeuX95Tt/jhkhZCIUTCi1hZWRYq+4SOYz/7kSv+OE+TS4sLISxFwlgdEvol6wbPFzfbeXKQn8OIkDOcmgjg3YcSvvxx8fl3E+9/tfH3RodjauJ3Vu/YqKkkgPiXuaNM7+MfFK2uXmRItFoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Azure Storage Account Form"
+        title="Azure Storage Account Form"
+        src="/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/fcda8/createstorageaccount.png"
+        srcset="/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/12f09/createstorageaccount.png 148w,
+/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/e4a3f/createstorageaccount.png 295w,
+/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/fcda8/createstorageaccount.png 590w,
+/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/efc66/createstorageaccount.png 885w,
+/gatsby-bloga-2/static/9a994b34fc3ee646f2060992d6f65ac8/8ea22/createstorageaccount.png 1023w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Click on <code class="language-text">review + create</code> then <code class="language-text">create</code>, after a few seconds, your account will be created.</p>
+<p>Next, click on <code class="language-text">Go to resource</code></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/12470/createstorageaccountcomplete.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 39.86486486486486%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAABHUlEQVQoz42R3WqEMBSEff/3KbTPUIqrVii7vShFqit2jUbzn0yP0S60XuwqQ+Bw+DIzSdJDjrIskR1SvBYF0jRFlhc4Hk+oqgpN06Cu67uV1G0LLjSEdpDGg0sJayZorTBMElIpOB9w75e8V19oB4FBAdwA51Hg6aXH8/ECKWfwcSS4jss+hJtK6nMLQ26A1UXDP/GQP+Ltg5FDhW6QEORaCgFr7WojhG1/r4Qxtt3u4znpC5ouA+sZwRRm5eC9jwoEuqVk2IBxQL91QP89ous6cM6hqUOl1K6r/62GbfAXGFans5gglInzJaakyMYYOOdin8sZU5FrNk70cPrK2AGtp9fW1BtFdTGqiw4X6AJbLvitwDlPexbGumslPxTJbLNxEx7EAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Azure storage account created"
+        title="Azure storage account created"
+        src="/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/fcda8/createstorageaccountcomplete.png"
+        srcset="/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/12f09/createstorageaccountcomplete.png 148w,
+/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/e4a3f/createstorageaccountcomplete.png 295w,
+/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/fcda8/createstorageaccountcomplete.png 590w,
+/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/efc66/createstorageaccountcomplete.png 885w,
+/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/c83ae/createstorageaccountcomplete.png 1180w,
+/gatsby-bloga-2/static/bf2acbbd31535d1259bce57613abc0e8/12470/createstorageaccountcomplete.png 1311w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Setup your account for static site usage</h3>
+<p>Find the <code class="language-text">Static Website (preview)</code> link in the left hand panel and select it.</p>
+<p>Change the option to <code class="language-text">enabled</code>, set a default document name of <code class="language-text">index.html</code> and hit <code class="language-text">Save</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 454px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/59671cfaaca177805088c075e96634ab/b3c1d/setdefaultdocument.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 93.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAAC3UlEQVQ4y41UXW/TQBD0T+af8A94h2d45KkvSREtBaSmJHHSNIkT+3xn+/xtx8PsRYlCQKgnjc727Y53Ztf2SpvhPsiwjDOsV0vM53MsfB/z2QyLhU8ssN1uEYUhHh8fEXKfz31Mp1Os12sslkssCYlrmgaetRY32xxTZfHraYInBs5IuFytsA8jbIMdwkjBFgU2QYAsTZGaCFEUIY5jmDiEMQZKKXRdBy8wGVpe5FWNjLCCukFzGM6oibxpUbUt9wHfVzyvK/T9gEXYoSwLouR9Dy9OLbq2QcUHOauVios8R8vyL9HUNYZDj6LqMNtVjMvQtB02unU5gmEY4CkSGpNgt9/jcDjgtOTwBFniT6w1Y0hqEydZ6xhaHSXLvchmhRmqQjuzc1ZWsxLxQshPOBFKksiKY+38i1SEmur4ejDy6KEiIaAoN3UJQiykl1XKkmCR1dLLcKUQvcSYjGZ49+Y98QEf3352cV5Iyc/FAJOwe2nyh+TLvWVDUna47yg5LVFkJXSQ4MunB9x+/IafN09HQkWihKOR0EdNj7Iscx27rvCSUO1jhAE9C2OUVYm6qZ0NmbbwIhIVsyksg8VUgSReN8VJzi36pofZp9g8c9i3CrVt0eQduqLn3lJyYjFJGhhWJmTSsX+tqqqw2WxcU8TjqqzcM1FTFiWS5GiXF9FDXVJOZlm2cgciWyDX0l1Z8qLRaOS6LmeiQs4Fci1d7/tOCJnctOeHkihwY8GuSxWyJPH29tZZIPKl0kvIi8RnL2a3msEgtYYjc/w+pQLZtTk+k2AhHI/Hfw39NVyXX5Y+P/rEIU2Mw+na8GuQwZX7E+HlOF0vb7pLcTcNMNtqTNcKc+5+oDEn/J1x9zFVryNKfg3h11WKsV/i4SXBD+J+oXDnR2fM4harAphsDD18BaF8KbY9QFP6brdHxAHl3+qM/nBM1OaVkqXLCclk4t3PQbrqgo84JV425X+EvwE/fq8wet7u7gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Set default document"
+        title="Set default document"
+        src="/gatsby-bloga-2/static/59671cfaaca177805088c075e96634ab/b3c1d/setdefaultdocument.png"
+        srcset="/gatsby-bloga-2/static/59671cfaaca177805088c075e96634ab/12f09/setdefaultdocument.png 148w,
+/gatsby-bloga-2/static/59671cfaaca177805088c075e96634ab/e4a3f/setdefaultdocument.png 295w,
+/gatsby-bloga-2/static/59671cfaaca177805088c075e96634ab/b3c1d/setdefaultdocument.png 454w"
+        sizes="(max-width: 454px) 100vw, 454px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<blockquote>
+<p>Note down the <code class="language-text">Primary Endpoint</code> that azure gives you, that will be the web address that our blog will be deployed, it will be in the format (<code class="language-text">https://&lt;the-name-of-your-storage&gt;.&lt;the-zone&gt;.web.core.windows.net/</code>)</p>
+</blockquote>
+<h3>Create a production Gatsby build</h3>
+<p>You are now ready to produce a production build of your blog. Make sure you’re in the blog folder and then run.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby build
+
+success <span class="token function">open</span> and validate gatsby-config — <span class="token number">0.010</span> s
+success load plugins — <span class="token number">0.352</span> s
+success onPreInit — <span class="token number">2.785</span> s
+success delete html and css files from previous builds — <span class="token number">0.041</span> s
+success initialize cache — <span class="token number">0.009</span> s
+success copy gatsby files — <span class="token number">0.139</span> s
+success onPreBootstrap — <span class="token number">0.016</span> s
+success <span class="token builtin class-name">source</span> and transform nodes — <span class="token number">0.147</span> s
+success building schema — <span class="token number">0.521</span> s
+success createPages — <span class="token number">0.072</span> s
+success createPagesStatefully — <span class="token number">0.037</span> s
+<span class="token punctuation">..</span>.</code></pre></div>
+<p>This will output a production build of your blog into the <code class="language-text">public</code> folder.</p>
+<h2>Install the Azure Storage extension</h2>
+<p>The easiest way to deploy your blog to your storage account is to use the <code class="language-text">Azure Storage Extension</code> within VS Code.</p>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage">Install the Azure Storage Extension - Extensions Gallery</a></p>
+<blockquote>
+<p>Alternatively, select the extension option from VS Code and search for <code class="language-text">Azure Storage</code>.</p>
+</blockquote>
+<h2>Deploy your blog</h2>
+<p>Now you can finally deploy your blog!</p>
+<p>Right click on the <code class="language-text">public</code> folder in VS code and select <code class="language-text">Deploy to Static Website...</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 523px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/544edb7341449c6bd90790993c35fc96/3e286/deploytostorage.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 109.45945945945948%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAABYlAAAWJQFJUiTwAAADh0lEQVQ4y5WUW2sbRxiG9QsCvTA9yDpY0q4Ou9KudiV518UniCzLgdZOKKQQetFelDhQelGaEPobTCBEjiVLaY3j5s7YN/4LPpT2vncpxTaRYh1MopUt6c03I0ut20qmAy87zOHZd2a+77P9XrJQKp2gWqmgWquhUi6jfFJGjfrNZgv/t9nW1tbw7MdnyOWyWF5+ikKhgJWVFeTzef7NZDLI5nLI0Fw2m8Xqah4/v3iBjecb2Njo6Dn119fXuWypVAqzs7MYGfEgpscgSRLc7hG4XO6/5HT1+k7qOxzOS7LbhzE0NMRlMwwDY2NjSF6/jk/n53Hz1gLS6TTYuGmaV4rtjcVi9DMXl216ehoTk5MwaWIuPYeZmRmMjhqIRqPQNI2+g6VpOsLhMDl3ctlMYxQJXYXfH0BYU0kKvF4vREGEX/T3lSiK8Hl9EGidTxDo6I4O8OPkDaiffImAKEBNxCHHNPhDMtweH97/cBgffPRvsXG7w0UgEQLBLwMnpqBM3cCQMgV7fBaTt77CF9/+gM++/g63F7/H5/cekO73dHvxPu588xCpO4u4Jk3gmjyF94IGnAxIst1cmEc6NQOfpMAlhPDo8RMeT69eFdFonPeNt19+/Q0ObwBukaJCCHCHTLbx8XF6EBOKrCIUlLCc6QCPjo9QKhZh1S20Wi202y00z89hWRaf39vdhZdCTaTj+ujOe8CFeQqTuTQioQRkcskCvE2Ao+NDyqAijv48xHmzySGWVUfttNYB7u3B4/HyR/HS4/SApmkgHk8grAYgh2XKkALfUCRYpVxBpXpCDtvksM3HmduBQBZ3yWQSckhCMBDk6cdamWDl1yeo1ztHZECm5oXbvkBNiyISUaBrMiRZonzN9YAM0Lm/dk9v374ZDIzFdChKFKMJCYoa4cnP2unFXZG3S6/bBe7v7/83UNd1chiFYUqQQgGsPM3yDYfHxzitnV46rlWvo1qtDHbIgMxhPB6inJSoZHWApdJrHiLdYzOx+2s0Gnx+d3cAUFUURLhTFau5PA+bly//6D1AtzH42dlZB7h3BVDWDXh8fmSeZPiGarXKgWcUzMxV8yJcuuFzcHDQH8hKVSAYgn3Ygbt3F7G9vc0rN6vAP1FFLxTyvDJvbW1hc3MTOzs7WFpa4qC+QMFHKURif2XVmy1iffbt9lkl74qtYev7A1ldu1jwT101/nfgO8N3BM9wjIMmAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Deploy to Azure Storage"
+        title="Deploy to Azure Storage"
+        src="/gatsby-bloga-2/static/544edb7341449c6bd90790993c35fc96/3e286/deploytostorage.png"
+        srcset="/gatsby-bloga-2/static/544edb7341449c6bd90790993c35fc96/12f09/deploytostorage.png 148w,
+/gatsby-bloga-2/static/544edb7341449c6bd90790993c35fc96/e4a3f/deploytostorage.png 295w,
+/gatsby-bloga-2/static/544edb7341449c6bd90790993c35fc96/3e286/deploytostorage.png 523w"
+        sizes="(max-width: 523px) 100vw, 523px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>If you haven’t logged in before, this will show you a prompt in VS Code where you will need to select <code class="language-text">Sign in to Azure</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/e9131/signintoazure.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAeUlEQVQY053FYQqCMACA0Z2i1JhzqJD9WEWSRiWIFQU6SVz3v8lXHUF/PJ4Y3gNuHPk4R287uradrbcWkZ4erM9PVN7gmQu+uRLsqum2P/saYaoXh8aSljeS4o7OaxbZkeWmmCb7XyIiuUKHkliFJFoRRxIZeEh/ni/3yH2JlE/m4wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sign in to Azure"
+        title="Sign in to Azure"
+        src="/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/fcda8/signintoazure.png"
+        srcset="/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/12f09/signintoazure.png 148w,
+/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/e4a3f/signintoazure.png 295w,
+/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/fcda8/signintoazure.png 590w,
+/gatsby-bloga-2/static/c1b635f356ded2825b12fce85e031311/e9131/signintoazure.png 614w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>You will see a dialog in the bottom right, asking you to load a webpage and enter a device code. Click on <code class="language-text">Copy &amp; open</code> and enter the code provided.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 470px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/add4b0119e5363a8ada087524fdfa6c6/f96db/signintoazurecode.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABRUlEQVQY01WQz07CQBDGeyMceAG5IN3ddrv9S0srLWBBKP+CEqOJdxM1ctEDL+HJ+BS+hFdf63PYgAmHX76Z3Z3Zmc9otU1wFUJwCX5ACBuWdVSb1NJ6jBkTME2ulTGu30qp6IzBMJ0Q2eYBiypHVQ0wmfQxHl+RzjTT6ZzyKd0tdLxcrpHnA0RRgiDowHUDFMWQ3lQU+9Sw3ULgr5BlO6TpK+kzRqNrKq4wn68wmy0on6Dfv8RwODpQ6tz1Qnhe9K+CJjU4P0OzuUOt9ot6/QeNxjfC8IYKekSpf/eoQCn/hP1krnTgcAFHCLhkh012GIxZurgoQtKYSNDr5XqtPd3uhW64n0DjH1AezPUW6uUL6vED9tMnzuOSViYjkyQjT1LEcYZOJyNNqVGmiaJYGy6le4otYZb3UHfvcDZbWLdvaLkp/gClJcLU1sCULgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Sign in to Azure device code"
+        title="Sign in to Azure device code"
+        src="/gatsby-bloga-2/static/add4b0119e5363a8ada087524fdfa6c6/f96db/signintoazurecode.png"
+        srcset="/gatsby-bloga-2/static/add4b0119e5363a8ada087524fdfa6c6/12f09/signintoazurecode.png 148w,
+/gatsby-bloga-2/static/add4b0119e5363a8ada087524fdfa6c6/e4a3f/signintoazurecode.png 295w,
+/gatsby-bloga-2/static/add4b0119e5363a8ada087524fdfa6c6/f96db/signintoazurecode.png 470w"
+        sizes="(max-width: 470px) 100vw, 470px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The webpage should show you are trying to link your Azure device to VS Code, click <code class="language-text">Continue</code> and login to Azure if you weren’t already.</p>
+<p>If everything worked correctly you should see a page confirming you signed in.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/d7ab4/successfullysignedin.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA7klEQVQY04WRS27CMBCGDb0Al+BEwJIdp+A0bKA8umDHDXhIiA1iXakVqOCxE+NACIH8tR1ECK3ESKMZ2ZpP/saMDQhvHwTW5yiavjBIe3t+v2vvUJ1o4HLC5mcL4gTOOYgIQghIKWEjSRIw1uNuwEE6pnZ5DpoDIgYXEr7vw/M8V5VS0FpnwNJQoD7bYyFjtD5DlEcygz4AK2OFV+GAjbnG9+GClYqxO13RXB7A3lP9Py9MztgaXaJUUxpdq237KIoclLldWW2b3Wx3z8q1qQHGIb7WGwRBkEurHB7DG9AO9p9A/3xKZbx3A9cXyr9fDIcJhkjwMAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Successful sign in"
+        title="Successful sign in"
+        src="/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/fcda8/successfullysignedin.png"
+        srcset="/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/12f09/successfullysignedin.png 148w,
+/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/e4a3f/successfullysignedin.png 295w,
+/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/fcda8/successfullysignedin.png 590w,
+/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/efc66/successfullysignedin.png 885w,
+/gatsby-bloga-2/static/8c58024d9009871506682335732d2ea0/d7ab4/successfullysignedin.png 1014w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>You can now return to VS Code and select your subscription and then your storage account.</p>
+<p>Selecting the storage account will begin the deployment.</p>
+<blockquote>
+<p>If you have previously deployed you will see a dialog asking if you want to delete your files and redeploy.</p>
+</blockquote>
+<p>In a few seconds, you will see a message in the bottom right of VS Code confirming that your blog has been deployed!</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 504px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/654b33a48137b860467380ff2d7d64b8/08115/deploymentcomplete.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABDklEQVQY05WPzXaCMBCFfY8SUIGEPyFFEKnyUxQQdd1962lfphvf+DYExZ7TVRdf7p3JnDvJRFVVEEJAlCcoivIvCBl41AST/uhDdeZAN0zouvELE8afnjH25mNNQamF2Wx+D9TwfHhD253RNh32+xZ1fUDbHlFVtfQ9u10j77ruhLyo4AchXI8jSTZiroHr+rdATYPnBcjzUvCKQgyXZYUsK28Ustf7XqXfZggcFw6lcBiDyywwkw6BmjbFapWOrNcbSZpupXIeie2BWMrhLTgWIoi9HEE/r6Af32AXwdcV07h+fJnzEMtljDCMpMZxIjWKEhHkw7Ic2LYLS2CL15g8hXO+wDu9Dwg/9WL8AOHpuqrWOjlzAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Successful deployment"
+        title="Successful deployment"
+        src="/gatsby-bloga-2/static/654b33a48137b860467380ff2d7d64b8/08115/deploymentcomplete.png"
+        srcset="/gatsby-bloga-2/static/654b33a48137b860467380ff2d7d64b8/12f09/deploymentcomplete.png 148w,
+/gatsby-bloga-2/static/654b33a48137b860467380ff2d7d64b8/e4a3f/deploymentcomplete.png 295w,
+/gatsby-bloga-2/static/654b33a48137b860467380ff2d7d64b8/08115/deploymentcomplete.png 504w"
+        sizes="(max-width: 504px) 100vw, 504px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Congratulations! You’ve successfully completed the tutorial and deployed your Gatsby blog to Azure!</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2018-11-01-hacktoberfest-wrapup/">← <!-- -->Gatsby Hacktoberfest Wrap-up</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2018-11-07-gatsby-for-apps/">Gatsby for Apps<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2018-11-05-deploying-gatsby-to-azure/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

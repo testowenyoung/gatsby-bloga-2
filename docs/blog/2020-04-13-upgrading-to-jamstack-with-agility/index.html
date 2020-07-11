@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Rebuilding the Agility CMS Website with Gatsby (one page at a time) | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="I’ve been preaching about JAMStack for a while now, and lately I’ve been talking a lot about how you can move your website to JAMStack without rebuilding…"/><meta data-react-helmet="true" property="og:title" content="Rebuilding the Agility CMS Website with Gatsby (one page at a time)"/><meta data-react-helmet="true" property="og:description" content="I’ve been preaching about JAMStack for a while now, and lately I’ve been talking a lot about how you can move your website to JAMStack without rebuilding…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Rebuilding the Agility CMS Website with Gatsby (one page at a time)"/><meta data-react-helmet="true" name="twitter:description" content="I’ve been preaching about JAMStack for a while now, and lately I’ve been talking a lot about how you can move your website to JAMStack without rebuilding…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2020-04-13-upgrading-to-jamstack-with-agility/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Rebuilding the Agility CMS Website with Gatsby (one page at a time)</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">April 13, 2020</p></header><section><p>I’ve been preaching about JAMStack for a while now, and lately I’ve been talking a lot about how you can <a href="https://agilitycms.com/resources/posts/migrate-to-jamstack-now-no-excuses">move your website to JAMStack without rebuilding everything</a>.</p>
+<p>I decided it was time to take my own advice and upgrade my company’s website, <a href="https://agilitycms.com">agilitycms.com</a>, starting with the home page, and adding pages and sections over time. Agility CMS is a headless content management system running in the cloud (Microsoft Azure). The current website is built on ASP.NET Core. Our marketing team came to me with a request to build a brand new home page which included not only updating content, but a brand new design, new modules, and new integrations with mar-tech.</p>
+<p>This was just the opportunity I’d been looking for: A chance to practice what I’ve been preaching! What’s also great is the current .NET website is already built using a headless CMS, so I don’t have to rewrite or migrate any content.</p>
+<h2>Goals</h2>
+<ul>
+<li>Build the new home page using <a href="https://www.gatsbyjs.org/">Gatsby</a></li>
+<li>Re-use much of the existing site content from <a href="https://agilitycms.com/">our headless CMS</a></li>
+<li>Zero downtime</li>
+</ul>
+<h2>tl;dr</h2>
+<p>For those of you who just want to see the code for the new site (it only has code for the modules that are on the homepage right now, but it will expand over time), it’s all here on GitHub: <a href="https://github.com/agility/agility-website-gatsby">https://github.com/agility/agility-website-gatsby</a>.</p>
+<h2>Steps</h2>
+<p>Here’s what I did to get everything up and running, right from coding the new site, to deploying, testing and flipping over the DNS.</p>
+<ul>
+<li><a href="#step-1-get-it-running-locally-with-gatsby">Get it running locally with Gatsby</a></li>
+<li><a href="#step-2-implement-the-header-and-footer">Implement the Header and Footer</a></li>
+<li><a href="#step-3-create-a-new-home-page">Create a new Home Page</a></li>
+<li><a href="#step-4-run-it-in-gatsby-cloud">Run it in Gatsby Cloud</a></li>
+<li><a href="#step-5-deploy-to-netlify">Deploy to Netlify</a></li>
+<li><a href="#step-6-setup-the-cdn-to-do-the-edge-routing">Setup the CDN to do the Edge Routing</a></li>
+</ul>
+<p>What’s really cool is that this workflow isn’t just for upgrading Agility websites to JAMstack - you can use it for any website! Now let’s break each step into specific details.</p>
+<h2>Step 1: Get it running locally with Gatsby</h2>
+<p>It’s really easy to get started creating a Gatsby website with Agility CMS. Just clone the <a href="https://github.com/agility/agility-gatsby-starter">starter repo from GitHub</a>, open up the folder in <a href="https://code.visualstudio.com/">VS Code</a> and pop in your API Keys.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> clone https://github.com/agility/agility-gatsby-starter.git</code></pre></div>
+<p>Now, find your API Keys on the Getting Started page of the <a href="https://manager.agilitycms.com/">Agility CMS Content Manager</a></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/9c177/post-image-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 69.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsSAAALEgHS3X78AAAC80lEQVQoz2WRa0iTURjHjxeyQEErqKQo6Et9UjMa3iotiygRpytTzGmlrhxGRN/60pcsCVToppbXXd53m1uZkpi5NHJbE0Wamb7b3CWdtOt72fbO+a6zmRX058/heQ7nd57nPAdkHjtYxuEWZlWcTefkHDqfn1bc3oj2t42iz4ffdI4NdCn/GKbcAn7G4XMXjrALUorYhaUgN58leTzBS5A1JPc3JCtuJSt4O5DaJGH11r5y0F0OejbXsKtjxbVx0ppt0gqADD7VghOns8UPldfikBs7JbwklLcdrd8l4+/p5yVKrm5BqmLEEKjaNDdaWBklrIwRXgI98ubPIPdMDvIIwpK6RCk3VsSNFnOjRNwocUWUsBR0c0AXG7QVgRds0L7hEtBxJab3IuiUN0+C46cyIQzbrklA0HtazQA2Lvim7NV9FMxpFaYpuVmFGn4bMahlhpFnurpEUQl4qWiZDLcN4bp42fV4ZPqdkQ7hlB/3rRG+IMGEmNA/YtbDqXuV5CejxRBuDVfOgnB1NFIBBOp+PUXjLoeHJCjcjTvsTsJD2FZWzUtWI2Y2GS0Op2PZYL+5V1AM2hUtKpCTl4k2KblAXAa61XKMZihIQpEkCVeXyzUzM6Od0kzPflGrVbq5rxbMxt+HcEDn61YVyM7LEDWOXQZ9JeDVpBSjAuHKFOUlIrLbHYalhSFUc5ej+DA4ZbQsmuZX4F+wQbccvjn7ZIbiyac7+9/yd8tm35tCIZ+fDhf2eDxut5sgSIfzp37+x8TQwhK2Ap9iMzsf5A/fPqAYbFMDFou1+B0LUIxrmdSOmpvqxzvua3C3Nxhc8/v9of8UoAPGBbNpcRlSID39qF6vDw+TWbdZXJMjep1meT349zRsw+P24DjJRGYfDAZpmoaBxWIBKSmpEZjxUiRN+7w07g+ER4XjuNPpZBgGBg67HU5uY34whQGErVYrSE1Nw7CFNZogPHafjwoE1mg/vJqGPcNDEIalAhHBTW9EkIcxhH8B/hU8QymCWUwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Agility CMS Getting Started landing page"
+        title="Agility CMS Screenshot"
+        src="/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/fcda8/post-image-1.png"
+        srcset="/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/12f09/post-image-1.png 148w,
+/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/e4a3f/post-image-1.png 295w,
+/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/fcda8/post-image-1.png 590w,
+/gatsby-bloga-2/static/626f7a46404c3a8259033126b0dd8ab2/9c177/post-image-1.png 880w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Put your API Keys into the <strong>.env.development</strong> and <strong>.env.production</strong> files. They look something like this and have instructions about which values go where.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text"># Your Instance Id
+AGILITY_GUID=
+
+# Your Preview API Key (recommended) - you can get this from the Getting Started Page in Agility CMS
+AGILITY_API_KEY=
+
+# If using your Preview API Key, set this to true
+AGILITY_API_ISPREVIEW=true
+
+# If you want to enable &lt;host&gt;/__refresh endpoint
+ENABLE_GATSBY_REFRESH_ENDPOINT=true</code></pre></div>
+<p>Now, check out the <strong>gatsby-config.js</strong> file - it has a section for plugins, and the Agility CMS source plugin is called <strong>@agility/gatsby-source-agilitycms</strong>. Check that the language code and channel name matches what you have in your Agility CMS instance.</p>
+<h3>Modules and Page Templates</h3>
+<p>Since this was an existing website, we already had a few Page Templates and Module Definitions set up in the instance. We need to make sure we at least have placeholders in our new Gatsby project for those, and we’ll just implement whatever is needed for our new home page.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 414px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/cfe18f342e3168f95aa1d550426bb412/b910a/post-image-2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACDUlEQVQ4y42UXYvTQBSG8x/9Ad7ohe6iXdAVrwXvvNLudldx/4XQglvssn5Bm6TpppNMJt9J8zHJZJqisLslnrQIi9I2Ly/DEHjmvCc5E6Hb7X77ejn4cj4YDHq93sVK/X5fVVVd17WtEuSxUqRBoP0MwiiJ47Is5/P5YrEoGgjgMQ1n+mhITJOmKeccnjLGGsFjSYmYP5l999zA933HcUFNYXE8KSOLiZ+ukG4YmOW1imYSFEnxMu+Hc2kTJwiCdeym8ERWSGyf40Ea2AWvu92dmfM8S2kaCbIsxzRB6oVt6tDv+m3vrLmuIUiSCD3G088AY0wcpw7fNPZIlBLKonHX1NFERbbjhmEExzWxQHRp+TtTQ9lzpzz1qtuyWs6rm2KHr2sL918NWx1272T6qO2/PGOHZ3yvzfba+eN32Ua/zfaPsv3jXHjwevjsAzs8Hj5/H774ODvohA/f+E+OaOskf9rJNrl1mh2c5oKJpeqa3VCliNDM1fKIJD76VfjVsqiqebXk9eZ/39YWhiMxLxYs80NPV6dY040rFYEt2w1ncZzQLC82WZBEkfOSUzvyNaRhuIYIIULgmpgY48DfNnN/4cxNQoMQyzQJwHBEHMerYdr6ne/AxHY8gKGmZVlopSRJGlWOA7yCTdu2Yc4wzBs2KKX8jjbBDsAQmxADMgMP67pzWGEPfyWI8w/8B5i3IrNZPZwtAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Project Folder Structure"
+        title="Project Folder Structure"
+        src="/gatsby-bloga-2/static/cfe18f342e3168f95aa1d550426bb412/b910a/post-image-2.png"
+        srcset="/gatsby-bloga-2/static/cfe18f342e3168f95aa1d550426bb412/12f09/post-image-2.png 148w,
+/gatsby-bloga-2/static/cfe18f342e3168f95aa1d550426bb412/e4a3f/post-image-2.png 295w,
+/gatsby-bloga-2/static/cfe18f342e3168f95aa1d550426bb412/b910a/post-image-2.png 414w"
+        sizes="(max-width: 414px) 100vw, 414px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>There are folders for Page Templates and Modules, and you can just put in placeholder React code for these right now.</p>
+<p>Here’s an example Page Template component with a single content zone called “Main”:</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span>
+<span class="token keyword">import</span> ContentZone <span class="token keyword">from</span> <span class="token string">"../agility/components/ContentZone"</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">MainTemplate</span> <span class="token operator">=</span> <span class="token parameter">props</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main-template<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ContentZone</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Main<span class="token punctuation">"</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token punctuation">...</span><span class="token attr-value">props</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> MainTemplate</code></pre></div>
+<p>Here’s an example Module component that doesn’t do anything except output its name.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">LatestResources</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> item <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">className</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">LatestResources</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> LatestResources</code></pre></div>
+<p>When I got all those things in place, I started up Gatsby to see what would happen.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby develop</code></pre></div>
+<p>Gatsby will pull down all the content for our website and put it into GraphQL. This is a <em>content sync</em>, so from now on it will only pull down a delta (what’s changed) from Agility CMS.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 499px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/e48658397d8df721a031134d55a97e81/119c7/post-image-3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABZUlEQVQoz32S25KbMAyGef8329502mYhwGIj+czZJhAcNrtVksn0Ynf6D8PIRp+MfjkZ/eg6J5W01g7DoO+igJZd1xlj2rZ1ztHmOI5N04QQPp9K9KrKJQcLAgUJEQmgNwA8avV9P00TBTHGy+Wy7/s/GLc6jX9Ej1VZ1VDTOURSlXVdr9fr53+V2KirWNjRaKmllPSrBC/LQjGVeCR93PUNDJEf4i/o4JgesywryoK6VUoVRTH5aX/fz+fzt+QNNpPhPVNaGWmUUMgBQQiQwKFru8Y1ZVlSL6fT6WsXSe6Ph+nwo38x0fBT9dv/fAtlHlJcYN5C2ELcIpHk1uP8j6dusPBYDaxo837pTNB8YOgBR7SzxR5ccOuyEDzP81cLk5rV5HN6SJ11EiXFWCNtImD2mrE3xjnP85wmNz9FoyZH73PWmlxljN3uQNsIKYw1lh5nCaCvNHZKoCls2+a9J5IyH1flL5+iLh2dcylTAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Alt Text"
+        title="Agility CMS - Gatsby - Terminal Output"
+        src="/gatsby-bloga-2/static/e48658397d8df721a031134d55a97e81/119c7/post-image-3.png"
+        srcset="/gatsby-bloga-2/static/e48658397d8df721a031134d55a97e81/12f09/post-image-3.png 148w,
+/gatsby-bloga-2/static/e48658397d8df721a031134d55a97e81/e4a3f/post-image-3.png 295w,
+/gatsby-bloga-2/static/e48658397d8df721a031134d55a97e81/119c7/post-image-3.png 499w"
+        sizes="(max-width: 499px) 100vw, 499px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Step 2: Implement the Header and Footer</h2>
+<p>We need to make our new website look just like the old one, so we need to match the colors, fonts, and other visual styles as much as we can. You may want to pull in the CSS from your old site—or start from scratch if you want to make a clean break.</p>
+<p>Either way, this is a great time to familiarize yourself with the GraphQL data in your website. Point your browser to <code class="language-text">http://localhost:8000/___graphql</code> to start exploring your data, and you can build the query access and Shared Content or Sitemap data. You can see that all content is available, grouped by content definition name.</p>
+<p>Here’s the query that I used to grab a Global Header shared content item, as well as the nested sitemap as JSON.</p>
+<div class="gatsby-highlight" data-language="graphql"><pre class="language-graphql"><code class="language-graphql"><span class="token keyword">query</span> GlobalHeaderQuery <span class="token punctuation">{</span>
+  agilityGlobalHeader<span class="token punctuation">(</span><span class="token attr-name">properties</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token attr-name">referenceName</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token attr-name">eq</span><span class="token punctuation">:</span> <span class="token string">"globalheader"</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    customFields <span class="token punctuation">{</span>
+      marketingBanner
+      logo <span class="token punctuation">{</span>
+        url
+        label
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    preHeaderLinks <span class="token punctuation">{</span>
+      customFields <span class="token punctuation">{</span>
+        title
+        uRL <span class="token punctuation">{</span>
+          href
+          target
+          text
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  agilitynestedsitemap <span class="token punctuation">{</span>
+    internal <span class="token punctuation">{</span>
+      content
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Your query will look different, of course, but I hope you get the idea of how to query your Agility CMS content.</p>
+<p>Now, you can create a component that uses a <code class="language-text">&lt;StaticQuery&gt;</code> to pull in the data and make it available. Check out the example <code class="language-text">GlobalHeader.js</code> component in your project for an example of that.</p>
+<h2>Step 3: Create a new Home Page</h2>
+<p>In Agility CMS, the first page in your sitemap is considered your Home Page. So, I created a new home page and temporarily called it home-2. I didn’t publish it, but this meant that I could use this to build out the modules on the new home page.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/8c857/post-image-4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz2OwMZbS0lAxMDQy0Nc3MDBQVlGRlZWVlJQ0MjJas2bNzp07t27ZsnXr1l27du0Dgr179+/fD6T3gwGDgb6ujo6Onr6+nLy8nJycjKysvIJCRGRkTm5uYVFRXn5+SUlJeUVleUVFVXVVRWVlMZBfWlpWVpaXl8egoKAcGxu7bPnypcuWrV27dsOGDb29vcEhITGxMUAjQkJDo2JiwiMjI4AgMjIcSERFhYeHBwYHBwQFMagoqzg7uwBNApoKNBJoQ2p6ekJySm5+YU5efmZ2NtDyzKys7NzcjKysrJycnLw8IMrNzwcqY7C31FZUUtXQ1FDX0JBTUAA6W1lZ+caNa//////79+9/vIBBX1dLTU3dytLK2tpGTU1NQUHBwNBw4bxZjbWV5eVAh1SWlZdDPAkC5eUQuhSMGDS1dDQ1NM1szcwtzbW1tVXV1IyNTeYtnl/aVNbQ0FhXX9/a1tbR2dnR0dHW3g5HEMCgpaWlqaltZmVm7+IAtFxXT09P1+DYhaPXP1z5/fP3j58//v37h9PZurp6mhpa+sb6Fo4W1lY2+obAuDM4cvbw6UfHnz95/gIMnj9//uTJk48fP/5CBQBynAs8wQFqAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Agility CMS Screenshot - temporary home page"
+        title="Agility CMS Screenshot - Home Page"
+        src="/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/fcda8/post-image-4.png"
+        srcset="/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/12f09/post-image-4.png 148w,
+/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/e4a3f/post-image-4.png 295w,
+/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/fcda8/post-image-4.png 590w,
+/gatsby-bloga-2/static/ac1c9cc4477c822641923706f86da9f4/8c857/post-image-4.png 761w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I created a couple of new Module Definitions that I needed for the new page design, so I created new react components in the <strong>modules</strong> folder for those. The amazing thing about the Agility CMS Gatsby implementation is that nearly all the data that you need to render a module on a page is given to you in a property called <strong>item</strong>.</p>
+<p>What I normally do is just <code class="language-text">console.log(&quot;ModuleName&quot;, item)</code> so I can see exactly what that data looks like. Then run the site locally in your browser <code class="language-text">http://localhost:8000</code> and open up your Developer Tools to see what it looks like in the console.</p>
+<h3>Hot Reloading - Code and Content</h3>
+<p>One of the best things about React development with Gatsby is that everything can be hot reloaded, including the content!</p>
+<p>If you leave your browser open beside your code, you can just make changes and see them. Additionally, if you open a second terminal window, you can also pull down any changes that you make to the content in Agility CMS without having to run <code class="language-text">gatsby develop</code> again.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">curl</span> -X POST http://localhost:8000/__refresh</code></pre></div>
+<p>Here’s a side-by-side screenshot of my 2 monitor setup. You can see that I have 2 terminal windows opened in VS Code.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/29114/post-image-5.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 30.405405405405407%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABgUlEQVQY01WPbWvTYBSG80P8IzIQxE9+H4i/xK/7GX4TkcEQx8SZrnSbrNtkdJsgm0tfZlzStE3Spknz+jRpk8uHKIIHbs6Bc851zq2cNi/Y3/5KW/3CuXpEu3HFnTZA6+l0ewNUtcEvXWc28/C9gLnrE4chaZqyXOYIIeo6jiKiMEKxW88wP21gN55w++Y51vGruhGFCVEwpdlUsScT4iQmDXOyeUZVFPwfFVVZkaUCxTp6jHf+iMvXL9na+MzdzhYimpCJNcNem+bBPrbjSmBSL+TyWCmB5WolISVVVf1TIp9QzL1NguOn0H3Bor9Nbh/guwNCf8hi9sDhYQvDtAjDmExaLOJEwtaU5V9Q/d8fFcUK5fvZW/o3Z/S6t4yte4yJy7frE7SbUzoXLXY/7ODNXHKRsgg8vKlDlkS10XJVkMYRyyxlXeRUawnU+gbm0EE3HKyRgzmWssbYtsPPe5137z/S0Qx+GFMu5Wyn+4DuxlhBwXC+lBJYvmAU5Ixk/g0D8rGjmpovVAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="two screens side by side showing hot reloading website and the Gatsby code for it"
+        title="Side-by-side Hot Module Reload"
+        src="/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/fcda8/post-image-5.png"
+        srcset="/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/12f09/post-image-5.png 148w,
+/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/e4a3f/post-image-5.png 295w,
+/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/fcda8/post-image-5.png 590w,
+/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/efc66/post-image-5.png 885w,
+/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/c83ae/post-image-5.png 1180w,
+/gatsby-bloga-2/static/5ed665fb64579acbf2d6c3a07134d002/29114/post-image-5.png 1920w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I really love this workflow! It makes it really easy to tweak things and see the changes instantly.</p>
+<h2>Step 4: Run it in Gatsby Cloud</h2>
+<p>To get going, <a href="https://www.gatsbyjs.com/">Gatsby Cloud</a> is the easiest way to Preview and Build Gatsby sites. The free version is enough to get you started.</p>
+<p>Push your code to a GitHub repo, sign up for Gatsby Cloud, and create a new site. When asked, simply choose “I already have a Gatsby site” and don’t add any integrations just now.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/9c177/post-image-6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA5UlEQVQY022QDW+DIBCG/f+/sKuJVitfVVvdKhwfd+zYOtOmI08IBJ7jPaoEeSc6opBnszR117anaZrEIJRUfddnyu+j2jUmWESf58vycaiPx1op1TRtdyqFEPF/mWLO+MTfI/S0xoQpIs9MDOhd4m3FtwHgN57Rput6IeRwHpyDANGcF9Mvsr2O4nMUq+5vjP2CFAlsKLL3IIVkWWvNJre6risSeojehXm8ajka9WAebyFEouxdrDASJkqhhCmpEIkeWd0WnGW83cDef9gAXGDN3j2wvH916fx1cBVuLKU3YoFPvwFVuJPMaunrpQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="landing page for Gatsby Cloud Create New Site"
+        title="Gatsby Cloud - Create New Site"
+        src="/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/fcda8/post-image-6.png"
+        srcset="/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/12f09/post-image-6.png 148w,
+/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/e4a3f/post-image-6.png 295w,
+/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/fcda8/post-image-6.png 590w,
+/gatsby-bloga-2/static/ba41941098e81273668bd62eb299cded/9c177/post-image-6.png 880w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>You can securely add your API Keys in the Environment Variable section of Settings.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/9c177/post-image-7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.13513513513513%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABOUlEQVQoz31S2XKEMAzj//+yb+UIuePcrRKzDLPbqYYJCbYcS2ZxOmhhc0611pxLDClSinE+IfXW39F6yRXvUsoSAp2nDBRaa84FKYyS9hRa7EoK2/vPG0COPmMzyOTpWKXVDmScW6ttAvv+SX1gkL0N65dwxiPVWnvsx7ZuRps4+k7IyBAz1/QAV1+ISCnFZ+ecEMJ7j8IgK6n0BBKcdTcfoVobaw6IIcDkfd+RDb59gPm4JkyAdrWNkgA3NsVy0QLzSx0fb9w9I1LGaPKCwtxSbdUav32f4tDqNPuqvKVPn+A2uZfbxtht2yADl8KhFPO8dYwN8/yD3Hst7SKjDYhhw7CBBCjEinKs7b9R3XpAhk9SSniDQEoZR5QginMlHMMLw5E3MvTDbR4VvmhtGPKUWKeZF/j3/AWmkLs65g3AfwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gatsby webpage for setting environment variables"
+        title="Gatsby Cloud - Environment Variables"
+        src="/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/fcda8/post-image-7.png"
+        srcset="/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/12f09/post-image-7.png 148w,
+/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/e4a3f/post-image-7.png 295w,
+/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/fcda8/post-image-7.png 590w,
+/gatsby-bloga-2/static/e0076d93a7ce3477226ed1b6d4ece8b7/9c177/post-image-7.png 880w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Now you can take the Preview link from Gatsby and plug that into Agility CMS in the Domain Configuration area of the Settings section.</p>
+<p>Additionally, Gatsby gives you webhook URLs for Preview and Build. You can go ahead and plug these into the Webhook area in Agility Settings.</p>
+<h2>Step 5: Deploy to Netlify</h2>
+<p>Netlify is a really great service to easily host static websites. Even better, it integrates seamlessly so that Gatsby can automatically deploy your website to Netlify when it builds!</p>
+<p>Go ahead and create a free Netlify account and point to it under the Gatsby <strong>Hosting Integrations</strong> settings section.</p>
+<p>Since Gatsby is going to be building the LIVE version of our site, we need to publish our new Homepage in Agility. If you’ve reviewed everything in Preview and you’re ready to go, the first thing you need to do is to disable the Syncing Web Servers for the existing website in Agility CMS. You’ll have to coordinate this with your content team, of course.</p>
+<p>When I was testing all this out, I actually built my new site using the Preview API Keys temporarily. That way I could verify everything was working first.</p>
+<p>In the end, you’re going to end up with a URL to your new home page in Netlify.</p>
+<h2>Step 6: Setup the CDN to do the Edge Routing</h2>
+<p>We can use Edge computing to decide whether to route to the new website or the old one, depending on the page.</p>
+<p>In this example, I decided to use a <a href="https://www.stackpath.com/">StackPath</a> Script to do this for us.</p>
+<p>You set up a StackPath site just like normal, but pointing to your OLD website’s unique hostname. It can’t be your public DNS name - you need to have another unique way to address that site. For example, since our website is hosted in an Azure App Service, we get an azurewebsites.net URL.</p>
+<p>Now you create a Script in StackPath to do the routing. In our case, we ONLY want to route requests to the home page, plus any Gatsby-specific stuff, to our new website.</p>
+<p>You can also see that I’m only allowing for 60 seconds on caching in the CDN for all requests. This is because we don’t have anything built into this workflow to clear the cache in this CDN, and I don’t want my content team to have to wait too long to see their changes. I’ll take care of that later.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token comment">// sample script</span>
+<span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"fetch"</span><span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+  event<span class="token punctuation">.</span><span class="token function">respondWith</span><span class="token punctuation">(</span><span class="token function">handleRequest</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>request<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">/**
+ * Fetch and return the request body
+ * @param {Request} request
+ */</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">handleRequest</span><span class="token punctuation">(</span><span class="token parameter">request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Wrap your script in a try/catch and return the error stack to view error information</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* The request can be modified here before sending it with fetch */</span>
+
+    <span class="token keyword">const</span> originalUrl <span class="token operator">=</span> request<span class="token punctuation">.</span>url
+    <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>url<span class="token punctuation">)</span>
+    <span class="token comment">// we need get the url in order to figure out where to route them</span>
+    <span class="token keyword">let</span> path <span class="token operator">=</span> url<span class="token punctuation">.</span>pathname
+
+    <span class="token comment">//secondary domain...</span>
+    <span class="token keyword">const</span> secDomain <span class="token operator">=</span> <span class="token string">"https://my-new-website.netlify.app"</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>
+      path <span class="token operator">==</span> <span class="token string">"/"</span> <span class="token operator">||</span> <span class="token comment">//redirect the home page...</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/webpack"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/common"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/component"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/page-data"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/styles"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span>
+      path<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">"/app-"</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span>
+    <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// we need get the url in order to figure out where to route them</span>
+      request<span class="token punctuation">.</span>url <span class="token operator">=</span> secDomain <span class="token operator">+</span> path
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> response <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span>
+
+    response<span class="token punctuation">.</span>headers<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"Cache-Control"</span><span class="token punctuation">,</span> <span class="token string">"public, max-age=60"</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> response
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>stack <span class="token operator">||</span> e<span class="token punctuation">,</span> <span class="token punctuation">{</span> status<span class="token operator">:</span> <span class="token number">500</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>You can now test this whole thing with the unique StackPath URL that you get (123xyz.stackpathcdn.com).</p>
+<p>Once you are happy with everything, you simply switch your DNS to point to StackPath.</p>
+<p>That’s it—you’re finished!</p>
+<p>If you have any questions about JAMstack or migrating to this technology, reach out!</p>
+<h2>Next Steps</h2>
+<p>I encourage you to go ahead and use this technique as the starting point for one of the pages on your own website! You can use <a href="https://agilitycms.com/v3-free-signup-developers?source=devto">Agility CMS for free</a> to do it.</p>
+<h2>BONUS CONTENT!</h2>
+<p>As a companion to this article, I recorded a video that walks you through the steps I took and the different tools involved. I also highlight some of the really neat features of Agility CMS, Gatsby, Netlify, and StackPath.</p>
+<p><a href="https://www.youtube.com/embed/WSIzYKDgJuE" title="Migrating a website to JAMstack with Gatsby"><img src="https://res.cloudinary.com/marcomontalbano/image/upload/v1586464859/video_to_markdown/images/youtube--WSIzYKDgJuE-c05b58ac6eb4c4700831b2b3070cd403.jpg" alt="Migrating a website to JAMstack with Gatsby"></a></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2020-04-10-LA-2020-Libere/">← <!-- -->Gatsby Days LA 2020 Video 8: Building Excitement for Gatsby in East Africa</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2020-04-13-LA-2020-Comeau/">Gatsby Days LA 2020 Video 9: Empowering Content Creators with a Headless CMS and Gatsby<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2020-04-13-upgrading-to-jamstack-with-agility/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

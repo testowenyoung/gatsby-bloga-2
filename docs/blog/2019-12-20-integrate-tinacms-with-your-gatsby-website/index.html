@@ -1,0 +1,361 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Integrate TinaCMS With Your Gatsby Website | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="TinaCMS is a toolkit of JavaScript components. You can use these components to build content editing functionality into your site. Right now, Tina uses a Git…"/><meta data-react-helmet="true" property="og:title" content="Integrate TinaCMS With Your Gatsby Website"/><meta data-react-helmet="true" property="og:description" content="TinaCMS is a toolkit of JavaScript components. You can use these components to build content editing functionality into your site. Right now, Tina uses a Git…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Integrate TinaCMS With Your Gatsby Website"/><meta data-react-helmet="true" name="twitter:description" content="TinaCMS is a toolkit of JavaScript components. You can use these components to build content editing functionality into your site. Right now, Tina uses a Git…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2019-12-20-integrate-tinacms-with-your-gatsby-website/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Integrate TinaCMS With Your Gatsby Website</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">December 20, 2019</p></header><section><p><a href="https://tinacms.org/">TinaCMS</a> is a toolkit of JavaScript components. You can use these components to build content editing functionality into your site.</p>
+<p>Right now, Tina uses a Git backend to track content changes. When detected, changes are immediately written back to source files. Saving pushes those changes to your repo. While Git backed for now, the Tina Team has built inherent flexibility into the CMS. Adding support for alternate backends, such as posting to a database, is on the <a href="https://github.com/tinacms/tinacms/blob/master/ROADMAP.md">Tina roadmap</a>.</p>
+<p>In this article, we will walk through how to add TinaCMS to an existing Gatsby website. We will cover installing and configuring the Tina <a href="https://tinacms.org/docs/concepts/sidebar">sidebar</a>. Learn how to create a content editing <a href="https://tinacms.org/docs/concepts/forms">form</a> for markdown. Touch on customizing the form with Tina <a href="https://tinacms.org/docs/concepts/fields">field</a> components. Set-up <a href="https://tinacms.org/docs/gatsby/inline-editing">inline (aka on-page) editing</a>. And then we’ll configure a <a href="https://tinacms.org/docs/gatsby/creating-new-files"><code class="language-text">content-creator</code></a> plugin that will allow us to add new files to the site. Let’s use the classic <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Gatsby’s Starter Blog 💜</a> as our example.</p>
+<blockquote>
+<p>Follow along by referencing <a href="https://github.com/tinacms/gatsby-tinacms-blog-post-reference">a fork of the Gatsby starter blog</a> that makes the same changes outlined in this post.</p>
+</blockquote>
+<p>Want to see a more advanced example of TinaCMS integrated with a Gatsby website? Checkout <a href="https://github.com/tinacms/tina-starter-grande">Tina Grande</a>, a gatsby starter with first-class TinaCMS integration.</p>
+<h2>Prerequisites</h2>
+<ul>
+<li>A Gatsby project that sources local <code class="language-text">markdown</code> content. Use Gatsby’s <a href="https://github.com/gatsbyjs/gatsby-starter-blog">Starter Blog</a> if you don’t have an existing website.</li>
+<li><a href="/gatsby-bloga-2/tutorial/part-zero/">Gatsby Development Environment</a></li>
+</ul>
+<h2>Setup</h2>
+<p>First we need to get a local development environment set up for the site. Please reference the Gatsby Starter Blog <a href="https://github.com/gatsbyjs/gatsby-starter-blog/#readme">README</a> for extra notes on this.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby new tina-tutorial https://github.com/gatsbyjs/gatsby-starter-blog
+<span class="token builtin class-name">cd</span> tina-tutorial</code></pre></div>
+<h2>Install and Configure Tina</h2>
+<p>As usual when setting up a new tool, we need to install a few packages. We will install <code class="language-text">gatsby-plugin-tinacms</code>, which sets up the core Tina functionality. Along with that, we’ll need the peer-dependency, <code class="language-text">styled-components</code>, to keep the sidebar pretty. Since this site uses markdown, we’ll install <code class="language-text">gatsby-tinacms-remark</code>. And <code class="language-text">gatsby-tinacms-git</code> will setup our Git API.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">yarn</span> <span class="token function">add</span> gatsby-plugin-tinacms gatsby-tinacms-remark gatsby-tinacms-git styled-components</code></pre></div>
+<p>After installing those packages, add <code class="language-text">gatsby-plugin-tinacms</code> to the list of plugins in <code class="language-text">gatsby-config.js</code>. We’ll also pass options to tell Tina what plugins to use and when to hide the sidebar:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+  plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-tinacms"</span><span class="token punctuation">,</span>
+      options<span class="token operator">:</span> <span class="token punctuation">{</span>
+        sidebar<span class="token operator">:</span> <span class="token punctuation">{</span>
+          hidden<span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">===</span> <span class="token string">"production"</span><span class="token punctuation">,</span>
+          position<span class="token operator">:</span> <span class="token string">"displace"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        plugins<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"gatsby-tinacms-git"</span><span class="token punctuation">,</span> <span class="token string">"gatsby-tinacms-remark"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// ...</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Now we’re all set to start setting up content editing with Tina. If you want to test it out, run <code class="language-text">gatsby develop</code> and take a look. You should see an edit icon in the lower left-hand corner, open it to find an empty Tina sidebar. This <a href="https://tinacms.org/docs/concepts/sidebar">sidebar</a> is the main interface for using Tina to edit and manage content.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/9a8cd/step-one_empty-sidebar.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd2LYwD/xAAWEAEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQEAAQUCdAjf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAAEgMaH/2gAIAQEABj8CZex//8QAGhABAAIDAQAAAAAAAAAAAAAAAQAQESFhgf/aAAgBAQABPyHRZTsExs+qUDtf/9oADAMBAAIAAwAAABBjz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQADAAEFAAAAAAAAAAAAAAEAESFBEDGBscH/2gAIAQEAAT8QqRgqmJDbIOXbxDtKgDm/UxPg6f/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Empty Tina Sidebar"
+        title="Empty Tina Sidebar"
+        src="/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/1c72d/step-one_empty-sidebar.jpg"
+        srcset="/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/a80bd/step-one_empty-sidebar.jpg 148w,
+/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/1c91a/step-one_empty-sidebar.jpg 295w,
+/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/1c72d/step-one_empty-sidebar.jpg 590w,
+/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/a8a14/step-one_empty-sidebar.jpg 885w,
+/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/fbd2c/step-one_empty-sidebar.jpg 1180w,
+/gatsby-bloga-2/static/8530332e5a6f65605c48ad5b23f3b4ae/9a8cd/step-one_empty-sidebar.jpg 1248w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Add a Form</h2>
+<p>To make content editable, we need to register a <a href="https://tinacms.org/docs/concepts/forms">form</a> with Tina. Forms live in the sidebar, displaying fields where you can edit content.</p>
+<p>You can add a form to the sidebar from any component. When that component is rendered, the form displays in the sidebar. To add a form for the individual blog post, we’ll need to make three changes to <code class="language-text">templates/blog-post.js</code>:</p>
+<ol>
+<li>
+<p>Import <code class="language-text">remarkForm</code></p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> remarkForm <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"gatsby-tinacms-remark"</span></code></pre></div>
+</li>
+<li>
+<p>Wrap the default export with <code class="language-text">remarkForm</code>. This is a <a href="https://reactjs.org/docs/higher-order-components.html">higher-order component</a> that modifies the data to be editable by Tina as it’s passed to the component. In production, the unaltered component renders as normal.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">remarkForm</span><span class="token punctuation">(</span>BlogPostTemplate<span class="token punctuation">)</span></code></pre></div>
+</li>
+<li>
+<p>Add <code class="language-text">...TinaRemark</code> to the GraphQL query inside the <code class="language-text">markdownRemark</code> node. This is a GraphQL fragment that adds additional fields used by <code class="language-text">gatsby-tinacms-remark</code>.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">const</span> pageQuery <span class="token operator">=</span> graphql<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+ query BlogPostBySlug($slug: String!) {
+   site {
+     siteMetadata {
+       title
+     }
+   }
+   markdownRemark(fields: { slug: { eq: $slug } }) {
+     id
+     excerpt(pruneLength: 160)
+     html
+     frontmatter {
+       title
+       date(formatString: "MMMM DD, YYYY")
+       description
+     }
+
+     ...TinaRemark
+   }
+ }
+</span><span class="token template-punctuation string">`</span></span></code></pre></div>
+</li>
+</ol>
+<p>Now spin up the development server (<code class="language-text">gatsby develop</code>) and see what the default form looks like.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/9a8cd/step-two_default-form.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHuVkaA/8QAGBAAAgMAAAAAAAAAAAAAAAAAARARIUH/2gAIAQEAAQUCwU5X/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERMRAhUZH/2gAIAQEAAT8hthuvRUTGhJzH/9oADAMBAAIAAwAAABCYz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAECAQE/EEn/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhMVH/2gAIAQEAAT8QVEqc9uSom/S5UP3ekk7iElx0N//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Default Form"
+        title="Default Form"
+        src="/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/1c72d/step-two_default-form.jpg"
+        srcset="/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/a80bd/step-two_default-form.jpg 148w,
+/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/1c91a/step-two_default-form.jpg 295w,
+/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/1c72d/step-two_default-form.jpg 590w,
+/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/a8a14/step-two_default-form.jpg 885w,
+/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/fbd2c/step-two_default-form.jpg 1180w,
+/gatsby-bloga-2/static/abd9c72e329666652012c2aac28b4634/9a8cd/step-two_default-form.jpg 1248w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>We should have access to all the fields passed into the component via GraphQL. Without specifying how the form should display, default labels and values are rendered.</p>
+<p>Try editing the content and see what happens; you should see your changes updating live on the site 🥳. Look at the source file for this particular post, you’ll notice the edits you made are also reflected there. Tina is writing to disk as you are editing content in the sidebar. Gatsby picks this up and rebuilds the site to reflect the changes in “real time.”</p>
+<h2>Customize The Editing Form</h2>
+<p>We can customize the form by defining a form options object. This provides control over the form fields and their functionality. Check out all the <a href="https://tinacms.org/docs/concepts/fields">fields</a> provided by Tina, or read more on creating your own <a href="https://tinacms.org/docs/fields/custom-fields">custom fields here</a>.</p>
+<ol>
+<li>
+<p>Define the form options. Here’s a simple form that exposes the <code class="language-text">Title</code> and <code class="language-text">Description</code>:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> BlogPostForm <span class="token operator">=</span> <span class="token punctuation">{</span>
+ fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+   <span class="token punctuation">{</span>
+     label<span class="token operator">:</span> <span class="token string">"Title"</span><span class="token punctuation">,</span>
+     name<span class="token operator">:</span> <span class="token string">"frontmatter.title"</span><span class="token punctuation">,</span>
+     description<span class="token operator">:</span> <span class="token string">"Enter the title of the post here"</span><span class="token punctuation">,</span>
+     component<span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   <span class="token punctuation">{</span>
+     label<span class="token operator">:</span> <span class="token string">"Description"</span><span class="token punctuation">,</span>
+     name<span class="token operator">:</span> <span class="token string">"frontmatter.description"</span><span class="token punctuation">,</span>
+     description<span class="token operator">:</span> <span class="token string">"Enter the post description"</span><span class="token punctuation">,</span>
+     component<span class="token operator">:</span> <span class="token string">"textarea"</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+<li>
+<p>Pass the form options to <code class="language-text">remarkForm</code>:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">remarkForm</span><span class="token punctuation">(</span>BlogPostTemplate<span class="token punctuation">,</span> BlogPostForm<span class="token punctuation">)</span></code></pre></div>
+</li>
+</ol>
+<p>Now instead of the default form, open up the sidebar to see the custom <code class="language-text">BlogPostForm</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/9a8cd/step-three_custom-form.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHuVkaA/8QAGBAAAgMAAAAAAAAAAAAAAAAAARARIUH/2gAIAQEAAQUCwU5X/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAHRABAAEDBQAAAAAAAAAAAAAAAQAQIVERMUGBkf/aAAgBAQABPyG6tbdxZew2i8QGKf/aAAwDAQACAAMAAAAQuM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQEBAQAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QTJ//xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhUTH/2gAIAQEAAT8QUKuPpiVE30uVD7prHOmISXHQ3//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Custom Form"
+        title="Custom Form"
+        src="/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/1c72d/step-three_custom-form.jpg"
+        srcset="/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/a80bd/step-three_custom-form.jpg 148w,
+/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/1c91a/step-three_custom-form.jpg 295w,
+/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/1c72d/step-three_custom-form.jpg 590w,
+/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/a8a14/step-three_custom-form.jpg 885w,
+/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/fbd2c/step-three_custom-form.jpg 1180w,
+/gatsby-bloga-2/static/20a9aa7001d9e29e3431f53d3d456ee6/9a8cd/step-three_custom-form.jpg 1248w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Add In-Page Editing</h2>
+<p>Editing in the sidebar works fine for many types of content. Yet, long-form content is easier to edit right on the page. We can build this ‘inline-editing’ functionality into our site with Tina.</p>
+<ol>
+<li>
+<p>Import <code class="language-text">liveRemarkForm</code> instead of <code class="language-text">remarkForm</code>, and add three new imports:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> liveRemarkForm <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"gatsby-tinacms-remark"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Wysiwyg <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@tinacms/fields"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> TinaField <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"tinacms"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Button <span class="token keyword">as</span> TinaButton <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@tinacms/styles"</span></code></pre></div>
+</li>
+<li>
+<p>Replace <code class="language-text">remarkForm</code> with <code class="language-text">liveRemarkForm</code> in the export:</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">liveRemarkForm</span><span class="token punctuation">(</span>BlogPostTemplate<span class="token punctuation">,</span> BlogPostForm<span class="token punctuation">)</span></code></pre></div>
+</li>
+<li>
+<p>Wrap <code class="language-text">TinaField</code> around the element rendering content you want to edit inline. Pass in the <code class="language-text">Wysiwyg</code> component to <code class="language-text">TinaField</code>:</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TinaField</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rawMarkdownBody<span class="token punctuation">"</span></span> <span class="token attr-name">Component</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>Wysiwyg<span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+ </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">dangerouslySetInnerHTML</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> __html<span class="token operator">:</span> post<span class="token punctuation">.</span>html <span class="token punctuation">}</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TinaField</span></span><span class="token punctuation">></span></span></code></pre></div>
+</li>
+<li>
+<p>Add a button anywhere on your page to toggle ‘edit’ mode. This button also serves as a flag to signal inline content editing. You’ll only want this to display in production, so here you can see one way of rendering it conditionally.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">const</span> <span class="token punctuation">{</span> isEditing<span class="token punctuation">,</span> setIsEditing <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props
+
+<span class="token punctuation">{</span>
+ process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!=</span> <span class="token string">"production"</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">TinaButton</span></span> <span class="token attr-name">primary</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">setIsEditing</span><span class="token punctuation">(</span><span class="token parameter">p</span> <span class="token operator">=></span> <span class="token operator">!</span>p<span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+     </span><span class="token punctuation">{</span>isEditing <span class="token operator">?</span> <span class="token string">"Preview"</span> <span class="token operator">:</span> <span class="token string">"Edit"</span><span class="token punctuation">}</span><span class="token plain-text">
+   </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">TinaButton</span></span><span class="token punctuation">></span></span>
+ <span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+</li>
+</ol>
+<p>The <code class="language-text">liveRemarkForm</code> HOC is similar to <code class="language-text">remarkForm</code>, they both return components where Tina can edit the data that they render. With <code class="language-text">RemarkForm</code>, this data is edited in the sidebar. With <code class="language-text">liveRemarkForm</code>, the data is edited on the page. The difference is, <code class="language-text">liveRemarkForm</code> returns a component wrapped in a <code class="language-text">TinaForm</code>. In ‘edit-mode’, the form displays on the page itself.</p>
+<p>Within the template component, we can wrap child elements in a <code class="language-text">TinaField</code> component. <code class="language-text">TinaField</code> allows us to render a field on the page, such as a wysiwyg editor. The <code class="language-text">Component</code> prop tells Tina which field component to render in edit-mode. In non-edit-mode (<em>and in production</em>), <code class="language-text">TinaField</code> will pass the child elements that it wraps.</p>
+<p>To trigger edit-mode, <code class="language-text">liveRemarkForm</code> provides a state variable and hook: <code class="language-text">isEditing</code> and <code class="language-text">setIsEditing</code>. These are passed as props to the template component. In the example above, <code class="language-text">TinaButton</code> toggles this state. You could create your own button to handle this. Or, you can import the same <code class="language-text">Button</code> (as <code class="language-text">TinaButton</code>) used in the sidebar.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/9a8cd/step-four_inline-editing.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAe5k2lgf/8QAGBAAAwEBAAAAAAAAAAAAAAAAARAREkH/2gAIAQEAAQUC4FqmL//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABUQAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEBAAY/Aql//8QAHRABAAIBBQEAAAAAAAAAAAAAAQARIRAxQVFhgf/aAAgBAQABPyFtd4iTt+aGK1XMPbDaf//aAAwDAQACAAMAAAAQVw//xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQMBAT8QEcn/xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQIBAT8QRNn/xAAbEAEBAQACAwAAAAAAAAAAAAABEQAxUSFx4f/aAAgBAQABPxCJpTka65QOj6w0GT3kF5B5ahdCA63/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Inline Editing"
+        title="Inline Editing"
+        src="/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/1c72d/step-four_inline-editing.jpg"
+        srcset="/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/a80bd/step-four_inline-editing.jpg 148w,
+/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/1c91a/step-four_inline-editing.jpg 295w,
+/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/1c72d/step-four_inline-editing.jpg 590w,
+/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/a8a14/step-four_inline-editing.jpg 885w,
+/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/fbd2c/step-four_inline-editing.jpg 1180w,
+/gatsby-bloga-2/static/ae1924258271d992649d60540e8347bf/9a8cd/step-four_inline-editing.jpg 1248w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Add Create Post Button</h2>
+<p>So now we have a nice little editor set up for the blog. One thing we’ll definitely want, is the ability to create new posts. We can do this with a <code class="language-text">content-creator</code> plugin. When creating new markdown files, we’ll use <code class="language-text">RemarkCreatorPlugin</code> for this.</p>
+<p>We will register the <code class="language-text">content-creator</code> plugin in a component on the site. When that component is actively rendered, we’ll have the ability to add new content. If editors should always be able to create new posts, we’ll want to register the plugin on a component that is always rendered. Some common components used for this are <code class="language-text">Layout</code>, <code class="language-text">Index</code>, or <code class="language-text">Root</code>.</p>
+<blockquote>
+<p>If you add the plugin in <code class="language-text">src/components/layout.js</code>, it will be rendered on every page.</p>
+</blockquote>
+<ol>
+<li>
+<p>Import <code class="language-text">withPlugin</code> and <code class="language-text">RemarkCreatorPlugin</code>.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">{</span> withPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"tinacms"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> RemarkCreatorPlugin <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"gatsby-tinacms-remark"</span></code></pre></div>
+</li>
+<li>
+<p>Instantiate <code class="language-text">RemarkCreatorPlugin</code>.</p>
+<ul>
+<li>Provide a label for the button</li>
+<li>Provide a filename that will calculate the path to the new file. <em>You can reference data submitted by the form.</em></li>
+<li>Define the fields that will render in the ‘creator’ modal form.</li>
+</ul>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> CreateBlogPlugin <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RemarkCreatorPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+ label<span class="token operator">:</span> <span class="token string">"New Blog Post"</span><span class="token punctuation">,</span>
+ <span class="token function-variable function">filename</span><span class="token operator">:</span> <span class="token parameter">form</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
+   <span class="token keyword">return</span> form<span class="token punctuation">.</span>filename
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ fields<span class="token operator">:</span> <span class="token punctuation">[</span>
+   <span class="token punctuation">{</span>
+     name<span class="token operator">:</span> <span class="token string">"filename"</span><span class="token punctuation">,</span>
+     component<span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span>
+     label<span class="token operator">:</span> <span class="token string">"Filename"</span><span class="token punctuation">,</span>
+     placeholder<span class="token operator">:</span> <span class="token string">"content/blog/hello-world/index.md"</span><span class="token punctuation">,</span>
+     description<span class="token operator">:</span>
+       <span class="token string">"The full path to the new markdown file, relative to the repository root."</span><span class="token punctuation">,</span>
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+ <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+</li>
+<li>
+<p>Export the component and plugin using <code class="language-text">withPlugin()</code>.</p>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">withPlugin</span><span class="token punctuation">(</span>Layout<span class="token punctuation">,</span> CreateBlogPlugin<span class="token punctuation">)</span></code></pre></div>
+</li>
+</ol>
+<p>The ‘create-content’ button shows up in the top right-hand corner of the sidebar menu. It looks like a plus ➕ icon. Click it and add a new blog post to the site!</p>
+<p>We now have a way to add new posts from the Tina sidebar. The location of the new files will be based on the return value from the <code class="language-text">filename</code> property. There’s lots of ways to configure this return value, please reference the <a href="https://tinacms.org/docs/gatsby/creating-new-files#4-formatting-the-filename--path">documentation</a> for more info.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/9a8cd/step-five_create-content.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAZ0c1lCD/8QAGBAAAgMAAAAAAAAAAAAAAAAAAAMREyD/2gAIAQEAAQUCLVRj/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFxAAAwEAAAAAAAAAAAAAAAAAACAyof/aAAgBAQAGPwInF//EABkQAAIDAQAAAAAAAAAAAAAAAAERABAhQf/aAAgBAQABPyHkRhjRwAV//9oADAMBAAIAAwAAABAoz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQEBAAMBAAAAAAAAAAAAAAERABAhMVH/2gAIAQEAAT8Qau9M9ukH1BJw+iZRe8EJv//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Create Content"
+        title="Create Content"
+        src="/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/1c72d/step-five_create-content.jpg"
+        srcset="/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/a80bd/step-five_create-content.jpg 148w,
+/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/1c91a/step-five_create-content.jpg 295w,
+/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/1c72d/step-five_create-content.jpg 590w,
+/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/a8a14/step-five_create-content.jpg 885w,
+/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/fbd2c/step-five_create-content.jpg 1180w,
+/gatsby-bloga-2/static/d076fb412cad316709a1fc0dc45726a9/9a8cd/step-five_create-content.jpg 1248w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Access Tina In The Cloud</h2>
+<p>Since Tina makes edits using the Gatsby development server, we need to create an environment for the development server to run in the cloud. This way non-technical editors can visit that cloud-hosted environment to manage content. We’ll set it up with <a href="https://www.gatsbyjs.com/cloud/">Gatsby Cloud</a>, which is a hosted service for building and maintaining Gatsby websites.</p>
+<p>When it’s time to allow your editors to edit a site with Tina on a hosted server, you will need to be extra careful around safeguarding against run-time errors. Does your site blow up if an array is empty? or if an image isn’t defined? You’ll want to account for these edge cases which your editors may run into while editing.</p>
+<p>To get Tina working in Gatsby Cloud, you’ll need to configure the following environment variables in your <code class="language-text">Site Settings</code>:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">GIT_AUTHOR_EMAIL
+GIT_AUTHOR_NAME
+SSH_KEY</code></pre></div>
+<p>The <code class="language-text">SSH_KEY</code> is a private key that allows write access to your git repo. You’ll need to add the public key to your repo under <code class="language-text">Deploy Keys</code> in <code class="language-text">Settings</code> and enable <code class="language-text">write access</code>. The <code class="language-text">SSH_KEY</code> needs to be Base64 encoded before adding to Gatsby Cloud; you can encode this locally by running <code class="language-text">cat ./.ssh/id_rsa | base64</code>.</p>
+<p>Since these values will be set at the environment level, all edits made using Tina will use these values when pushing changes to git.</p>
+<p>Getting a development server running in the cloud solves the issue of accessing Tina from anywhere, but there are a number of other challenges that require attention. The team behind TinaCMS is currently nearing the initial beta release of <a href="https://tinacms.org/teams"><strong>Tina Teams</strong></a>, a custom live editing environment for you and your team. Tina Teams handles user authentication with individual user commits to provide the best possible editing experience for your team. Stay tuned!</p>
+<h2>Summary</h2>
+<p>These are just some simple steps to get up and running with Tina, the possibilities don’t end here. Make sure to check out <a href="https://github.com/tinacms/tina-starter-grande">Tina Starter Grande</a> to see a more advanced implementation of Tina on a Gatsby website.</p>
+<p>Hopefully you’ve found this introduction to TinaCMS useful. Feel free to tweet at <a href="https://twitter.com/tina_cms">Tina 🦙</a> with feedback or questions. If you want to learn more, checkout the <a href="https://tinacms.org/docs/getting-started/introduction">documentation</a>. TinaCMS is open source; feel free to dig into the <a href="https://github.com/tinacms/tinacms">source code</a>. If you’re interested in getting involved with the project, join our <a href="https://join.slack.com/t/tinacms/shared_invite/enQtNzgxNDY1OTA3ODI3LTNkNWEwYjQyYTA2ZDZjZGQ2YmI5Y2ZlOWVmMjlkYmYxMzVmNjM0YTk2MWM2MTIzMmMxMDg3NWIxN2EzOWQ0NDM">community slack</a>. If you get stuck, don’t hesitate to ask questions on the <a href="https://community.tinacms.org/">Tina Forum</a>.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2019-12-12-how-we-accidentally-launched-a-popular-gatsby-plugin/">← <!-- -->How we accidentally launched a popular Gatsby plugin</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/100days/">100 Days Of Gatsby - Our Guided Coding Challenge for 2020<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2019-12-20-integrate-tinacms-with-your-gatsby-website/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

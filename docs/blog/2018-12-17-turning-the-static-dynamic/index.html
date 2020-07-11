@@ -1,0 +1,334 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Turning the Static Dynamic: Gatsby + Netlify Functions + Netlify Identity | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="In a recent Reactiflux interview, the Gatsby team was asked this question: Q: What is one thing that Gatsby is capable of doing that might surprise some people…"/><meta data-react-helmet="true" property="og:title" content="Turning the Static Dynamic: Gatsby + Netlify Functions + Netlify Identity"/><meta data-react-helmet="true" property="og:description" content="In a recent Reactiflux interview, the Gatsby team was asked this question: Q: What is one thing that Gatsby is capable of doing that might surprise some people…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Turning the Static Dynamic: Gatsby + Netlify Functions + Netlify Identity"/><meta data-react-helmet="true" name="twitter:description" content="In a recent Reactiflux interview, the Gatsby team was asked this question: Q: What is one thing that Gatsby is capable of doing that might surprise some people…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2018-12-17-turning-the-static-dynamic/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Turning the Static Dynamic: Gatsby + Netlify Functions + Netlify Identity</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">December 26, 2018</p></header><section><p><a href="https://www.reactiflux.com/transcripts/gatsby-team/">In a recent Reactiflux interview</a>, the Gatsby team was asked this question:</p>
+<blockquote>
+<p>Q: What is one thing that Gatsby is capable of doing that might surprise some people? — ctlee</p>
+</blockquote>
+<blockquote>
+<p>A: Gatsby can be used to build fully dynamic sites, which surprises some people because of it’s label as a “static site generator”. It’s fully equipped to be a powerful alternative to create-react-app and other similar solutions with the addition of easy pre-rendering and perf baked in. — biscarch</p>
+</blockquote>
+<p>Even though Dustin <a href="/gatsby-bloga-2/blog/2018-11-07-gatsby-for-apps/">recently wrote about Gatsby for Apps</a> and open sourced his <a href="https://gatsby-mail.netlify.app/">Gatsby Mail</a> demo, I do still find people constantly having to explain that Gatsby is “not just for sites”.</p>
+<p>Today I’d like to show you how you can incrementally add functionality to a Gatsby static site with Netlify Functions, and then add authentication with Netlify Identity to begin a proper Gatsby app.</p>
+<h2>Static-Dynamic is a spectrum</h2>
+<p>Why would you use something like Gatsby over Jekyll or Hugo or one of the <a href="https://www.staticgen.com/">hundreds of Static Site Generators</a> out there? <a href="/gatsby-bloga-2/blog/2018-2-27-why-i-upgraded-my-website-to-gatsbyjs-from-jekyll/">There are many reasons</a>, but one of the unique selling points is how Gatsby helps you build <a href="/gatsby-bloga-2/docs/progressive-web-app/#progressive-web-app">“Static Progressive Web Apps”</a> with React.</p>
+<p><a href="/gatsby-bloga-2/docs/production-app/#dom-hydration">Gatsby’s ability to rehydrate</a> (what a delicious word!) the DOM means you can do incredibly dynamic things with JavaScript and React that would be much harder with legacy SSG’s.</p>
+<p>Let’s say you have a typical static Gatsby site, like <a href="/gatsby-bloga-2/starters/gatsby-starter-default">gatsby-starter-default</a>. You can <code class="language-text">npm run build</code> it, and it spits out a bunch of HTML files. Great! I can host that for free!</p>
+<p>Now your client comes to you and asks you to add some custom logic that needs to be executed on the server:</p>
+<ul>
+<li>Maybe you have third party API secrets you don’t want to expose to your user.</li>
+<li>Maybe you need <a href="https://developer.yahoo.com/javascript/howto-proxy.html?guccounter=1">a serverside proxy to get around CORS issues</a>.</li>
+<li>Maybe you need to ping a database to check your inventory.</li>
+</ul>
+<p><strong>Oh no! Now you have to rewrite everything and move to a Digital Ocean droplet!</strong></p>
+<p>I’m kidding. No, you don’t have to rewrite everything.</p>
+<p>The beauty of serverless functions is that it is incrementally adoptable - <strong>your site grows with your needs</strong> - and with Gatsby you can rerender entire sections of your site based on live API data. Of course, the more you do this, the more resource intensive (in terms of bandwidth and computation) it can be, so there is a performance tradeoff. <strong>Your site should be as dynamic as you need it to be, but no more.</strong> Gatsby is perfect for this.</p>
+<h2>5 Steps to add Netlify Functions to Gatsby</h2>
+<p>Netlify Functions are a great low configuration solution for adding serverless functionality to your Gatsby site. You get 125,000 free calls a month - that’s a function call every 20 seconds every day of the week, month, and year - and you can emulate them in local development with <a href="https://github.com/netlify/netlify-lambda"><code class="language-text">netlify-lambda</code></a>.</p>
+<p>Let’s walk through the steps:</p>
+<ol>
+<li><strong>Install dependencies</strong>: <code class="language-text">npm install -D http-proxy-middleware netlify-lambda npm-run-all</code></li>
+<li><strong>Run function emulation alongside Gatsby</strong>: replace your <code class="language-text">scripts</code> in <code class="language-text">package.json</code>:</li>
+</ol>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json">  <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"develop"</span><span class="token operator">:</span> <span class="token string">"gatsby develop"</span><span class="token punctuation">,</span>
+    <span class="token property">"start"</span><span class="token operator">:</span> <span class="token string">"run-p start:**"</span><span class="token punctuation">,</span>
+    <span class="token property">"start:app"</span><span class="token operator">:</span> <span class="token string">"npm run develop"</span><span class="token punctuation">,</span>
+    <span class="token property">"start:lambda"</span><span class="token operator">:</span> <span class="token string">"netlify-lambda serve src/functions"</span><span class="token punctuation">,</span>
+    <span class="token property">"build"</span><span class="token operator">:</span> <span class="token string">"gatsby build &amp;&amp; netlify-lambda build src/functions"</span><span class="token punctuation">,</span>
+    <span class="token property">"build:app"</span><span class="token operator">:</span> <span class="token string">"gatsby build"</span><span class="token punctuation">,</span>
+    <span class="token property">"build:lambda"</span><span class="token operator">:</span> <span class="token string">"netlify-lambda build src/functions"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<p>When deploying to Netlify, <code class="language-text">gatsby build</code> must be run before <code class="language-text">netlify-lambda build src/functions</code> or else your Netlify function builds will fail. To avoid this, do not set your build script command to <code class="language-text">&quot;build&quot;: &quot;run-p build:**&quot;</code> when you replace <code class="language-text">scripts</code> in <code class="language-text">package.json</code>. Doing so will run all build scripts in parallel. This will make it possible for <code class="language-text">netlify-lambda build src/functions</code> to run before <code class="language-text">gatsby build</code>.</p>
+<ol start="3">
+<li><strong>Configure your Netlify build</strong>: When serving your site on Netlify, <code class="language-text">netlify-lambda</code> will now build each JavaScript/TypeScript file in your <code class="language-text">src/functions</code> folder as a standalone Netlify function (with a path corresponding to the filename). Make sure you have a Functions path in a <code class="language-text">netlify.toml</code> file at root of your repository:</li>
+</ol>
+<div class="gatsby-highlight" data-language="toml"><pre class="language-toml"><code class="language-toml"><span class="token punctuation">[</span><span class="token table class-name">build</span><span class="token punctuation">]</span>
+  <span class="token key property">command</span> <span class="token punctuation">=</span> <span class="token string">"npm run build"</span>
+  <span class="token key property">functions</span> <span class="token punctuation">=</span> <span class="token string">"functions"</span>
+  <span class="token key property">publish</span> <span class="token punctuation">=</span> <span class="token string">"public"</span></code></pre></div>
+<p>For more info or configuration options (e.g. in different branches and build environments), check <a href="https://docs.netlify.com/configure-builds/file-based-configuration/">the Netlify.toml reference</a>.</p>
+<p><strong>NOTE:</strong> the <code class="language-text">command</code> specified in <code class="language-text">netlify.toml</code> overrides the build command specified in your site’s Netlify UI Build settings.</p>
+<ol start="4">
+<li><strong>Proxy the emulated functions for local development</strong>: Head to <code class="language-text">gatsby-config.js</code> and add this to your <code class="language-text">module.exports</code>:</li>
+</ol>
+<div class="gatsby-highlight" data-language="jsx:title=gatsby-config.js"><pre class="language-jsx:title=gatsby-config.js"><code class="language-jsx:title=gatsby-config.js">const { createProxyMiddleware } = require(&quot;http-proxy-middleware&quot;) //v1.x.x
+// Use implicit require for v0.x.x of &#39;http-proxy-middleware&#39;
+// const proxy = require(&#39;http-proxy-middleware&#39;)
+// be sure to replace &#39;createProxyMiddleware&#39; with &#39;proxy&#39; where applicable
+
+module.exports = {
+  // for avoiding CORS while developing Netlify Functions locally
+  // read more: https://www.gatsbyjs.org/docs/api-proxy/#advanced-proxying
+  developMiddleware: app =&gt; {
+    app.use(
+      &quot;/.netlify/functions/&quot;,
+      createProxyMiddleware({
+        target: &quot;http://localhost:9000&quot;,
+        pathRewrite: {
+          &quot;/.netlify/functions/&quot;: &quot;&quot;,
+        },
+      })
+    )
+  },
+  // ...
+}</code></pre></div>
+<ol start="5">
+<li><strong>Write your functions</strong>: Make a <code class="language-text">src/functions</code> folder and write as many functions as you need. The only requirement is that each function must export a <code class="language-text">handler</code>, although <code class="language-text">netlify-lambda</code> helps you use webpack to bundle modules or you can <a href="https://www.netlify.com/blog/2018/09/14/forms-and-functions/#optional-zip-the-function-to-manage-dependencies">zip the functions yourself</a>. For example you can write <code class="language-text">src/functions/hello.js</code>:</li>
+</ol>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// For more info, check https://www.netlify.com/docs/functions/#javascript-lambda-functions</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"queryStringParameters"</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>queryStringParameters<span class="token punctuation">)</span>
+  <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// return null to show no errors</span>
+    statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token comment">// http status code</span>
+    body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      msg<span class="token operator">:</span> <span class="token string">"Hello, World! "</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Now you are ready to access this API from anywhere in your Gatsby app! For example, in any event handler or lifecycle method, insert:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"/.netlify/functions/hello"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span></code></pre></div>
+<p>and watch “Hello World!” pop up in your console. (I added a random number as well to show the endpoint is dynamic) If you are new to React, I highly recommend <a href="https://reactjs.org/docs/handling-events.html">reading through the React docs</a> to understand where and how to insert event handlers so you can, for example, <a href="https://reactjs.org/docs/handling-events.html">respond to a button click</a>.</p>
+<p>The local proxying we are doing is only for local emulation, e.g. it is actually running from <code class="language-text">http://localhost:9000/hello</code> despite you hitting <code class="language-text">/.netlify/functions/hello</code> in your Gatsby app. When you deploy your site to Netlify (either by <a href="https://app.netlify.com/">hooking your site up through Git through our Web UI</a>, or our l33t new <a href="https://docs.netlify.com/cli/get-started/">CLI</a>), that falls away, and your functions -are- hosted on the same URL and “just works”. Pretty neat!</p>
+<h2>That’s cool, but its not an app</h2>
+<p>So, yes, your site can now be more dynamic than any static site. It can hit any database or API. It runs rings around CORS (by the way, you can also use <a href="https://docs.netlify.com/routing/redirects/">Netlify Redirects</a> for that). But its not an <em>app</em> app. Yet!</p>
+<p>The key thing about web apps (and, let’s face it, the key thing users really pay for) is they all have some concept of <code class="language-text">user</code>, and that brings with it all manner of complication from security to state management to <a href="https://docs.netlify.com/visitor-access/role-based-access-control/">role-based access control</a>. Entire routes need to be guarded by authentication, and sensitive content shielded from Gatsby’s static generation. Sometimes there are things you -don’t- want Google’s spiders to see!</p>
+<p>It’s a different tier of concern, which makes it hard to write about in the same article as a typical Gatsby tutorial. But we’re here to make apps, so let’s bring it on!</p>
+<h2>5 Steps to add Netlify Identity and Authenticated Pages to Gatsby</h2>
+<ol>
+<li><strong>Enable Netlify Identity</strong>: Netlify Identity doesn’t come enabled by default. You’ll have to head to your site admin (e.g. <code class="language-text">https://app.netlify.com/sites/YOUR_AWESOME_SITE/identity</code>) to turn it on. <a href="https://docs.netlify.com/visitor-access/identity/">Read the docs</a> for further info on what you can do, for example add Facebook or Google social sign-on!</li>
+<li><strong>Install dependencies</strong>: <code class="language-text">npm install netlify-identity-widget gatsby-plugin-create-client-paths</code></li>
+<li><strong>Configure Gatsby</strong>: for dynamic-ness!</li>
+</ol>
+<div class="gatsby-highlight" data-language="js:title=gatsby-config.js"><pre class="language-js:title=gatsby-config.js"><code class="language-js:title=gatsby-config.js">module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/app/*`] },
+    },
+    // ...
+  ],
+  // ... (including what you also wrote earlier)
+}</code></pre></div>
+<ol start="4">
+<li><strong>Write an authentication service</strong>: <code class="language-text">netlify-identity-widget</code> is a framework-agnostic overlay that ships with a nice signup/login UI. This gets you up and running the fastest, however if you need a smaller solution you may want to use the underlying <a href="https://github.com/netlify/gotrue-js">gotrue-js</a>, or <a href="https://github.com/sw-yx/react-netlify-identity">react-netlify-identity</a> for a React Hooks solution.</li>
+</ol>
+<p>Here’s a usable example that stores your user in local storage:</p>
+<div class="gatsby-highlight" data-language="js:title=service/auth.js"><pre class="language-js:title=service/auth.js"><code class="language-js:title=service/auth.js">import netlifyIdentity from &quot;netlify-identity-widget&quot;
+
+export const isBrowser = () =&gt; typeof window !== &quot;undefined&quot;
+export const initAuth = () =&gt; {
+  if (isBrowser()) {
+    window.netlifyIdentity = netlifyIdentity
+    // You must run this once before trying to interact with the widget
+    netlifyIdentity.init()
+  }
+}
+export const getUser = () =&gt;
+  isBrowser() &amp;&amp; window.localStorage.getItem(&quot;netlifyUser&quot;)
+    ? JSON.parse(window.localStorage.getItem(&quot;netlifyUser&quot;))
+    : {}
+
+const setUser = user =&gt;
+  window.localStorage.setItem(&quot;netlifyUser&quot;, JSON.stringify(user))
+
+export const handleLogin = callback =&gt; {
+  if (isLoggedIn()) {
+    callback(getUser())
+  } else {
+    netlifyIdentity.open()
+    netlifyIdentity.on(&quot;login&quot;, user =&gt; {
+      setUser(user)
+      callback(user)
+    })
+  }
+}
+
+export const isLoggedIn = () =&gt; {
+  if (!isBrowser()) return false
+  const user = netlifyIdentity.currentUser()
+  return !!user
+}
+
+export const logout = callback =&gt; {
+  netlifyIdentity.logout()
+  netlifyIdentity.on(&quot;logout&quot;, () =&gt; {
+    setUser({})
+    callback()
+  })
+}</code></pre></div>
+<ol start="5">
+<li><strong>Write your app</strong>: Now, any sub paths in <code class="language-text">src/pages/app</code> will be exempt from Gatsby static generation. To keep the dividing line between app and site crystal clear, I like to have all my dynamic Gatsby code in a dedicated <code class="language-text">app</code> folder. This means you can use <code class="language-text">@reach/router</code> with <code class="language-text">netlify-identity-widget</code> to write a standard dynamic React app. Here’s some sample code to give you an idea of how to hook them up:</li>
+</ol>
+<div class="gatsby-highlight" data-language="jsx:title=app.js"><pre class="language-jsx:title=app.js"><code class="language-jsx:title=app.js">import React from &quot;react&quot;
+import { Router } from &quot;@reach/router&quot; // comes with gatsby v2
+import Layout from &quot;../components/layout&quot;
+import NavBar from &quot;./components/NavBar&quot;
+import Profile from &quot;./profile&quot;
+import Main from &quot;./main&quot; // NOT SHOWN
+import PrivateRoute from &quot;./components/PrivateRoute&quot;
+import Login from &quot;./login&quot;
+
+// remember everything in /app/* is dynamic now!
+const App = () =&gt; {
+  return (
+    &lt;Layout&gt;
+      &lt;NavBar /&gt;
+      &lt;Router&gt;
+        &lt;PrivateRoute path=&quot;/app/profile&quot; component={Profile} /&gt;
+        &lt;PublicRoute path=&quot;/app&quot;&gt;
+          &lt;PrivateRoute path=&quot;/&quot; component={Main} /&gt;
+          &lt;Login path=&quot;/login&quot; /&gt;
+        &lt;/PublicRoute&gt;
+      &lt;/Router&gt;
+    &lt;/Layout&gt;
+  )
+}
+function PublicRoute(props) {
+  return &lt;div&gt;{props.children}&lt;/div&gt;
+}
+
+export default App</code></pre></div>
+<div class="gatsby-highlight" data-language="jsx:title=components/navbar.js"><pre class="language-jsx:title=components/navbar.js"><code class="language-jsx:title=components/navbar.js">import React from &quot;react&quot;
+import { Link, navigate } from &quot;gatsby&quot;
+import { getUser, isLoggedIn, logout } from &quot;../services/auth&quot;
+
+export default function NavBar() {
+  const content = { message: &quot;&quot;, login: true }
+  const user = getUser()
+  if (isLoggedIn()) {
+    content.message = `Hello, ${
+      user.user_metadata &amp;&amp; user.user_metadata.full_name
+    }`
+  } else {
+    content.message = &quot;You are not logged in&quot;
+  }
+  return (
+    &lt;div
+      style={{
+        display: &quot;flex&quot;,
+        flex: &quot;1&quot;,
+        justifyContent: &quot;space-between&quot;,
+        borderBottom: &quot;1px solid #d1c1e0&quot;,
+        backgroundColor: &quot;aliceblue&quot;,
+      }}
+    &gt;
+      &lt;span&gt;{content.message}&lt;/span&gt;
+
+      &lt;nav&gt;
+        &lt;span&gt;Navigate the app: &lt;/span&gt;
+        &lt;Link to=&quot;/app/&quot;&gt;Main&lt;/Link&gt;
+        {` `}
+        &lt;Link to=&quot;/app/profile&quot;&gt;Profile&lt;/Link&gt;
+        {` `}
+        {isLoggedIn() ? (
+          &lt;a
+            href=&quot;/&quot;
+            onClick={event =&gt; {
+              event.preventDefault()
+              logout(() =&gt; navigate(`/app/login`))
+            }}
+          &gt;
+            Logout
+          &lt;/a&gt;
+        ) : (
+          &lt;Link to=&quot;/app/login&quot;&gt;Login&lt;/Link&gt;
+        )}
+      &lt;/nav&gt;
+    &lt;/div&gt;
+  )
+}</code></pre></div>
+<div class="gatsby-highlight" data-language="jsx:title=components/privateroute.js"><pre class="language-jsx:title=components/privateroute.js"><code class="language-jsx:title=components/privateroute.js">import React from &quot;react&quot;
+import { isLoggedIn } from &quot;../services/auth&quot;
+import { navigate } from &quot;gatsby&quot;
+
+class PrivateRoute extends React.Component {
+  componentDidMount = () =&gt; {
+    const { location } = this.props
+    if (!isLoggedIn() &amp;&amp; location.pathname !== `/app/login`) {
+      // If the user is not logged in, redirect to the login page.
+      navigate(`/app/login`)
+      return null
+    }
+  }
+
+  render() {
+    const { component: Component, location, ...rest } = this.props
+    return isLoggedIn() ? &lt;Component {...rest} /&gt; : null
+  }
+}
+
+export default PrivateRoute</code></pre></div>
+<div class="gatsby-highlight" data-language="jsx:title=login.js"><pre class="language-jsx:title=login.js"><code class="language-jsx:title=login.js">import React from &quot;react&quot;
+import { navigate } from &quot;gatsby&quot;
+import { handleLogin, isLoggedIn } from &quot;./services/auth&quot;
+
+class Login extends React.Component {
+  handleSubmit = () =&gt; handleLogin(user =&gt; navigate(`/app/profile`))
+  render() {
+    return (
+      &lt;&gt;
+        &lt;h1&gt;Log in&lt;/h1&gt;
+        &lt;button onClick={this.handleSubmit}&gt;log in&lt;/button&gt;
+      &lt;/&gt;
+    )
+  }
+}
+
+export default Login</code></pre></div>
+<p>Phew that was a lot! but you should have a solid starting point for your app :)</p>
+<h2>Bonus points: Authenticated Lambda Functions for your Gatsby App</h2>
+<p>Just like <a href="https://en.wikipedia.org/wiki/The_Prestige_(film)">every magic act has a pledge, a turn, and a prestige</a>, I have one last tidbit for you. <a href="https://stackoverflow.com/questions/50277192/react-security-concerns-restricted-pages-in-app">Nothing on the client-side is safe</a>, and although you can send along Netlify Identity user id’s to your Netlify Function endpoints for authenticated access from your Gatsby App (for example in the body of a POST request), you’ll never be truly sure if that flow is secure either from malicious users or snooping.</p>
+<p>The best way to do authenticated actions inside serverless functions is to do it from inside the context of the function itself. Fortunately, <a href="https://docs.netlify.com/functions/functions-and-identity/">Netlify Identity and Functions work seamlessly together</a>. All you have to do is to send along the user’s <a href="https://jwt.io/">JWT</a> when hitting your endpoint:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// in your gatsby app</span>
+<span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"/.netlify/functions/auth-hello"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+    Accept<span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
+    <span class="token string">"Content-Type"</span><span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
+    Authorization<span class="token operator">:</span> <span class="token string">"Bearer "</span> <span class="token operator">+</span> user<span class="token punctuation">.</span>token<span class="token punctuation">.</span>access_token<span class="token punctuation">,</span> <span class="token comment">// like this</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token comment">/* etc */</span><span class="token punctuation">)</span></code></pre></div>
+<p>And then inside a Lambda function, you can now access the <code class="language-text">user</code> object:</p>
+<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token comment">// more info: https://www.netlify.com/docs/functions/#identity-and-functions</span>
+
+<span class="token comment">// Note that `netlify-lambda` only locally emulates Netlify Functions, while `netlify-identity-widget` interacts with a real Netlify Identity instance. This means that `netlify-lambda` doesn't support Netlify Functions + Netlify Identity integration.</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>context<span class="token punctuation">.</span>clientContext<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>
+      user<span class="token punctuation">,</span> <span class="token comment">// actual user info you can use for your serverless functions</span>
+    <span class="token punctuation">}</span> <span class="token operator">=</span> context<span class="token punctuation">.</span>clientContext
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+      body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        msg<span class="token operator">:</span> <span class="token string">"auth-hello: "</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        user<span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+    Note that netlify-lambda only locally emulates Netlify Functions,
+    while netlify-identity-widget interacts with a real Netlify Identity instance.
+    This means that netlify-lambda doesn't support Netlify Functions + Netlify Identity integration.
+    </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+      body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        msg<span class="token operator">:</span>
+          <span class="token string">"auth-hello - no authentication detected. Note that netlify-lambda doesn't locally emulate Netlify Identity."</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<h2>Gatsby - Perfect for your next Hackathon</h2>
+<p>It’s 5 steps each to turn your static Gatsby sites into dynamic, authenticated, fully serverless apps with Netlify’s free tools. This makes Gatsby a perfect tool for your next app. If you’re at a hackathon, short on time, or just like to see a full working demo, check any of the following links.</p>
+<ul>
+<li><strong>Code:</strong> <a href="https://github.com/sw-yx/jamstack-hackathon-starter">https://github.com/sw-yx/jamstack-hackathon-starter</a></li>
+<li><strong>Starter:</strong> <a href="https://www.gatsbyjs.org/starters/jamstack-hackathon-starter">https://www.gatsbyjs.org/starters/jamstack-hackathon-starter</a></li>
+<li><strong>Live Demo:</strong> <a href="https://jamstack-hackathon-starter.netlify.app/">https://jamstack-hackathon-starter.netlify.app/</a></li>
+</ul></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2018-11-03-building-an-accessible-lightbox/">← <!-- -->Building a custom, accessible image lightbox</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2018-12-04-per-link-gatsby-page-transitions-with-transitionlink/">Per-Link Gatsby page transitions with TransitionLink<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2018-12-17-turning-the-static-dynamic/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

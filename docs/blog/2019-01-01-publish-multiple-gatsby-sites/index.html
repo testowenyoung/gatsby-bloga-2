@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Publish Multiple Gatsby Sites in a Monorepo, Using Lerna, Travis &amp; Vercel | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Learn how to create a balanced lasagna instead of a tangled mess of spaghetti. Foreword This tutorial will take about two hours to complete. If you’re…"/><meta data-react-helmet="true" property="og:title" content="Publish Multiple Gatsby Sites in a Monorepo, Using Lerna, Travis &amp; Vercel"/><meta data-react-helmet="true" property="og:description" content="Learn how to create a balanced lasagna instead of a tangled mess of spaghetti. Foreword This tutorial will take about two hours to complete. If you’re…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Publish Multiple Gatsby Sites in a Monorepo, Using Lerna, Travis &amp; Vercel"/><meta data-react-helmet="true" name="twitter:description" content="Learn how to create a balanced lasagna instead of a tangled mess of spaghetti. Foreword This tutorial will take about two hours to complete. If you’re…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2019-01-01-publish-multiple-gatsby-sites/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Publish Multiple Gatsby Sites in a Monorepo, Using Lerna, Travis &amp; Vercel</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 01, 2019</p></header><section><h2>Learn how to create a balanced lasagna instead of a tangled mess of spaghetti.</h2>
+<h3>Foreword</h3>
+<p>This tutorial will take about two hours to complete. If you’re unfamiliar with Lerna, Travis or Vercel, you may fall into a few traps, but it’s all part of the learning process! I’ve included a troubleshooting section at the end of the article for common problems, so refer to it at any time.</p>
+<h3>Introduction</h3>
+<p>If you work alone or in a small team, you’re likely to have started working on small programs that slowly grow complex and convoluted. Shit happens and you’ll soon find that your perfectly balanced lasagna evolves into a heaped bowlful of spaghetti.</p>
+<p>The same goes for those who have worked as part of a large company/team. Branding guidelines come in the form of CSS style-guides or reusable components. Separating the discrete packages from what’s shared becomes a hassle if everything’s stored together. You may even have to deal with several similar projects thrown about in different repos, which can be a headache to keep track of. These are some of the problems monorepos solve.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/6533e/monorepo-diagram.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe4qTQf/xAAWEAEBAQAAAAAAAAAAAAAAAAAQATH/2gAIAQEAAQUCJj//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAABIP/aAAgBAQAGPwJr/8QAHBAAAgICAwAAAAAAAAAAAAAAAAERMSFRYYHR/9oACAEBAAE/IctpXRnmtEreEkJiUKEf/9oADAMBAAIAAwAAABCQD//EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oACAEDAQE/EFf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEBAQABBQAAAAAAAAAAAAABEQAhUWGRseH/2gAIAQEAAT8QJiw8LJ9zCx8nnJBq9z01dcsVOUmIggb/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Monorepo Diagram"
+        title="Monorepo Diagram"
+        src="/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/1c72d/monorepo-diagram.jpg"
+        srcset="/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/a80bd/monorepo-diagram.jpg 148w,
+/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/1c91a/monorepo-diagram.jpg 295w,
+/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/1c72d/monorepo-diagram.jpg 590w,
+/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/a8a14/monorepo-diagram.jpg 885w,
+/gatsby-bloga-2/static/72822e30046f7c951f06907d80b27009/6533e/monorepo-diagram.jpg 1160w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>A monorepo is an architectural design pattern that allows us to maintain several packages within a single repo. This reduces the complexity when dealing with packages that share in-house and third-party dependencies.</p>
+<p>Think of monorepos like a well-organized supermarket. Each aisle contains a particular kind of food, making it easy to navigate and find the item of food you want. Supermarkets also contain a variety of different foods so you don’t need to go to a series of specific shops to find your gluten-free, dairy-free banoffee pie (which is very much a <a href="https://glutenfreecuppatea.co.uk/2016/02/14/recipe-healthy-banoffee-pie-gluten-free-vegan-refined-sugar-free-dairy-free/">thing</a>).</p>
+<p>With monorepos the code is split into specific packages (aisles). Meaning you can easily navigate the project to find the component or module you want to work on. It also means not needing to maintain separate repos when making changes that affect multiple parts of your stack (the single shop).</p>
+<p>Everything is accessible from a single place, while still being organized enough to navigate painlessly.
+Enough with the theory, let’s move on to the tutorial, which is split into 2 sections: development and deployment.</p>
+<p><em>Development</em> — We’ll configure an existing application, built with <a href="/gatsby-bloga-2/">Gatsby</a>, into a monorepo. I won’t delve too much into its implementation details because it’s beyond the scope of this article. We’ll attend the lavish party that the great Gatsby throws for us and we won’t ask why or how they did it.</p>
+<p>Another tool we’ll use is <a href="https://github.com/lerna/lerna">Lerna</a>, which will manage the dependencies of our project. Lerna will also allow us to link packages together which we’ll use to share components.</p>
+<p><em>Deployment</em> — After we’ve converted our app into a monorepo we’ll hook our GitHub account to Travis-CI and create a CI pipeline. The CI pipeline will test, build and deploy our application.</p>
+<p>There are a couple of caveats to address prior to beginning:</p>
+<p>Due to the scale of our demo site, you may feel that monorepos aren’t practical. You’ll be right in thinking that because a monorepo in this instance isn’t practical. There’ll be elements of duplication and rewriting that will seem counter productive. It’ll also seem like we’re over-engineering a simple site. The real learning comes from understanding how the pieces fit together on a small scale. You’ll be able to easily integrate monorepos at production level with your understanding of the fundamental concepts and underlying technologies.</p>
+<p>This tutorial deals with loads of small changes which make for plenty of opportunities for things to go wrong. I’ve tried making myself as clear as possible to prevent this but if you do come across issues then leave a descriptive comment. I’ll do my best to respond, edit and improve this article. You can also find the <a href="https://github.com/andrico1234/lerna-monorepo-finisher">finished repo here</a>. There’s no shame in copying my code if you’re stuck.</p>
+<p>I’m also assuming fundamental web dev knowledge including experience with React, Git and the command line.</p>
+<h3>Part One</h3>
+<p>Let’s begin! Navigate to an empty folder in the terminal and clone the repo by running the following command</p>
+<p><code class="language-text">git clone git@github.com:andrico1234/lerna-monorepo-starter.git</code></p>
+<p>and navigate into the <code class="language-text">lerna-monorepo-starter</code> directory.</p>
+<p>Go to your GitHub account and create a new repo, this’ll be the repo that you push the site to so that Travis can run the pipeline. For those who need a refresher on how to <a href="https://help.github.com/articles/creating-a-new-repository/">create a new repo</a>. You may have to run <code class="language-text">git remote remove origin</code> so you can point the code to your newly created repo.</p>
+<p>Run the code that GitHub outputs when creating a new repo:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">git</span> remote <span class="token function">add</span> origin git@github.com:<span class="token operator">&lt;</span>account-name<span class="token operator">></span>/lerna-monorepo-starter.git
+<span class="token function">git</span> push -u origin master</code></pre></div>
+<p>Commit and push regularly for best results.</p>
+<p>Navigate inside of the <code class="language-text">lerna-monorepo-starter</code> directory and install the packages by running <code class="language-text">yarn</code>. Once your packages have installed, run <code class="language-text">yarn develop</code> to run the application on <code class="language-text">http://localhost:8000</code>.</p>
+<p>Open Chrome, and navigate to <code class="language-text">http://localhost:8000</code>. You’ll find a simple application with a mock blog and a mock shop. Imagine this is a fleshed out application, we can make the assumption that the underlying logic behind the blog and the shop are different and that there are similarities with the styling and components.</p>
+<p>Go back to your IDE and you’ll see that we’re not pulling data from an external source. The data is being served locally via a couple of JSON files in the <code class="language-text">data</code> directory. When we run the <code class="language-text">develop</code> command Gatsby pulls the data from these JSON files and creates pages for them. You can take a look at how this being done by peeking inside of the <code class="language-text">gatsby-node.js</code> file. This is because Gatsby builds the code and outputs a static site.</p>
+<p>So imagine our application is starting to grow, the shop and the blog start intertwining with each other. You may not notice the lack of separation until its too late and your code is tangled tighter than the ivy across the side of your grandma’s cottage.</p>
+<p>Let’s start splitting up our application. I’ll only be touching the surface of what Lerna is capable of, so I’d recommend checking out their repo to learn more. Install Lerna with <code class="language-text">yarn global add lerna</code>. We need to create a file in the root directory called <code class="language-text">lerna.json</code>. Add in the following:</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"lerna"</span><span class="token operator">:</span> <span class="token string">"2.11.0"</span><span class="token punctuation">,</span>
+  <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"packages/*"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"npmClient"</span><span class="token operator">:</span> <span class="token string">"yarn"</span><span class="token punctuation">,</span>
+  <span class="token property">"useWorkspaces"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>The above specifies the version of Lerna we’re using. We also let Lerna know where to find our packages, in this case the packages will be contained within a directory inside of <code class="language-text">packages</code>. We specify that we’re using Yarn, the current version of our application and that we’re using Yarn Workspaces enables Lerna’s package hoisting. To enable Yarn workspaces, add the following to your <code class="language-text">package.json</code> file.</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  ...rest of file<span class="token punctuation">,</span>
+  <span class="token property">"private"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">"workspaces"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"packages/*"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Once that’s been completed create a new <code class="language-text">packages</code> directory in the root of the project. Create three additional directories inside of it so the structure looks like the following:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">packages
+ | blog
+ | shared-ui
+ | shop</code></pre></div>
+<p>The next step is to move the contents from our current application into their respective folders. All the files in our <code class="language-text">components</code> folder will be moved to our <code class="language-text">shared-ui</code> directory since we’d like to be able to use them anywhere throughout our codebase.</p>
+<p>For now we’ll move everything over to <code class="language-text">shared-ui</code> components and import them using a relative url.</p>
+<p>Inside of the <code class="language-text">packages/shared-ui</code> directory, I’ve created a file called <code class="language-text">index.js</code> which will be our entry point for importing components. This is the directory that we’re going to be moving our components folder into. Open up your terminal and navigate to the top level of your project directory and run</p>
+<p><code class="language-text">mv src/components/ packages/shared-ui/components/</code></p>
+<p>This will move the components into their brand new home. Go ahead and do the same for the <code class="language-text">theme</code> directory too. You’re going to need to fix the now broken import statements for each component that uses the theme object.</p>
+<p>The Layout component behaves as the entry point of each Gatsby application, which means that each package will need one.</p>
+<p>We’ll avoid code duplication by abstracting the parts of the layout that won’t need to change based on the page, like the use of the Header component. We’ll keep each package’s individual logic, like the <code class="language-text">graphql</code> query.</p>
+<p>In <code class="language-text">packages/shared-ui</code>, create a new directory called <code class="language-text">layouts/PrimaryLayouts</code>. Create an <code class="language-text">index.js</code> file and move over the contents of the <code class="language-text">src/layouts/index.js</code> file here. Once that’s done get rid of the <code class="language-text">graphql</code> query. Move over the CSS file so the imports don’t break.</p>
+<p>Back in the <code class="language-text">src/layouts</code> file we can get rid of everything and replace it with this:</p>
+<div class="gatsby-highlight" data-language="jsx:title=layout/index.js"><pre class="language-jsx:title=layout/index.js"><code class="language-jsx:title=layout/index.js">import React from &quot;react&quot;
+import PropTypes from &quot;prop-types&quot;
+
+import { PrimaryLayout } from &quot;../../packages/shared-ui&quot;
+
+const Layout = ({ children, data }) =&gt; (
+  &lt;PrimaryLayout children={children} data={data} /&gt;
+)
+
+Layout.propTypes = {
+  children: PropTypes.func,
+}
+
+export default Layout
+
+export const query = graphql`
+  query SiteTitleQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`</code></pre></div>
+<p>Once that’s done update the export statements in <code class="language-text">the shared-ui/index.js</code> file to look like the following.</p>
+<div class="gatsby-highlight" data-language="jsx:title=index.js"><pre class="language-jsx:title=index.js"><code class="language-jsx:title=index.js">export { default as theme } from &quot;./theme&quot;
+
+export { default as Button } from &quot;./components/Button&quot;
+export { default as Header } from &quot;./components/Header&quot;
+export { ItemCard, ItemCardWrapper } from &quot;./components/ItemCard&quot;
+
+export { default as PrimaryLayout } from &quot;./layouts/PrimaryLayouts&quot;</code></pre></div>
+<p>Your packages folder hierarchy should look like this now</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">packages
+  | blog
+  | shared-ui
+    | index.js
+    | components
+      | Button
+        | index.js
+      | Header
+        | index.js
+      | ItemCard
+        | index.js
+    | theme
+      | index.js
+    | layouts
+      | PrimaryLayout
+        | index.js
+        | index.css
+  | shop</code></pre></div>
+<p>It’s likely that your project won’t run because the import statements for your shared components will have broken. The way the project’s set up means that we can do a find-and-replace to find <code class="language-text">../components/{specific-component}</code> and replace it with <code class="language-text">../../packages/shared-ui</code>. The site will still be broken because we need to wrap the import name with curly braces, so the import statement looks like this:</p>
+<p><code class="language-text">import { Header } from ‘../../packages/shared-ui’</code></p>
+<p>Just make sure the Header import for your <code class="language-text">PrimaryLayout/index.js</code> is as follows <code class="language-text">import { Header } from &#39;../../&#39;</code>. Once you’ve replaced all the outdated import statements with new ones, try running your application again. We should expect to see no errors in the console. Now’s a good time to commit and push the code.</p>
+<p>Now we’ve got this working, we want to take it one step further and make the shared-ui behave in the same way a public package does. Create a <code class="language-text">package.json</code> file inside of the <code class="language-text">shared-ui</code> package and add the following:</p>
+<div class="gatsby-highlight" data-language="json:title=package.json"><pre class="language-json:title=package.json"><code class="language-json:title=package.json">{
+  &quot;name&quot;: &quot;@lerna-monorepo/shared-ui&quot;,
+  &quot;description&quot;: &quot;Lerna monorepo starter&quot;,
+  &quot;version&quot;: &quot;1.0.2&quot;,
+  &quot;dependencies&quot;: {
+    &quot;gatsby&quot;: &quot;^1.9.247&quot;,
+    &quot;gatsby-link&quot;: &quot;^1.6.40&quot;,
+    &quot;gatsby-plugin-react-helmet&quot;: &quot;^2.0.10&quot;,
+    &quot;gatsby-plugin-react-next&quot;: &quot;^1.0.11&quot;,
+    &quot;react&quot;: &quot;16.4.2&quot;,
+    &quot;react-helmet&quot;: &quot;^5.2.0&quot;,
+    &quot;styled-components&quot;: &quot;^3.3.3&quot;
+  },
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;repository&quot;: {
+    &quot;type&quot;: &quot;git&quot;,
+    &quot;url&quot;: &quot;https://github.com/gatsbyjs/gatsby-starter-default&quot;
+  }
+}</code></pre></div>
+<p>This will add the necessary dependencies for our <code class="language-text">shared-ui</code> package.</p>
+<p>Now we’re going to want to split up our original application into two separate packages; blog and shop. We’re going to need to mimic the current hierarchy to ensure that Gatsby keeps working. Each package will have a:</p>
+<ul>
+<li>data directory</li>
+<li>src directory with layouts and pages</li>
+<li>gatsby-config.js</li>
+<li>gatsby-node.js</li>
+<li>package.json file</li>
+</ul>
+<p>Go ahead and create blank folders/files for each item in the list above inside of each package. We’ll go through each item one by one for the blog package, then I’ll leave you to implement this for the shop package. You can refer to the finished repo at anytime if you’re stuck.</p>
+<p>Data directory — Move the <code class="language-text">blog.json</code> file in the top level <code class="language-text">data</code> directory. Go to your console, move to the repo’s top level directory and execute the following command <code class="language-text">mv data/blog.json packages/blog/data/blog.json</code>. This moves our mock blog data into its rightful home.</p>
+<p>Src directory with layouts and pages — In <code class="language-text">packages/blog/src/layouts</code>, create an <code class="language-text">index.js</code> file. Copy and paste the contents of the top level <code class="language-text">src/layouts/index.js</code> file. Your IDE might start shouting at you because <code class="language-text">../../packages/shared-ui</code> is no longer a valid import location. We finally get to use the brand spanking new <code class="language-text">shared-ui</code> package we created earlier on. Change the old import location to <code class="language-text">@lerna-monorepo/shared-ui</code>. Create two new files inside the <code class="language-text">packages/blog/src/pages/</code> directory with the file name of <code class="language-text">index.js</code> and <code class="language-text">blogItem.js</code>. In the <code class="language-text">index.js</code> file copy the contents of the <code class="language-text">blog.js</code> file under the <code class="language-text">src/pages/</code> directory. Update the import for the <code class="language-text">shared-ui</code> package like we did for the index file. Do the same for the <code class="language-text">blogItem.js</code> file. You’ll need to change the ‘back to blog’ to attribute in this file to ‘/’.</p>
+<p>gatsby-config.js — Again, copy the contents of the top level <code class="language-text">gatsby-config.js</code> file with the one in the blog package.</p>
+<p>gatsby-node.js — We’ll only know whether everything works or if our site craps itself once we move this file and add the <code class="language-text">package.json</code>. We want to copy over only the logic relating to the processing of the blog data. Copy and paste everything into the empty <code class="language-text">gatsby-node.js</code> file. Remove all the lines between and including 6–33, as well as the bottom most right curly bracket, and the right parenthesis on the second to last line.</p>
+<p>package.json- Add the following to the <code class="language-text">package.json</code> file:</p>
+<div class="gatsby-highlight" data-language="json:title=package.json"><pre class="language-json:title=package.json"><code class="language-json:title=package.json">{
+  &quot;name&quot;: &quot;@lerna-monorepo/blog&quot;,
+  &quot;description&quot;: &quot;Lerna monorepo starter&quot;,
+  &quot;version&quot;: &quot;1.0.2&quot;,
+  &quot;dependencies&quot;: {
+    &quot;@lerna-monorepo/shared-ui&quot;: &quot;^1.0.1&quot;,
+    &quot;gatsby&quot;: &quot;^1.9.247&quot;,
+    &quot;gatsby-link&quot;: &quot;^1.6.40&quot;,
+    &quot;gatsby-plugin-react-helmet&quot;: &quot;^2.0.10&quot;,
+    &quot;gatsby-plugin-react-next&quot;: &quot;^1.0.11&quot;,
+    &quot;gatsby-react-router-scroll&quot;: &quot;^1.0.18&quot;,
+    &quot;gatsby-source-filesystem&quot;: &quot;^1.5.39&quot;,
+    &quot;gatsby-transformer-json&quot;: &quot;^1.0.20&quot;,
+    &quot;react&quot;: &quot;^16.4.2&quot;,
+    &quot;react-helmet&quot;: &quot;^5.2.0&quot;,
+    &quot;react-router-dom&quot;: &quot;4.3.1&quot;,
+    &quot;serve&quot;: &quot;^10.0.0&quot;,
+    &quot;styled-components&quot;: &quot;^3.3.3&quot;
+  },
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;serve public/&quot;,
+    &quot;build&quot;: &quot;gatsby build&quot;,
+    &quot;develop&quot;: &quot;gatsby develop&quot;
+  }
+}</code></pre></div>
+<p>As well as the dependencies we defined in our top level <code class="language-text">package.json</code> file, I’ve added a couple more that we’ll use later. You won’t need to worry about what they do for now.</p>
+<p>Note: In your top level <code class="language-text">package.json</code> change the version of React to <code class="language-text">16.0.0</code>. I explain why in the troubleshooting section at the bottom of the article.</p>
+<p>You should notice that we’ve added <code class="language-text">&quot;@lerna-monorepo/shared-ui&quot;: &quot;^1.0.0&quot;</code> to the list dependencies. This will treat our <code class="language-text">shared-ui</code> package as a standard node module. Run <code class="language-text">lerna clean</code> and <code class="language-text">lerna bootstrap</code> to update your packages.</p>
+<p>Once you’ve done this, try navigating to the <code class="language-text">packages/blog</code> directory and running <code class="language-text">yarn develop</code>. Hopefully everything compiles and you should be able to access the homepage. Because the shop hasn’t been implemented, trying to navigate to that part of the application will result in failure. Go ahead and do the same for the shop package.</p>
+<p>Here’s the <code class="language-text">package.json</code> file for the shop package:</p>
+<div class="gatsby-highlight" data-language="json:title=package.json"><pre class="language-json:title=package.json"><code class="language-json:title=package.json">{
+  &quot;name&quot;: &quot;@lerna-monorepo/shop&quot;,
+  &quot;description&quot;: &quot;Lerna monorepo finisher&quot;,
+  &quot;version&quot;: &quot;1.0.2&quot;,
+  &quot;dependencies&quot;: {
+    &quot;@lerna-monorepo/shared-ui&quot;: &quot;^1.0.1&quot;,
+    &quot;gatsby&quot;: &quot;^1.9.247&quot;,
+    &quot;gatsby-link&quot;: &quot;^1.6.40&quot;,
+    &quot;gatsby-plugin-react-helmet&quot;: &quot;^2.0.10&quot;,
+    &quot;gatsby-plugin-react-next&quot;: &quot;^1.0.11&quot;,
+    &quot;gatsby-source-filesystem&quot;: &quot;^1.5.39&quot;,
+    &quot;gatsby-transformer-json&quot;: &quot;^1.0.20&quot;,
+    &quot;gatsby-react-router-scroll&quot;: &quot;^1.0.18&quot;,
+    &quot;react&quot;: &quot;^16.4.2&quot;,
+    &quot;react-helmet&quot;: &quot;^5.2.0&quot;,
+    &quot;react-router-dom&quot;: &quot;4.3.1&quot;,
+    &quot;serve&quot;: &quot;^10.0.0&quot;,
+    &quot;styled-components&quot;: &quot;^3.3.3&quot;
+  },
+  &quot;license&quot;: &quot;MIT&quot;,
+  &quot;scripts&quot;: {
+    &quot;start&quot;: &quot;serve public&quot;,
+    &quot;build&quot;: &quot;gatsby build&quot;,
+    &quot;develop&quot;: &quot;gatsby develop -p 8001&quot;
+  }
+}</code></pre></div>
+<p>I’ve made a slight change in this file, so that running both packages won’t cause a port clash. If you can navigate to both packages and run <code class="language-text">yarn develop</code> without the script throwing an error, then commit and push your changes.</p>
+<p>There are two major issues we need to address:</p>
+<p>Having to run each package manually is a pain.
+Our website doesn’t recognise that we’re linking between two different packages.
+We’ll resolve the first issue by creating a top level script that runs both the blog and shop in parallel. The second issue we’ll solve by adding <code class="language-text">.env</code> variables that will hold the addresses for the blog/shop urls. The variables will be different for the production environment and will hold the live urls.</p>
+<p>Add the following to the scripts block of your top level <code class="language-text">package.json</code> file.</p>
+<div class="gatsby-highlight" data-language="json:title=package.json"><pre class="language-json:title=package.json"><code class="language-json:title=package.json">&quot;scripts&quot;: {
+  &quot;run:blog&quot;: &quot;cd packages/blog &amp;&amp; yarn develop&quot;,
+  &quot;run:shop&quot;: &quot;cd packages/shop &amp;&amp; yarn develop&quot;,
+  &quot;run:all&quot;: &quot;npm-run-all --parallel run:blog run:shop&quot;
+}</code></pre></div>
+<p>The first two run each package’s Gatsby server individually, while the latter uses <code class="language-text">npm-run-all</code> to run the scripts in parallel. Install <code class="language-text">npm-run-all</code> using <code class="language-text">lerna add npm-run-all</code> in the top level of your project.</p>
+<p>Note: <code class="language-text">npm-run-all</code> runs both Gatsby instances in the same terminal window. So logging for both the shop and blog outputs to the same window. You’ll need to press cmd+d twice to kill the Gatsby process.</p>
+<p>To navigate between both our Gatsby sites on development we’re going to need to add environment variables so to use with the <code class="language-text">Link</code> components. We’ll add the <code class="language-text">dotenv</code> package so Gatsby knows which variables to load for a given environment.</p>
+<p><code class="language-text">lerna add dotenv --scope=*{@lerna-monorepo/shop,@lerna-monorepo/blog}*</code></p>
+<p>This adds the <code class="language-text">dotenv</code> module to only the blog and shop packages, this way we don’t add unnecessary dependencies to our <code class="language-text">shared-ui</code> package.</p>
+<p>Create a new file in your shop package called <code class="language-text">.env.development</code> and <code class="language-text">.env.production</code>. Inside the former, add the following line:</p>
+<p><code class="language-text">BLOG_URL=http://localhost:8000</code></p>
+<p>Leave the production file alone for now and repeat for blog package, just change the name of the variable to <code class="language-text">SHOP_URL</code> and the port to <code class="language-text">8001</code>.</p>
+<p>Now add the following code to the top of your <code class="language-text">gatsby-config.js</code> file in your shop package.</p>
+<div class="gatsby-highlight" data-language="js:title=gatsby-config.js"><pre class="language-js:title=gatsby-config.js"><code class="language-js:title=gatsby-config.js">const activeEnv = process.env.ACTIVE_ENV | &quot;development&quot;
+
+require(&quot;dotenv&quot;).config({
+  path: `.env.${activeEnv}`,
+})</code></pre></div>
+<p>Add this code to the blog’s <code class="language-text">gatsby-config.js</code> file too. This code snippet will give you access to these variables inside of our components. We can provide different sets of variables depending on the current environment. When we later run gatsby build to create our static site, it will use the production variables.</p>
+<p>Once we’ve add that, we’re going to need to find all instances where we navigate from the blog site to the shop site and vice versa, you’ll need to replace the current Links to:</p>
+<p><code class="language-text">&lt;a href={process.env.SHOP_URL}&gt;Back to Shop&lt;/a&gt;</code></p>
+<p>Protip: they’re in <code class="language-text">shop/src/pages/index.js</code>, and <code class="language-text">blog/src/pages/index.js</code>.</p>
+<p>This will allow us to transition between our two sites. Do the same for the shop package and you’ll be able to use the site as normal. If <code class="language-text">yarn run:all</code> still works and you can run <code class="language-text">yarn build</code> for each package then commit and push the changes. In each package run <code class="language-text">yarn serve</code> go to the correct port to double-check that everything displays correctly.</p>
+<p>Congratulations, the site now behaves in exactly the same way as when we started. This might make it seem like monorepos have little use, but you’ll find that using a monorepo is a way of keeping packages independent from each other while easily reusing assets.</p>
+<p>You can stop the tutorial now and you’ll have a working knowledge of when, how and why to use monorepos, but the latter half of this tutorial will show us how we can take things a step further. We’ll get a CI pipeline set up for our application and deploy it on success.</p>
+<h3>Part Two</h3>
+<p>Let’s take a second to reflect on where we are right now. We’ve managed to start with a single application with two discrete sections and split them apart in a monorepo. This allows us to <em>separate the concerns</em> and share reusable components.</p>
+<p>There are two parts to this section, our Continuous Integration (CI) pipeline and the site’s deployment. Our CI pipeline will be used to automate a series of checks to ensure our tests pass and our build compiles. If either of these, or any part of the pipeline, fails then our site won’t deploy. The second part is how we deal with a successful build, and that’s deployment! If everything passes, our site will deploy using Vercel, where it will be hosted for the world to see on the interwebs.</p>
+<p>To use Travis we’ll first need to create an account and add the GitHub repo we’ve been pushing to. And like with every other tool we’ve used, the best way to get started with Travis is by reading <a href="https://docs.travis-ci.com/user/getting-started/">Travis’ getting started page</a>. The getting started page also runs through adding your GitHub repo which can be done via the main page. Click the ‘+’ and on your profile page click ‘Manage repositories in GitHub’. Choose the repo that you’ve been using and you should be set up.</p>
+<p>Once you’ve done this we’ll create our <code class="language-text">.travis.yml</code> which outlines the steps our CI pipeline will take when preparing for deployment. Travis won’t recognise any application that doesn’t have a <code class="language-text">.travis.yml</code>, so we’ll create a basic one. Once we push code that contains a <code class="language-text">.travis.yml</code> file, the CI pipeline will start running on every subsequent push.</p>
+<p>In the root of your project create a file named <code class="language-text">.travis.yml</code>. And please, please, pleaaase make sure you’ve spelt the file name correctly. I was racking my head for the best part of an hour wondering why my build wasn’t running, only to discover I had left out the leading period in the <code class="language-text">.travis.yml</code>.</p>
+<div class="gatsby-highlight" data-language="yaml:title=.travis.yml"><pre class="language-yaml:title=.travis.yml"><code class="language-yaml:title=.travis.yml">language: node_js
+node_js:
+  - &quot;10.9.0&quot;</code></pre></div>
+<p>This is the absolute least we can do for our CI pipeline, we’re telling Travis that we’re using node version 10.9.0. Note: I only chose 10.9.0 because it’s the latest stable version of Node available at the time of writing. To find out what version you’re on, type <code class="language-text">node -v</code> in the command line and declare that version in your <code class="language-text">.travis.yml</code> file. We don’t want any discrepancies between our development environment and our production build, so we’ll use keep the version of Node we’re using consistent.</p>
+<p>Once you’ve done this, commit your changes and push them forward. Travis should recognise your <code class="language-text">.travis.yml</code> file and starts running the pipeline.</p>
+<p>You should be getting feedback from Travis about your builds, and that they’re failing. This is expected as by default, travis runs a <code class="language-text">yarn test</code> as part of its pipeline. We have no tests so error code 1 is thrown causing the pipeline to fail. To get this passing, we’ll add a token test to our codebase. In <code class="language-text">blog/src/pages</code> create a new file <code class="language-text">blogitem.test.js</code> and add the following:</p>
+<div class="gatsby-highlight" data-language="jsx:title=blogitem.test.js"><pre class="language-jsx:title=blogitem.test.js"><code class="language-jsx:title=blogitem.test.js">import React from &quot;react&quot;
+import { shallow } from &quot;enzyme&quot;
+import BlogItem from &quot;./blogItem&quot;
+
+describe(&quot;Layout component&quot;, () =&gt; {
+  const mockProps = {
+    pathContext: {
+      data: {
+        title: &quot;mock title&quot;,
+        content: &quot;mock content&quot;,
+        href: &quot;google.com&quot;,
+      },
+    },
+  }
+
+  it(&quot;should render&quot;, () =&gt; {
+    const wrapper = shallow(&lt;BlogItem {...mockProps} /&gt;)
+
+    expect(wrapper)
+  })
+})</code></pre></div>
+<p>We’re using Enzyme, a package that lets us test React components by rendering the component in a virtual DOM. For the sake of the tutorial, we’re doing the enzyme equivalent of <code class="language-text">expect(true).toBe(true)</code>. Now go into the <code class="language-text">package.json</code> file for blog and add <code class="language-text">jest test --config ../../jest-config.json</code> to the <code class="language-text">test</code> field under <code class="language-text">scripts</code>. Once you’ve done this, navigate to the blog package in the command line and run <code class="language-text">yarn test</code>, your should test pass. Go ahead and do the same for shop package’s <code class="language-text">shoppingItem</code> component.</p>
+<p>Note: you’ll likely need <code class="language-text">react-router-dom</code> specified as a dependency to get the tests working. I elaborate more on this in the troubleshooting section below. Also make sure you’ve get <code class="language-text">jest</code> installed globally, if not then run <code class="language-text">yarn global add jest</code> in your command line. Test to see that <code class="language-text">yarn build</code> still works for each package, as it’s going to be the next step in our pipeline.</p>
+<p>Before we push, we need to make a couple more changes to our pipeline. Update your <code class="language-text">.travis.yml</code> file so it looks like the following:</p>
+<div class="gatsby-highlight" data-language="yaml:title=.travis.yml"><pre class="language-yaml:title=.travis.yml"><code class="language-yaml:title=.travis.yml">language: node_js
+node_js:
+  - &quot;10.9.0&quot;
+
+cache: yarn
+
+install:
+  - yarn global add lerna jest
+  - lerna bootstrap
+
+script:
+  - yarn test
+  - yarn build</code></pre></div>
+<p>The additions include caching Yarn, installing the global dependencies, and specifying that we want to run <code class="language-text">yarn test</code> and <code class="language-text">yarn build</code> as part of our pipeline.</p>
+<p>Run <code class="language-text">yarn test</code> one last time in your command line to make sure that everything still works. If it does then push your code to kick off the CI pipeline. Keep Travis-CI open in your web browser so you can watch the feedback for each CI step. If Travis throws up a bunch of red all over your screen, then it looks like something’s gone wrong. If this is the case, try running everything locally to see if it still works. A common error is using a global package locally that we haven’t explicitly specified in our <code class="language-text">.travis.yml</code> file. This means that Travis won’t have access to it when running the pipeline. Travis normally gives good logging to give clues as to why your pipeline failed, so it’s worth digging through them.</p>
+<p>There are two more sections we need to add to our <code class="language-text">.travis.yml</code> file</p>
+<ul>
+<li>Handling the individual scripts for each package.</li>
+<li>Handling deployment when the pipeline passes.</li>
+</ul>
+<p>We won’t worry about the latter for now, but let’s deal with running scripts for different repos. Because we’re not going to be deploying our <code class="language-text">shared-ui</code> we can skip it from our CI pipeline. We’ll run <code class="language-text">yarn test</code> and <code class="language-text">yarn build</code> for both the blog and the shop.</p>
+<p>We’ll do this by adding a <code class="language-text">matrix</code> step right after the <code class="language-text">install</code> step to the CI pipeline. This <code class="language-text">matrix</code> step will let us specify which packages we want to run the CI pipeline on. We’ll name each matrix and set an environment variables for the package location. We’ll then change the <code class="language-text">script</code> step so Travis moves into the correct directory and runs the <code class="language-text">script</code> step. Delete everything after the <code class="language-text">install</code> step and add the following:</p>
+<div class="gatsby-highlight" data-language="yaml:title=.travis.yml"><pre class="language-yaml:title=.travis.yml"><code class="language-yaml:title=.travis.yml">matrix:
+  include:
+    - name: &quot;Blog Pipeline&quot;
+      env: PACKAGE_LOCATION=packages/blog
+    - name: &quot;Shop Pipeline&quot;
+      env: PACKAGE_LOCATION=packages/shop
+script:
+  - cd $PACKAGE_LOCATION
+  - yarn test
+  - yarn build</code></pre></div>
+<p>Hopefully what I’ve said makes more sense with the code in front of us. The <code class="language-text">script</code> pipeline runs for each step we’ve included in the <code class="language-text">matrix</code>. We’ve also added another step to the <code class="language-text">script</code> section, this is doing nothing more than moving to the directory of the current package. Push the changes again to your repo and open Travis to see your pipeline running. You should now be seeing two build jobs running simultaneously, which means our matrix is working. If everything passes, we’ll move on to deploying our application.</p>
+<h3>Vercel</h3>
+<p>Vercel is a tool created by Vercel that makes the process of deploying Node applications simple. Vercel has recently released updates to the way they deploy static websites. Fortunately our Gatsby packages build to static sites, so it’s a win for us.</p>
+<p>If you haven’t used Vercel before, then go-ahead and <a href="https://vercel.com/home#features">get started</a>. This will install the <code class="language-text">Vercel CLI</code> and get a free account created, things we need for the tutorial. The getting started page also has a brief FAQs section that’s well worth reading.</p>
+<p>Travis-CI isn’t permitted to deploy to your Vercel account by default, and requires a token. You can create a token via the Account Settings page on the Vercel website. Once you’re there click the tokens tab and create a new token. Copy it to your clipboard, as we’ll be adding to the list of variables that Travis uses in our pipelines. Go to your lerna-monorepo repository in Travis and from the ‘More options’ drop down, click ‘settings’. When you’re here, you’ll see a section called ‘environment variables’. Create a new variable called <code class="language-text">VERCEL_TOKEN</code> and paste your Vercel public key as the value. We can now reference the key from within our <code class="language-text">.travis.yml</code> file.</p>
+<p>We’ll add the final part of our pipeline now, which deals with deployment. Make sure your <code class="language-text">.travis.yml</code> file looks like the following, and we’ll run through the additions.</p>
+<div class="gatsby-highlight" data-language="yaml:title=.travis.yml"><pre class="language-yaml:title=.travis.yml"><code class="language-yaml:title=.travis.yml">language: node_js
+node_js:
+  - &quot;10.9.0&quot;
+
+cache: yarn
+
+install:
+  - yarn global add lerna jest vercel
+  - lerna bootstrap
+
+matrix:
+  include:
+    - name: Blog Pipeline
+      env: PACKAGE_LOCATION=packages/blog PACKAGE_NAME=lerna-monorepo-blog
+    - name: Shop Pipeline
+      env: PACKAGE_LOCATION=packages/shop PACKAGE_NAME=lerna-monorepo-shop
+
+script:
+  - cd $PACKAGE_LOCATION
+  - yarn test
+  - yarn build
+
+deploy:
+  provider: script
+  script: vercel public --token $VERCEL_TOKEN
+  skip_cleanup: true
+  app: $PACKAGE_NAME</code></pre></div>
+<p>Note that we’ve added some additional environment variables to our matrix so and them in there. There are huge changes we’ve made to the end of the file so let’s go through them line by line:</p>
+<ul>
+<li>deploy — specifies the step of the pipeline; the deployment step.</li>
+<li>provider — tells the name of the script to run for deployment, in this case it’s ‘script’</li>
+<li>skip_cleanup — we don’t want Travis to get rid of any files made during the build. We created the ‘public’ folder when running the build, so we don’t want Travis to get rid of it.</li>
+<li>app — specifies the name of the application we’re deploying,</li>
+</ul>
+<p>We have to do add a little bit of configuration on our side to ensure that Vercel hosts our sites correctly. The config comes in the form of a <code class="language-text">vercel.json</code> file, which outlines the options we want Vercel to use when deploying our site. Go into the directory for our blog packages and create a <code class="language-text">vercel.json</code> file. We want to let Vercel know that we’re deploying a static site, the entry directory to the static site, and what alias we want to assign our site. Put this inside your <code class="language-text">vercel.json</code> file.</p>
+<div class="gatsby-highlight" data-language="json:title=vercel.json"><pre class="language-json:title=vercel.json"><code class="language-json:title=vercel.json">{
+  &quot;type&quot;: &quot;static&quot;,
+  &quot;alias&quot;: &quot;lerna-monorepo-blog&quot;,
+  &quot;static&quot;: {
+    &quot;public&quot;: &quot;public&quot;
+  },
+  &quot;public&quot;: true,
+  &quot;version&quot;: 1
+}</code></pre></div>
+<p>Note: <code class="language-text">public: true</code> needs to be specified since you’ll most likely have a free Vercel account. Having a publicly facing site is one of the restrictions of the free tier. The entry file to our static site is also called <code class="language-text">public</code> so don’t conflate the two.</p>
+<p>Push these changes to your repo to kick off your build pipeline. If everything was successful then your build will have passed and your site will have deployed. Go to Travis, open up your blog build so you have access to the logs. Scroll right to the bottom to where it says ‘deploying application’ and uncollapse the section. This’ll be the URL that Vercel deployed your site to. It should look something like <code class="language-text">https://buildsjdoe383jd.vercel.app</code>. Copy that url and go back to your command line. Run the following command:</p>
+<p><code class="language-text">vercel alias &lt;your randomly generated URL&gt; &lt;your chosen alias&gt;</code>
+I chose ‘lerna-monorepo-blog’ as my alias, so that one won’t be available for you to use, so choose your own. When you’ve run the command, there will be feedback saying that the alias was successfully created. If not, then it’s likely the command was written incorrectly or the alias is already in use by someone else. Once you’ve added an alias successfully for the blog, do the same for your shop package.</p>
+<p>Even if you push everything forward now the site’s navigation will still be broken. The very last thing we need to do is add our alias URL as an environment variables in our <code class="language-text">.env.production</code> file. In your blog package’s <code class="language-text">.env.production</code> go ahead and add the following:</p>
+<p><code class="language-text">BLOG_URL=https://&lt;your chosen alias&gt;.vercel.app/</code></p>
+<p>Do the same for your shop url, commit and push. Congrats!</p>
+<h3>Thanks for reading!</h3>
+<p>You should now be able to access the site and navigate easily between your shop and your blog. Great job!</p>
+<p>If you enjoyed the article or have any questions, please reach out to me on <a href="https://twitter.com/andricokaroulla?lang=en">Twitter</a>!</p>
+<p>You can find a variety of JavaScript related articles <a href="https://medium.com/@andricokaroulla">here</a></p>
+<p>I’m also running a <a href="https://www.eventbrite.com/e/gatsbyjs-workshop-develop-and-deploy-your-own-blog-tickets-52432622385?aff=GatsbyBlog">Gatsby workshop</a> in London, February 2019.</p>
+<h3>Troubleshooting</h3>
+<p>I’ll be adding to this section as I get feedback or stumble across issues myself.</p>
+<p>If you get an error that says <code class="language-text">lerna: command not found</code> after installing it globally, then install it locally as a project dependency and run it using <code class="language-text">yarn lerna &lt;command&gt;</code>.</p>
+<p>Running your application:</p>
+<p>A lot can go wrong in the first half of the application, so make sure that your files sit in their correct place. Also check you’re importing from the <code class="language-text">shared-ui</code> package correctly.</p>
+<p>My first go to when the application doesn’t work as expected is to run <code class="language-text">lerna clean</code> and <code class="language-text">lerna bootstrap</code>. This clears all of your <code class="language-text">node_modules</code> and reinstalls them.</p>
+<p>You need <code class="language-text">react</code> specified in the package level <code class="language-text">package.json</code> file to run your application. And you’ll also need <code class="language-text">react</code> and <code class="language-text">react-router-dom</code> specified in the top-level <code class="language-text">package.json</code> to run the tests. This left me stumped, and the only logical reason why I think this happens is because Gatsby only seems to look for React in the package level <code class="language-text">node_modules</code> directory, Since the tests are run from the top level, React also needs to exist there.</p>
+<p>My suggestion would be to have the package level react dependency the latest version of React, while the top-level react dependency as version 16.0.0.</p>
+<p>Running the pipeline for your application:</p>
+<p>If your CI pipeline isn’t deploying your site correctly, it can be difficult to distinguish whether or not it’s an issue with Travis or an issue with Vercel. If you can navigate to one of your package directory and run now, and everything’s successful, then it’s likely an issue with your <code class="language-text">.travis.yml</code> file or the way in which your defining your environment variables in Travis. Go over that section one more time to make sure you’ve got it all written as it should be.</p>
+<p>Deploying your application:</p>
+<p>If running the now command in your package throws an error, then make sure you’re logged in to Vercel via the CLI. You can do this via Vercel login. Make sure that your <code class="language-text">vercel.json</code> file points to the correct output of yarn build. It may be your version of Gatsby doesn’t create a build directory called <code class="language-text">public</code> but instead <code class="language-text">dist</code> or <code class="language-text">build</code>.</p>
+<p>Viewing your live application:</p>
+<p>Chances are that you might need to deploy your site more than once before everything works, lord knows I did when writing this application. One thing that tripped me up was client-side caching. Which is something that Vercel does out of the box. It just means that even if you’ve deployed a new version of the site, you might be viewing an older, cached version. If this is the case, open the Chrome/browser dev tools, right-click the reload symbol, and click ‘empty cache and hard reload’.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2018-12-31-how-we-do-high-impact-ux-research/">← <!-- -->How Gatsby does high-impact, low-effort UX research (and you can too!)</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2018-12-19-gatsby-scales-with-expertise-and-scope/">How Gatsby scales with your expertise &amp; scope<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2019-01-01-publish-multiple-gatsby-sites/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

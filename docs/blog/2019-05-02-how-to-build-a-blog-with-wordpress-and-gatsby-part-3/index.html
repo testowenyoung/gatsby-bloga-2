@@ -1,0 +1,669 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">How To Build A Blog with WordPress and Gatsby.js - Part 3 | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Note: This is part two in a series of posts about Gatsby.js and WordPress. You can find Part One here, and Part Two here. In the third part of this series about…"/><meta data-react-helmet="true" property="og:title" content="How To Build A Blog with WordPress and Gatsby.js - Part 3"/><meta data-react-helmet="true" property="og:description" content="Note: This is part two in a series of posts about Gatsby.js and WordPress. You can find Part One here, and Part Two here. In the third part of this series about…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="How To Build A Blog with WordPress and Gatsby.js - Part 3"/><meta data-react-helmet="true" name="twitter:description" content="Note: This is part two in a series of posts about Gatsby.js and WordPress. You can find Part One here, and Part Two here. In the third part of this series about…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2019-05-02-how-to-build-a-blog-with-wordpress-and-gatsby-part-3/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">How To Build A Blog with WordPress and Gatsby.js - Part 3</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">May 02, 2019</p></header><section><blockquote>
+<p>Note: This is part two in a series of posts about Gatsby.js and WordPress. You can find <a href="/gatsby-bloga-2/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1">Part One here</a>, and <a href="/gatsby-bloga-2/blog/2019-04-30-how-to-build-a-blog-with-wordpress-and-gatsby-part-2">Part Two here</a>.</p>
+</blockquote>
+<p>In the third part of this series about WordPress and Gatsby.js, you will be creating pages using templates and components with data from WordPress.</p>
+<p>So far, I’ve talked about what themes and plugins to use for a WordPress backend and why. You have also created a new Gatsby site and set it up to create routes for your blog posts programmatically. You will be using the same skills for some of the things in this post since you probably want to have a default template for your static pages. After that, you’ll create React.js components in the <code class="language-text">/pages</code> directory which will replace the default template for the desired pages, in this case your home page.</p>
+<h2>Creating a page template</h2>
+<p>As you’ll recall from the last post, you should create a page template before adding the <code class="language-text">createPages</code> API to the gatsby-node.js file so it has something to call. To do this, you’ll create a file in the templates directory called PageTemplate.js using the code below:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">touch</span> ./src/templates/Page.js</code></pre></div>
+<p>Just like with the blog post template, you can probably just use a <a href="https://www.iamtimsmith.com/blog/class-components-vs-stateless-functional-components/">stateless functional component</a> for this. Like before, you won’t cover how to create a component in this article, but you can read about <a href="https://www.iamtimsmith.com/blog/how-to-create-a-component/">creating a React.js component here</a>.</p>
+<p>I will go ahead and start off with a generic template again and then fill it out later with the appropriate data. The code below will get a simple template created for us to use for pages for now:</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/templates/page.js"><pre class="language-jsx:title=src/templates/page.js"><code class="language-jsx:title=src/templates/page.js">import React from &quot;react&quot;
+import Layout from &quot;../components/layout&quot;
+
+const PageTemplate = () =&gt; (
+  &lt;Layout&gt;
+    &lt;h1&gt;Page Template&lt;/h1&gt;
+  &lt;/Layout&gt;
+)
+
+export default PageTemplate</code></pre></div>
+<h2>Adding pages to gatsby-node.js</h2>
+<p>Awesome! Now that you have your page template created, you can add pages to the gatsby-node.js file. First, you will import the template just like you did for the BlogPostTemplate. Then you will add the allWordpressPage piece to the GraphQL query. Finally, you will use the <code class="language-text">createPage</code> API to create pages based on the information retrieved from the GraphQL query and use the Page template to build the pages automatically. Below is the finished gatsby-node.js file. See if you can spot the things I mentioned for the pages.</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-node.js"><pre class="language-javascript:title=gatsby-node.js"><code class="language-javascript:title=gatsby-node.js">/**
+ * Implement Gatsby&#39;s Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
+
+// You can delete this file if you&#39;re not using it
+const path = require(`path`)
+
+exports.createPages = async ({ graphql, actions, reporter }) =&gt; {
+  const { createPage } = actions
+  const BlogPostTemplate = path.resolve(&quot;./src/templates/BlogPost.js&quot;)
+  const PageTemplate = path.resolve(&quot;./src/templates/Page.js&quot;)
+
+  const result = await graphql(`
+    {
+      allWordpressPost {
+        edges {
+          node {
+            slug
+            wordpress_id
+          }
+        }
+      }
+      allWordpressPage {
+        edges {
+          node {
+            slug
+            wordpress_id
+          }
+        }
+      }
+    }
+  `)
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  const BlogPosts = result.data.allWordpressPost.edges
+  BlogPosts.forEach(post =&gt; {
+    createPage({
+      path: `/post/${post.node.slug}`,
+      component: BlogPostTemplate,
+      context: {
+        id: post.node.wordpress_id,
+      },
+    })
+
+    const Pages = result.data.allWordpressPage.edges
+    Pages.forEach(page =&gt; {
+      createPage({
+        path: `/${page.node.slug}`,
+        component: PageTemplate,
+        context: {
+          id: page.node.wordpress_id,
+        },
+      })
+    })
+  })
+}</code></pre></div>
+<p>Just like before, you can test this to make sure the pages were created as expected by starting your development server and visiting <code class="language-text">http://localhost:8000/stuff</code> to get a list of all of the available pages. Again, this is only available in a development environment since a live site will show a different 404 page. You should see an <code class="language-text">/about</code> page and a <code class="language-text">/sample-page</code> page in there. If so, your gatsby-node.js file worked and you can update the template to show the data you want.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/07a9c/gatsby1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA7klEQVQoz6WSW4+DIBSE+f+/0PtDH6TWuwKKwpkVtrYxTVZ3d5IvICGTOQ4sDEMkSYI0TRHHMaIoQpZlniAIwDmHExH9yH6HtW2Lqqo81lr8Vbsp67oOjrquMY4jhBCevu/9t1LqhZTSr9M0Hc611u+ETdPApdyNdlO3OgNjzCn7ZN6Q5znKsvzXuIeRhQRmn5hOf/ylUspCYdGf6ejV7DHBmVjzGNCVElotGxqTmKHG+Wn5Tn5V7H5fkMQreL7iURgMvYGeDZaFsK7HcS4ZFsWK281uTdP2dGh7LrQ1TBiG770xvzS0luC40uAVfQEWB2A43sadngAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="See a list of available pages"
+        title="See a list of available pages"
+        src="/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/fcda8/gatsby1.png"
+        srcset="/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/12f09/gatsby1.png 148w,
+/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/e4a3f/gatsby1.png 295w,
+/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/fcda8/gatsby1.png 590w,
+/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/efc66/gatsby1.png 885w,
+/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/c83ae/gatsby1.png 1180w,
+/gatsby-bloga-2/static/4fd290679c03fff8956938069cfc5ab9/07a9c/gatsby1.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Updating the page template</h2>
+<p>Since you have your page routes set up, you can start adding to the template. This will look very similar to the BlogPost.js file with only a few differences. In your blog, you aren’t going to have a featured image for static pages, so you can go ahead and leave that piece out of the query. You also don’t need a date or author for the pages since they don’t change. Essentially all you’ll need is a title and content along with an excerpt for the SEO component.</p>
+<p>The end result is a basic component as shown below:</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/templates/page.js"><pre class="language-jsx:title=src/templates/page.js"><code class="language-jsx:title=src/templates/page.js">import React from &quot;react&quot;
+import { graphql } from &quot;gatsby&quot;
+import Layout from &quot;../components/layout.js&quot;
+import SEO from &quot;../components/seo&quot;
+
+const PageTemplate = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;SEO
+      title={data.wordpressPage.title}
+      description={data.wordpressPage.excerpt}
+    /&gt;
+    &lt;h1&gt;{data.wordpressPage.title}&lt;/h1&gt;
+    &lt;div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} /&gt;
+  &lt;/Layout&gt;
+)
+
+export default PageTemplate
+
+export const query = graphql`
+  query($id: Int!) {
+    wordpressPage(wordpress_id: { eq: $id }) {
+      title
+      excerpt
+      content
+    }
+  }
+`</code></pre></div>
+<p>I mentioned at the end of <a href="/gatsby-bloga-2/blog/2019-04-30-how-to-build-a-blog-with-wordpress-and-gatsby-part-2">part two</a> that configuring the gatsby-node.js file is probably the most difficult part of this whole thing. Since you worked your way through that already and understand how it works, setting up another content type was cake, right?</p>
+<p><a href="https://giphy.com/gifs/reaction-office-space-that-was-easy-zcCGBRQshGdt6">https://giphy.com/gifs/reaction-office-space-that-was-easy-zcCGBRQshGdt6</a></p>
+<p>Now if you visit the about page at <code class="language-text">http://localhost:8000/about</code>, you can see the data coming in from WordPress. If you inspect the page and look at the head, you can also see that the title and meta tags are being updated in the head because of the SEO component!</p>
+<h2>Creating pages in the pages directory</h2>
+<p>Gatsby provides some awesome out-of-the-box routing. Anything you create in the <code class="language-text">/pages</code> directory will automatically create a route for you. For instance, if you were to create a file called <code class="language-text">gatsby-is-awesome.js</code>, Gatsby.js would see that and create a route called <code class="language-text">http://localhost:8000/gatsby-is-awesome</code>.</p>
+<p>You can also see that the starter default comes with a few pages already in the <code class="language-text">/pages</code> directory. The index page is what will show when a user visits <code class="language-text">http://localhost:8000/</code>. There is also a file called page-2.js which is just a simple page to show how linking works. Finally, there is a 404.js available which is the 404 page that shows when your Gatsby site is live.</p>
+<p>Since you want your blog to show up on the homepage, you can edit the file called <code class="language-text">index.js</code> to do this. Let’s take a look at this file before you make any changes:</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/pages/index.js"><pre class="language-jsx:title=src/pages/index.js"><code class="language-jsx:title=src/pages/index.js">import React from &quot;react&quot;
+import { Link } from &quot;gatsby&quot;
+
+import Layout from &quot;../components/layout&quot;
+import Image from &quot;../components/image&quot;
+import SEO from &quot;../components/seo&quot;
+
+const IndexPage = () =&gt; (
+  &lt;Layout&gt;
+    &lt;SEO title=&quot;Home&quot; keywords={[`gatsby`, `application`, `react`]} /&gt;
+    &lt;h1&gt;Hi people&lt;/h1&gt;
+    &lt;p&gt;Welcome to your new Gatsby site.&lt;/p&gt;
+    &lt;p&gt;Now go build something great.&lt;/p&gt;
+    &lt;div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}&gt;
+      &lt;Image /&gt;
+    &lt;/div&gt;
+    &lt;Link to=&quot;/page-2/&quot;&gt;Go to page 2&lt;/Link&gt;
+  &lt;/Layout&gt;
+)
+
+export default IndexPage</code></pre></div>
+<p>You are going to remove everything after the SEO tag but before the closing Layout tag and replace it with your own stuff. You can also use a query pretty similar to the one in the blog post template except for the content piece. You can just use the excerpt provided by the WordPress API.</p>
+<p>To keep things basic, you’ll just create a list of recent blog posts with an image, title, author, date, and excerpt. Each of the items in this list should link to the individual blog post for readers. Below is the code to create this layout. It’s pretty straightforward and looks very similar to your blog post template with the exception of the map function which iterates over the items in an array.</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/pages/index.js"><pre class="language-jsx:title=src/pages/index.js"><code class="language-jsx:title=src/pages/index.js">import React from &quot;react&quot;
+import { graphql, Link } from &quot;gatsby&quot;
+import Img from &quot;gatsby-image&quot;
+
+import Layout from &quot;../components/layout&quot;
+import SEO from &quot;../components/seo&quot;
+
+const IndexPage = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;SEO title=&quot;Home&quot; keywords={[`gatsby`, `application`, `react`]} /&gt;
+    &lt;ul style={{ listStyle: &quot;none&quot; }}&gt;
+      {data.allWordpressPost.edges.map(post =&gt; (
+        &lt;li style={{ padding: &quot;20px 0&quot;, borderBottom: &quot;1px solid #ccc&quot; }}&gt;
+          &lt;Link
+            to={`/post/${post.node.slug}`}
+            style={{ display: &quot;flex&quot;, color: &quot;black&quot;, textDecoration: &quot;none&quot; }}
+          &gt;
+            &lt;Img
+              sizes={post.node.acf.feat_img.localFile.childImageSharp.sizes}
+              alt={post.node.title}
+              style={{ width: &quot;25%&quot;, marginRight: 20 }}
+            /&gt;
+            &lt;div style={{ width: &quot;75%&quot; }}&gt;
+              &lt;h3
+                dangerouslySetInnerHTML={{ __html: post.node.title }}
+                style={{ marginBottom: 0 }}
+              /&gt;
+              &lt;p style={{ margin: 0, color: &quot;grey&quot; }}&gt;
+                Written by {post.node.author.name} on {post.node.date}
+              &lt;/p&gt;
+              &lt;div dangerouslySetInnerHTML={{ __html: post.node.excerpt }} /&gt;
+            &lt;/div&gt;
+          &lt;/Link&gt;
+        &lt;/li&gt;
+      ))}
+    &lt;/ul&gt;
+  &lt;/Layout&gt;
+)
+
+export default IndexPage
+
+export const query = graphql`
+  query {
+    allWordpressPost {
+      edges {
+        node {
+          title
+          excerpt
+          slug
+          author {
+            name
+          }
+          date(formatString: &quot;MMMM DD, YYYY&quot;)
+          acf {
+            feat_img {
+              localFile {
+                childImageSharp {
+                  sizes(maxWidth: 600) {
+                    ...GatsbyImageSharpSizes
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`</code></pre></div>
+<p>And here’s what it looks like when you visit the homepage of your blog:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/07a9c/gatsby2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACE0lEQVQoz3WRS2sTYRSG83M01a3SX6BFKW5EKGqsC0FaFBdVG8SFG1eiYhuQdKPWuLMuihTrQhNHsSCteAmZTJ1M5p7bTKchc+nMvH7fJxMmVQ88nLmc83LOezK57AIujC3i3IFHmBlfwq3JEuYnniJ/Yhk3JpYxf7KEy0eLyB1cwPShwpBcdhG0dz+ZT6s1JHxeq+PjuojKWxUcyRtv6gQe3GoV5Vc/UCGUV74zWP3rOtL9lAxSsUfIf41x/QOP299iNFsGJHkbsiZB0SVopgzVaJJ3EbsDm1RH2B+ZMIwQ7pEfUQTLjXHxnY/plxwuvfch6R0oUhPNpgypIUFVVJiGCUM3oesGFFmF53qIwphpUC02YRzHTD0IQ2z8klEWTJbtnR3Ytg3LstDr9eA4DgaDAVzXZQRBgKQ/0RgR9P0Bnt87jQczR1C6fwbV6k9sbm2RXIWiKGi32zBNE51OB61WC/1+/3+Cf7ywrTbOH89i7tRhksewLdTQIKs2RBGyTPxTVWiaxsR1XWfPvu8jPdTIhI6zi2eFx6isvMCT4hJp0Nk0dDJKt9tlKyd4njfs/adgELi4W7yJ/MNZFO5cha6pMAyDQSeiaya16Uh/GxHsEfPPzh7DlWvjmJuaQp0XUKvVwPM8BEEg6zeGSJIEkViR9vEvQdfz8aXMQSyvg+M2yZUdduEEuiK9LIV6R4miaETwN8XjBbgvKT6zAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Finished blog home page"
+        title="Finished blog home page"
+        src="/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/fcda8/gatsby2.png"
+        srcset="/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/12f09/gatsby2.png 148w,
+/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/e4a3f/gatsby2.png 295w,
+/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/fcda8/gatsby2.png 590w,
+/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/efc66/gatsby2.png 885w,
+/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/c83ae/gatsby2.png 1180w,
+/gatsby-bloga-2/static/3f887c362141374a087a1fa0107660d3/07a9c/gatsby2.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>It’s looking pretty good so far. You’re getting pretty close to being done, you just have a few more things to change and you’re ready to start blogging!</p>
+<p><a href="https://giphy.com/gifs/twitter-file-maximum-qLWdMYX1NYF2g">https://giphy.com/gifs/twitter-file-maximum-qLWdMYX1NYF2g</a></p>
+<h2>Changing the header component</h2>
+<p>One of the first things I notice about the blog pictured above is the header. It doesn’t look bad, but you probably don’t want your blog to say “Gatsby Default Starter”. There are a few ways you can change this, which I’ll go over real quick.</p>
+<h3>In the gatsby-config.js file</h3>
+<p>In the gatsby-config.js file, you can see a piece at the top called <code class="language-text">siteMetadata</code> with a title, description, and author. This is where some basic information is kept about the project for the SEO component, but also for the site name.</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  siteMetadata: {
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
+  },
+  plugins: [ ... ],
+}</code></pre></div>
+<p>The title you’re seeing in the header comes from the title listed here. You can change it to whatever you’d like your site to be called. Usually when building a WordPress site, I get all of my data for this from WordPress but in the case of a site using markdown or something different you may want to use the stuff located here.</p>
+<h3>In the header component</h3>
+<p>Since you are building a blog using WordPress and want your users to have full control over the data, you should get your site name from WordPress so if it ever changes the user can update it. Fortunately, WordPress makes this available to us through the API, so you can query it in GraphQL like so:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/07a9c/gatsby3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAA2ElEQVQoz7WT6w6CMAxGef/HNEJAdmc3QPa5IQozkBASS062H+tpga4oywpN80BLKAghEEJAKZUhI4wySCniXoLHMxlcgDGOpqUoOm3QCAtle0whIEVY1k+E+NCW41ZR1HcKJToYbVesm7HOo7DO4TlNa/JGFjYFhNKoqQInCpp10LxbVg1j3rIkLYZh+CbtkWKKBbUx8L6H63tY73MW2aFwr0Nt0qutib8cdph9u6xDm3WS9ntcEh7J/ic8+iGXhOM44kycFs43Qco4S2ks/C4uzmoamzPCF8etW5bMSBuNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GraphQL query to get siteName from WordPress"
+        title="GraphQL query to get siteName from WordPress"
+        src="/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/fcda8/gatsby3.png"
+        srcset="/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/12f09/gatsby3.png 148w,
+/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/e4a3f/gatsby3.png 295w,
+/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/fcda8/gatsby3.png 590w,
+/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/efc66/gatsby3.png 885w,
+/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/c83ae/gatsby3.png 1180w,
+/gatsby-bloga-2/static/4c44510a02636cd6249be5c0e49b4a60/07a9c/gatsby3.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Using queries works a bit differently inside of components. Rather than just writing a query which drops data into your page or template, you have to use a new component called <code class="language-text">StaticQuery</code> which is designed specifically for using queries inside of components.</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/components/header.js"><pre class="language-jsx:title=src/components/header.js"><code class="language-jsx:title=src/components/header.js">import { Link } from &quot;gatsby&quot;
+import PropTypes from &quot;prop-types&quot;
+import React from &quot;react&quot;
+
+const Header = ({ siteTitle }) =&gt; (
+  &lt;header
+    style={{
+      background: `rebeccapurple`,
+      marginBottom: `1.45rem`,
+    }}
+  &gt;
+    &lt;div
+      style={{
+        margin: `0 auto`,
+        maxWidth: 960,
+        padding: `1.45rem 1.0875rem`,
+      }}
+    &gt;
+      &lt;h1 style={{ margin: 0 }}&gt;
+        &lt;Link
+          to=&quot;/&quot;
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        &gt;
+          {siteTitle}
+        &lt;/Link&gt;
+      &lt;/h1&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+)
+
+Header.propTypes = {
+  siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+  siteTitle: ``,
+}
+
+export default Header</code></pre></div>
+<p>If you take a quick look at the existing header component, you will see that a site-title is being passed in as a prop which is then used to display the site title from <code class="language-text">gatsby-config.js</code> in the header. What you are going to do is use the <code class="language-text">StaticQuery</code> component provided by Gatsby and use a query prop to run your query and then a render prop to actually render out your component like you normally would. You can see below how you do this in code:</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/components/header.js"><pre class="language-jsx:title=src/components/header.js"><code class="language-jsx:title=src/components/header.js">import { StaticQuery, graphql, Link } from &quot;gatsby&quot;
+import React from &quot;react&quot;
+
+const Header = () =&gt; (
+  &lt;StaticQuery
+    query={graphql`
+      query {
+        wordpressSiteMetadata {
+          name
+        }
+      }
+    `}
+    render={data =&gt; (
+      &lt;header
+        style={{
+          background: `rebeccapurple`,
+          marginBottom: `1.45rem`,
+        }}
+      &gt;
+        &lt;div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1.45rem 1.0875rem`,
+            display: `flex`,
+            justifyContent: `space-between`,
+            alignItems: `center`,
+          }}
+        &gt;
+          &lt;h1 style={{ margin: 0 }}&gt;
+            &lt;Link
+              to=&quot;/&quot;
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            &gt;
+              {data.wordpressSiteMetadata.name}
+            &lt;/Link&gt;
+          &lt;/h1&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+    )}
+  /&gt;
+)
+
+export default Header</code></pre></div>
+<p>The header component above looks a little different than it originally did, but as you start to dig into it a bit more you can see it hasn’t changed much. You essentially just wrapped your header in the StaticQuery component and then ran your query inside of that component to give the header the necessary data.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/07a9c/gatsby4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz32RzWvTcBjH+1949G/w7eDRi+JBPHlxIB7my0EQD6I33WHbZXoTiqCIL6DInA60TIuda8FN+kLRQbq0tE3SdMmSvqy2tFuTj/klRrrq/MGH50nI8833+3silw5HCZk8FOXWqafcPfuC6XMvvf4Zl4885MrRvYh34tvR2ZDIRlZHUMjoFL2ay2yytGoT/9YgvaaQWZbIrsjkkgGZLwXyqRKlvIGc22QjE8yHRBg7ny2Y+LDOZLzEx2qXuiqj1KooWgVNV1C9XtRm28Zhd3yciDN0EOwOXe/RIb0Fs7kBc/kdsvUdOg0Lc8vCMExsu0G7vU27tU2j0aTb7eE6LqGG4I9D13H8amjfWXo1Q+LtPYrSGqVShWqlgmmatFotT7BNp9PxxLrBnOvudRg2w2FgPxF7ztWTB7h+5iCxd08oeoKFgoSiKNRqNTRN86uu675wKBoKjwgO/ZpMLPN4dopHc9OkkinPyU8sy/JpNpu+w5DBYLC/oPM78g8pzVT0Jg/u3yb7dQXTE6rXdd+ViDx+/hM5cBj7tMjEtWPcuHCa+OJ7KkoVSZKQZZlyuYyqqn5scQW2be/vUGxLHEXVWV9OkEmuUlbqXrRgEb1ez//pKCJVKPSPOwyW8mZhgTvnjzNz8QSv5+f9qIZh+AsQCGGxYUG/3//L4S/DNg1q28hZowAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Your Gatsby.js blog after updating the header component"
+        title="Your Gatsby.js blog after updating the header component"
+        src="/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/fcda8/gatsby4.png"
+        srcset="/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/12f09/gatsby4.png 148w,
+/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/e4a3f/gatsby4.png 295w,
+/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/fcda8/gatsby4.png 590w,
+/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/efc66/gatsby4.png 885w,
+/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/c83ae/gatsby4.png 1180w,
+/gatsby-bloga-2/static/a028b4271a078e09c245549d1204a402/07a9c/gatsby4.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Adding a Menu to the Header</h3>
+<p>Let’s take it a step further and say your user wants a menu in the header that he or she can update from WordPress. If you’ll recall in the <a href="/gatsby-bloga-2/blog/2019-04-26-how-to-build-a-blog-with-wordpress-and-gatsby-part-1">first part of this series</a>, I mentioned a plugin called WP API Menus which will make your menus available in the Rest API.</p>
+<p>When you were setting your gatsby-config.js file in the <a href="/gatsby-bloga-2/blog/2019-04-30-how-to-build-a-blog-with-wordpress-and-gatsby-part-2">second part of the series</a>, you just stuck with the default routes provided in the gatsby-source-wordpress docs. The WP API Menus plugin creates a few new routes for those endpoints, so the first thing you need to do is add these endpoints to the gatsby-config.js file.</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  siteMetadata: {
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
+  },
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: &quot;gatsby-source-wordpress&quot;,
+      options: {
+        // I have created a dummy site for us to use with the plugins we discussed
+        baseUrl: &quot;using-wordpress-with-gatsby.iamtimsmith.com&quot;,
+        protocol: &quot;https&quot;,
+        hostingWPCOM: false,
+        // We will be using some advanced custom fields
+        useACF: true,
+        acfOptionPageIds: [],
+        verboseOutput: false,
+        perPage: 100,
+        searchAndReplaceContentUrls: {
+          sourceUrl: &quot;https://www.using-wordpress-with-gatsby.iamtimsmith.com&quot;,
+          replacementUrl: &quot;https://localhost:8000&quot;,
+        },
+        // Set how many simultaneous requests are sent at once.
+        concurrentRequests: 10,
+        includedRoutes: [
+          &quot;**/categories&quot;,
+          &quot;**/posts&quot;,
+          &quot;**/pages&quot;,
+          &quot;**/media&quot;,
+          &quot;**/tags&quot;,
+          &quot;**/taxonomies&quot;,
+          &quot;**/users&quot;,
+          &quot;**/*/*/menus&quot;, // &lt;== Menu api endpoint
+          &quot;**/*/*/menu-locations&quot;, // &lt;== Menu api endpoint
+        ],
+        excludedRoutes: [],
+        normalizer: function ({ entities }) {
+          return entities
+        },
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // &#39;gatsby-plugin-offline&#39;,
+  ],
+}</code></pre></div>
+<p>If you look at the code above, you’ll notice you have added two new routes to the gatsby-source-wordpress. These routes are created automatically by the plugin inside of WordPress without any additional configuration. Remember, after making changes to files outside of the src folder, you need to restart your development server by running <code class="language-text">gatsby develop</code>. After restarting, you can visit <code class="language-text">http://localhost:8000/___graphql</code> and query for the menu information, which will look like the screenshot below.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/07a9c/gatsby6.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABGUlEQVQoz42TW26DMBBF2f9CupP+dgetWjVRlDiMH8E2YMzt2MSRS0mFpaMRoDm6jO3mcDxCXC6Q1EIIAWoljNLQWsMYk9EMtQStFJRmuEqZkHcUiCTOokVjncOH8PikALIBow+Y3IgpBJQ1zzNaQfg+ES50w1V16KyD8z2s8w/Sc+NY+Pqu8PKm8SWnRVCJSk2Cg1A4s9SQgeVm5/osKSRpMwwDt0Qm5JocSVBIK3K11nI6w+NR6E4StvubMAvHccyJYhYt+e6eXwm1uXFKjy412oUirFNmYWmqBXWNMT5mtv7F9btNIZ7McGsTdiVcC+uEtWyLZYbVJqzZEj6TZWGoztt/a7cw3wS+FelY9H2/ife8u/x9j/AHeUxZqZ4DFV4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GraphiQL query to get menu items from WordPress"
+        title="GraphiQL query to get menu items from WordPress"
+        src="/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/fcda8/gatsby6.png"
+        srcset="/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/12f09/gatsby6.png 148w,
+/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/e4a3f/gatsby6.png 295w,
+/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/fcda8/gatsby6.png 590w,
+/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/efc66/gatsby6.png 885w,
+/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/c83ae/gatsby6.png 1180w,
+/gatsby-bloga-2/static/b67ad819a89f248f60e647db2ded39c2/07a9c/gatsby6.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The final step is to add this query into your static query and create the menu itself in the header component. You can just drop this in under the <code class="language-text">wordpressSiteMetadata</code> piece. Once you have it added into the query, you can just use a <code class="language-text">map()</code> function to iterate over the menu items and create it dynamically, allowing the user to update it through WordPress. Doing it this way does require us to specify which menu you want, so you need the name of the menu which is set in WordPress. In this case, your menu is called Main Menu so you will use that in your query.</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/components/header.js"><pre class="language-jsx:title=src/components/header.js"><code class="language-jsx:title=src/components/header.js">import { StaticQuery, graphql, Link } from &quot;gatsby&quot;
+import React from &quot;react&quot;
+
+const Header = () =&gt; (
+  &lt;StaticQuery
+    query={graphql`
+      query {
+        wordpressSiteMetadata {
+          name
+        }
+        wordpressWpApiMenusMenusItems(name: { eq: &quot;Main Menu&quot; }) {
+          items {
+            title
+            object_slug
+          }
+        }
+      }
+    `}
+    render={data =&gt; (
+      &lt;header
+        style={{
+          background: `rebeccapurple`,
+          marginBottom: `1.45rem`,
+        }}
+      &gt;
+        &lt;div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `1.45rem 1.0875rem`,
+            display: `flex`,
+            justifyContent: `space-between`,
+            alignItems: `center`,
+          }}
+        &gt;
+          &lt;h1 style={{ margin: 0 }}&gt;
+            &lt;Link
+              to=&quot;/&quot;
+              style={{
+                color: `white`,
+                textDecoration: `none`,
+              }}
+            &gt;
+              {data.wordpressSiteMetadata.name}
+            &lt;/Link&gt;
+          &lt;/h1&gt;
+          &lt;ul style={{ listStyle: `none`, display: `flex`, margin: 0 }}&gt;
+            {data.wordpressWpApiMenusMenusItems.items.map(item =&gt; (
+              &lt;li key={item.object_slug} style={{ margin: `0 10px` }}&gt;
+                &lt;Link
+                  to={`/${item.object_slug}`}
+                  style={{
+                    color: `white`,
+                    textDecoration: `none`,
+                    fontFamily: `sans-serif`,
+                  }}
+                &gt;
+                  {item.title}
+                &lt;/Link&gt;
+              &lt;/li&gt;
+            ))}
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+    )}
+  /&gt;
+)
+
+export default Header</code></pre></div>
+<p>That’s a good looking component! Let’s see what it looks like when you visit the site:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/07a9c/gatsby7.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACIElEQVQoz3WRy2sTURTG8+doo90oSv8CFTfdiFCkNRUCalFcVEpAF25ciYo1EtKNz+5aF1aUdqGJqVWRFq3GTKedTCbzymumY8w8OjOf916dMvFx4ce593LOx3fOSYwNTON08i5G99zB2cN5ZI4/wtSxB7gyPItzQzMY2zuN1L4sy0klf8Uzg/eQPpBD+mAO44NZUI2IxNtnFUS8e7GB0qKA4pKM5SUBywvfUHj6BcXf0Hthfp3Edaw85/Dh5SZWFjjENRKInR1C5lOIy284XP0cQmrqkOQt1FWRUIWiS5C1GmqKAOuHQbJ9/HkSvh/A3wmAIIBhhxh/5SI1V0L6tQtRbUESRdRqEsSqCLkuQ9d0aCpFQ528HdtB4IdMg2oxh2EYMnXP9/F+S0KB11k0t7dhmiYMw0Cn04FlWej1erBtm+F5HqL6SKNP0HV7eHzjBG6dP4QnN0+iXP6K1bU1EsvETR3NZhO6rqPVaqHRaKDb7f5PMGAP02hi9OgAJof3k5jEJl9BlbRaFQRIEpmfLENRFCauqiq7u66LuKk+h5b1HQ+zORTnZ3E/P0MKVOaGOqO0223WcoTjOLu1/xT0PBvX81PI3J5A9tpFqIoMTdMY1BFtM8qNn/hfn2CHDP/UxBFcuDSEyZERbHA8KpUKOI4Dz/Ok/eouItm+QEYRn+Nfgrbj4mOhBKGwiFJplWzZYhuOoC3SzVLo7ChBEPQJ/gRdYAVNzavdhQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Blog after adding menu to header"
+        title="Blog after adding menu to header"
+        src="/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/fcda8/gatsby7.png"
+        srcset="/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/12f09/gatsby7.png 148w,
+/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/e4a3f/gatsby7.png 295w,
+/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/fcda8/gatsby7.png 590w,
+/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/efc66/gatsby7.png 885w,
+/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/c83ae/gatsby7.png 1180w,
+/gatsby-bloga-2/static/c9a3761bf130b14a5e780795acb4fe0f/07a9c/gatsby7.png 1440w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Wrapping up</h2>
+<p>Well done! You now have a functioning blog using WordPress and Gatsby. There are more things you can do to add custom functionality such as custom post types, galleries, and more, but this is enough to get you started for now. As you’ve seen, this stack is the best of both worlds since clients and users get the awesome experience of content creating with WordPress and as a developer you can leverage the amazing capabilities of Gatsby. As usual, go forth and make the internet a better place to be!</p>
+<p>The <a href="https://github.com/iamtimsmith/building-a-blog-with-wordpress-and-gatsby">code for this post</a> can be found on GitHub.</p>
+<p>If you have any thoughts or questions, you can find me on Twitter at <a href="https://twitter.com/iam_timsmith">@iam_timsmith</a>!</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2019-04-30-how-to-build-a-blog-with-wordpress-and-gatsby-part-2/">← <!-- -->How To Build A Blog with WordPress and Gatsby.js - Part 2</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2019-05-02-growing-housecall-pro-by-973-percent/">Growing Housecall Pro by 973% with Gatsby<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2019-05-02-how-to-build-a-blog-with-wordpress-and-gatsby-part-3/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

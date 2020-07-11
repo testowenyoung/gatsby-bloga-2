@@ -1,0 +1,914 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Building a static blog using Gatsby and Strapi | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="(Article updated on 20 March 2019. This updates the tutorial code examples. We added videos with additional explanations to each section.)  A static website…"/><meta data-react-helmet="true" property="og:title" content="Building a static blog using Gatsby and Strapi"/><meta data-react-helmet="true" property="og:description" content="(Article updated on 20 March 2019. This updates the tutorial code examples. We added videos with additional explanations to each section.)  A static website…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Building a static blog using Gatsby and Strapi"/><meta data-react-helmet="true" name="twitter:description" content="(Article updated on 20 March 2019. This updates the tutorial code examples. We added videos with additional explanations to each section.)  A static website…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/2018-1-18-strapi-and-gatsby/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Building a static blog using Gatsby and Strapi</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 18, 2018</p></header><section><p>(Article updated on 20 March 2019. This updates the tutorial code examples. We added videos with additional explanations to each section.)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/1ff84/gatsby-strapi.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.64864864864865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACIUlEQVQoz13SWU8TURjG8X431NgdmulMREAWo9UrBSHaMp3uYikUii1doJ0ZurdgSNTExCtvjMbo1/Hu79uW1Yvn8vzyPOccx6ozx5prhzVnng3XPmv3CqzeKbBxvygp8dpZJuyqEXEdoXvqRD0mhsci7jsh4WuS8LZIejukPF1JD8eb6QLhwHs2FTnsK7IdMjl40SIzb5NdbpFdarM13yK31GP7UY/cQp/sXI+4dwSOsPZtUNeK6NohhlZmc6ZM7lmD4kuL3ad99p8PyIcGZBc77D0Zkl8ZchD6QH75VMDmDXCCpTx9HJtqCV09JBosY6hVaXnIurPEhiTsrpJUBX/cl7kNou5RzHG7pGCJ/9ql3QLqAkYFNNSKoFW5y31eOQtEpisYgTqxQIOUekLMb0qsMRiZqhN3NwUV0HMJ9gUc4Jhgk3a6UqW0fko9+pG42hhjUX8d3Vu/wnZl7nnpJ9sPh8RdLVLe63bXoFYRrEJmweJr5wffzn+zG5KZgqUfNNma7RCftoncPeaL+Ye/wCD3HX3KJu3rXYADyXAETtoZWg1DqVENn2OlPhP2VYgr5nhuSpUHmLHRnQ32Vs74VP7FztyZNGxLw97V3AuwMgZj2hEx9Vha2rxbFCBoklAskootOSGtyJ3NSPzyhWYHpPxdub+bc4dkXKc4DG2E1QSbgEnNlNjSzhJ00i4dlH8ZbPM22CGjdMkEBPJ1bz3GJfgPILPyPRKA/2cAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Showing the idea of using Gatsby with Strapi"
+        title="Showing the idea of using Gatsby with Strapi"
+        src="/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/fcda8/gatsby-strapi.png"
+        srcset="/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/12f09/gatsby-strapi.png 148w,
+/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/e4a3f/gatsby-strapi.png 295w,
+/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/fcda8/gatsby-strapi.png 590w,
+/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/efc66/gatsby-strapi.png 885w,
+/gatsby-bloga-2/static/9e6f317c7bce6b5174a68584ebe61e80/1ff84/gatsby-strapi.png 1040w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>A static website contains Web pages with fixed content. Technically, it is a simple list of HTML files, which displays the same information to every visitor. Unlike dynamic websites, they do not require any backend programming or database. Publishing a static website is easy: the files are uploaded on a simple Web server or storage provider. The two main advantages of static websites are security and speed: there is no database so it can not be hacked and there is no need to render a page for each request, which makes Web browsing faster.</p>
+<p>To make their creation easier, numerous open-source static websites generators are available: <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://gohugo.io/">Hugo</a>, <a href="https://hexo.io/">Hexo</a>, etc. Most of the time, the content is managed through static (ideally Markdown) files or a Content API. Then, the generator requests the content, injects it in templates defined by the developer and generates a bunch of HTML files.</p>
+<p>Progressive Web Apps (PWA) are web applications, highly based on JavaScript, and are <a href="https://developers.google.com/web/progressive-web-apps/">reliable, fast and engaging</a>. Since they make web browsing much faster and offer a better user experience, PWA have become the default way to build Web interfaces. Thus, many amazing frontend frameworks appeared over the last couple years: Angular, React and more recently, Vue.</p>
+<blockquote>
+<p>Gatsby: when static websites meet Progressive Web Apps</p>
+</blockquote>
+<p>Both static websites and PWAs have strong advantages which make us crave for a way to use them together in the same project! Luckily, we have tools that bridge the gap between them and the one we recently heard of is definitely Gatsby. So, we decided to give you a complete example of how to get started with Gatsby. A static website needs a source of content: in this example we will deliver it using an API built with Strapi.</p>
+<h2>What is Gatsby?</h2>
+<p><a href="/gatsby-bloga-2/">Gatsby</a> is a <em>blazing-fast <strong>website framework</strong> for React</em>. It allows developers to build React based websites within minutes. Whether you want to develop a blog or a corporate website, Gatsby will fill your needs.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/f56c3/logo-gatsby.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2AXB/8QAGBAAAgMAAAAAAAAAAAAAAAAAABMBI0H/2gAIAQEAAQUCljLDP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAEFAAAAAAAAAAAAAAAAAAACECExMv/aAAgBAQAGPwKMlJb/xAAZEAADAAMAAAAAAAAAAAAAAAAAESEBMeH/2gAIAQEAAT8hhiR9hho9n//aAAwDAQACAAMAAAAQ+A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxBZ/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFBkaH/2gAIAQEAAT8Q3DsE7Xu4mFNW87fkaQhTIN0z/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The Gatsby Logo"
+        title="The Gatsby Logo"
+        src="/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/1c72d/logo-gatsby.jpg"
+        srcset="/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/a80bd/logo-gatsby.jpg 148w,
+/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/1c91a/logo-gatsby.jpg 295w,
+/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/1c72d/logo-gatsby.jpg 590w,
+/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/a8a14/logo-gatsby.jpg 885w,
+/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/fbd2c/logo-gatsby.jpg 1180w,
+/gatsby-bloga-2/static/0603eb9dd6bdfec9599dbc7590f891be/f56c3/logo-gatsby.jpg 2128w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Because it is based on React, the website pages are never reloaded which makes the generated website super fast. A large set of plugins is available allowing developers to save time coding. For example, plugins exist to get data from any source (Markdown files, CMS, etc.). Gatsby is strongly based on the <a href="/gatsby-bloga-2/docs/node-interface/">“node” interface</a>, which is the center of Gatsby’s data system.</p>
+<p>Created by <a href="https://twitter.com/kylemathews">Kyle Mathews</a>, the project was officially <a href="/gatsby-bloga-2/blog/gatsby-v1/">released in July 2017</a>. (As of February 2019, <a href="https://github.com/gatsbyjs/gatsby/blob/master/README.md">Gatsby is in Gatsby v2</a> and is now <a href="/gatsby-bloga-2/showcase/">used by many companies and for hundreds of websites</a>.</p>
+<h2>What is Strapi?</h2>
+<p><a href="https://strapi.io">Strapi</a> is an <em>open source <strong>Headless CMS Frontend Developers Love</strong></em>. It’s more than a <a href="https://strapi.io/overview">Node.js Framework and more than a Headless CMS</a>, it saves weeks of API development time, and allows easy long-term content management through a beautiful administration panel <em>anyone can use</em>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/321ea/logo-strapi.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsSAAALEgHS3X78AAABGklEQVQY02P4DwP//oEQQfAPSREDLkV//vz5+/cvUCmQhrAhAFkNVPOfv//vv/hz8/Hv91/+wY3/8fPnr1+/0Qy9e+8BUBSh+c+ff9ce/L5w9/eVB79PXf/14ev/b9++rN+4tad/ysQpMzdu3r5n74HtO/fs3LV3zbpN8xYu/fz5M1QzxAdAa28/+fPt579TN35+/Pr/8+eP6TnFJeW1Ta3dzW0902bOdXYPKKtqyC+uTEjJ/vLlK8R1DBD///j17+T1X5fu/T5zE+Sk379/Hz124vKVawcPHQW689Tps3v2Haypb927/9CtW3d+/vyJcDZE//O3f+8/BwYN9uAFku/evf+HGh8MWKMKSEPCFhjK/yCMP6BwRgtwAGX/uiDXFvaBAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The Strapi Logo"
+        title="The Strapi Logo"
+        src="/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/fcda8/logo-strapi.png"
+        srcset="/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/12f09/logo-strapi.png 148w,
+/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/e4a3f/logo-strapi.png 295w,
+/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/fcda8/logo-strapi.png 590w,
+/gatsby-bloga-2/static/f97dc5a8f4e25750908989b064a3ea40/321ea/logo-strapi.png 786w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Thanks to its extensible plugin system, it provides a large set of built-in features: Admin Panel, Authentication &#x26; Permissions management, Content Management, API Generator, etc.</p>
+<p>Unlike other CMSs, <strong>Strapi is 100% open-source</strong>, which means:</p>
+<ul>
+<li><strong>Strapi is completely free</strong>.</li>
+<li>You can <strong>host it on your own servers</strong>, so you own the data.</li>
+<li>It is entirely <strong>customizable and extensible</strong>, thanks to the plugin system.</li>
+</ul>
+<h2>Learn Gatsby with Strapi Headless CMS Video Tutorial Series</h2>
+<p>Please follow along watching the videos below and reading the text. You can watch just the videos or read just the text, but you will get the most from this tutorial by watching and reading both. The videos are designed to be used together with this article.</p>
+<p><strong><em>The videos follow the exact sequence of this article. The videos contain additional information and additional configuration details for a few sections. However, for intermediate to advanced users this article will be sufficient to get oriented and started building Strapi powered Gatsby projects.</em></strong></p>
+<h3>Index of Tutorial</h3>
+<ol>
+<li><a href="#1-introduction">Introduction</a></li>
+<li><a href="#2-installation">Installation</a></li>
+<li><a href="#3-content-types">Content Types</a></li>
+<li><a href="#4-roles-and-permissions">Roles and Permissions</a></li>
+<li><a href="#5-setting-up-gatsby">Setting up Gatsby</a></li>
+<li><a href="#6-create-our-index-page">Create the Index page view</a></li>
+<li><a href="#7-create-the-article-page-view">Create the Article page view</a></li>
+<li><a href="#8-gatsby-images-and-author-page">Gatsby Images &#x26; the Article page view</a></li>
+</ol>
+<p>Note: Final tutorial and code is available at <a href="https://github.com/strapi/strapi-examples/tree/master/gatsby-strapi-tutorial">the GitHub repo for the Strapi and Gatsby tutorial</a>. In this repo, you can download and/or copy/paste the <a href="https://github.com/strapi/strapi-examples/tree/master/gatsby-strapi-tutorial/content-for-tutorial">example content</a>.</p>
+<p>Note: Within the content below we provide links that open a running <em>localhost</em> project. For either Strapi or Gatsby. These will not work if your server(s) have not been started.</p>
+<h3>1. Introduction</h3>
+<p>This video series will take you step by step through creating a blog in Gatsby and teach you how to connect it to the open sourced <a href="/gatsby-bloga-2/docs/headless-cms/">headless CMS</a> - Strapi.</p>
+<p><a href="https://youtu.be/It4PRFJJaF0">https://youtu.be/It4PRFJJaF0</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="https://strapi.io/">Strapi Official Website</a></li>
+<li><a href="/gatsby-bloga-2/">Gatsby JS Official Website</a></li>
+<li><a href="/gatsby-bloga-2/starters/?v=2">Gatsby JS Starters</a></li>
+<li><a href="https://gatsby-starter-default-demo.netlify.app/">Gatsby JS Default Starter Demo</a></li>
+</ul>
+<h3>2. Installation</h3>
+<p><a href="https://youtu.be/4QnDgxtWqOI">https://youtu.be/4QnDgxtWqOI</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="https://nodejs.org/en/">Node 10 Installation</a></li>
+<li><a href="https://strapi.io/documentation/3.x.x/getting-started/quick-start.html">Strapi Installation Documentation</a></li>
+</ul>
+<h4>Strapi CMS Setup</h4>
+<p>To make the magic happen, let’s create a Strapi headless CMS and add some content.</p>
+<h4>Create a Strapi project</h4>
+<h5>Install Strapi</h5>
+<p><em>Requirements: please make sure <a href="https://nodejs.org/en/download/">Node 10</a> (or higher) is installed and running on your machine.</em></p>
+<p>Install Strapi using npm:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> i strapi@alpha -g</code></pre></div>
+<p><em>Note: Strapi v3 is still an alpha version, but it will be fine for this tutorial.</em></p>
+<h5>Generate a Strapi project</h5>
+<p>Create a directory named <code class="language-text">tutorial</code>:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">mkdir</span> tutorial</code></pre></div>
+<p>Navigate into <code class="language-text">tutorial</code>and then, using a single command, set-up and start your project inside your <code class="language-text">tutorial</code> folder:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> tutorial
+strapi new cms --quickstart</code></pre></div>
+<p>Using the <code class="language-text">--quickstart</code> flag creates a full Strapi project and automatically starts the server and opens up a tab in your browser.</p>
+<p>(If you leave off <code class="language-text">--quickstart</code>. Strapi allows you to configure the project according to your needs, Strapi will ask you some questions about your preferences. In this case, reply to each of them or press enter to keep the default values. If you choose a different database than <em>SQLite</em>, you will need to separately install that database onto your system.)</p>
+<p>Additional information can be found in the <a href="https://strapi.io/documentation/3.x.x/getting-started/quick-start.html">Official Strapi documentation</a>.</p>
+<h4>Create your first User</h4>
+<p>Add your first user from the registration page: <code class="language-text">http://localhost:1337/admin/plugins/users-permissions/auth/register</code>. This will be the <strong><em>root admin user</em></strong>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/e57e0/create-first-user.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAABkklEQVQ4y52TzU7CQBDH93V8BC9GqF5NVIjGxJs8hCQmPocQDhzag9GD8WKMTyAnD14gkggtUD6EAm33q+NsaUkRMOImv+52Z/Y/09kp0Xa2D48yx08XudxtJpu91/b2Q1Jpbc5uKh2S3Fu0a3c4P+C5Iqm8Vq45F9Dt9qDX64Ntd5dBm7KvtCHtdgeGwxFUqzWHoOMlzIaP8FUIITiljK+zI0wJCCEbpNk08+pFHUACBHyfhqi1M3ahYw/AanWh/+WA5832Y58IqTSmU9cipmmFgozxuSCuIZ49z8cUJcgAQOJDlSe2xX5IKOi63t8EKWMQKMFgUTAxrxdMRg7X1AfJ/ajMyxluJCg4h8GYQqNPwZ5IsKcBZiswCH7mJoKUcvDxEKYG700Kj28evNQoPNcZTHwOnLHQ51dB3GRRDRdAUaweEiBSBVz2iQXxlk3Sslr5qIcwRyGRIAljIqAJftojhNLACzTJR/3zimHw0chJtsFGqF5UA/8Wm9wUSluFYum8XC6f6Lpxquv6fzkzDOPgG8eknFWReRTRAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi registration page"
+        title="Strapi registration page"
+        src="/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/fcda8/create-first-user.png"
+        srcset="/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/12f09/create-first-user.png 148w,
+/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/e4a3f/create-first-user.png 295w,
+/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/fcda8/create-first-user.png 590w,
+/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/efc66/create-first-user.png 885w,
+/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/c83ae/create-first-user.png 1180w,
+/gatsby-bloga-2/static/ac78212d22d5f447505f61b93f9e1551/e57e0/create-first-user.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h4>Restarting Strapi</h4>
+<p>After installation, and initial use, you will often close your project and work on other things, reboot your computer, etc. Therefore, you will need to restart Strapi and your project.</p>
+<p>Enter inside your project folder, on the command line, (in this case <code class="language-text">tutorial/</code>, :</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> cms</code></pre></div>
+<p>From <code class="language-text">cms/</code>, launch the Strapi server:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">strapi start</code></pre></div>
+<p>Starting here, you should be able to visit the admin panel of your project: <code class="language-text">http://localhost:1337/admin</code>. You will now be directed to a login screen. Login using your <strong><em>admin root user</em></strong> or other user you have already created.</p>
+<h3>3. Content Types</h3>
+<p><a href="https://youtu.be/cPEkpfik6X4">https://youtu.be/cPEkpfik6X4</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="https://github.com/strapi/strapi-heroku-cms-demo/tree/master/content-for-tutorial">Sample Content for Demo</a></li>
+</ul>
+<h4>Create a Content Type</h4>
+<p>Strapi CMS projects are based on a data structure called Content Types (equivalent to models in frameworks and Content Types in WordPress).</p>
+<p>Create a Content Type:<code class="language-text">http://localhost:1337/admin/plugins/content-type-builder/</code> named <code class="language-text">article</code> with four fields:</p>
+<ul>
+<li><code class="language-text">title</code> (type <code class="language-text">string</code>)</li>
+<li><code class="language-text">content</code> (type <code class="language-text">text</code>)</li>
+<li><code class="language-text">image</code> (type <code class="language-text">media</code>)</li>
+<li><code class="language-text">author</code> (type <code class="language-text">relation</code>, many articles to one user)</li>
+</ul>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/50383/define-relation.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABYUlEQVQoz3VRTU/CQBDlt5v4H/wRxosH481Ej8bExBMQUtBCaZUWut3v3efMLhgwsMnLdLpv3ryZHQ3DgKIo8FWWmEynqOsaEUDdeaxbn6JxEdZaGJNhnSNGRIynCCFg5L2HlBJaayilUiHdYTsEtH1AR3A+k//AhAtnFPeXnojsloW5CWI4IR5LsCibYD5DiIFylR06st+2LeqmQTGfo6F4cIwLknw3m82wWCxQVRWWy2VaFU+XHDbNNzabTS6jnB1aFxLYuXUevQKkDjDWQSqLVd1gJyR4DtoIbOC1xCyoqKMxJllmMY7a+ISeitY/EpPSoKy2aLcC2sYkJqSBsiFBENd5GplVvQ8JzvFPnyKL8lFKQ+iYi5XMO0w7j/uvY5DDw5jx38txGs+8ZlQDQt8BTuN1bPDwZvAydrj/sPjsQh75Eo6bpQbkPkqBsKN9O4nbZ4nruwE3TxpXjxrvK49fiIK8rMb/QUYAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Define Relationship User has many Articles"
+        title="Define Relationship User has many Articles"
+        src="/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/fcda8/define-relation.png"
+        srcset="/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/12f09/define-relation.png 148w,
+/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/e4a3f/define-relation.png 295w,
+/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/fcda8/define-relation.png 590w,
+/gatsby-bloga-2/static/307694773d319dfb6fb3525aab25f382/50383/define-relation.png 740w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/b2c3d/strapi-new-type.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAB0klEQVQoz7WSO0sjURSA5ycY3WJjAkYjoviGtbPZUuIYdbUUy0Ub/4CFprGwWFYHG7FaEV+FSdDGxsbC9RGMWVIIltqo87jzvPfOnD0z0STgLgriwDf3cO6Zb+7hXKHn68T3L+LU0cD4ZHr021h2aHgsOzg0EiD6qzicTbxOJiEmD8XkyLIQ659ZjQ3MwsbBMbjMgUdZBUXVEAKyQkDXDbAsG0zEeqI69tENAzwAuL29uxYamtuXPn1ugl8b2zYmuUZ0/iArXNNU7joa567LsfY1HPBf1M0J8Y5+KdLcB+tbe8ymDO4fHkHGExJCwCIaMO6C63oBFPcZ4xhjzvPKeJ7nS8G27Ush1ton1UU7YHNnj+EetqyAqhEgugmqzsF2GP6ZB/ixaTng4EpR7MNKBEJs/1KIxnul2kg7bO6mmZ+UFTUQGoYJnPvFrIqyoHRahJaoCMONXVIo3PZCqKOQUv70Aa+KWbl1WpFXhPWN3VKo/t/C55M8C/7Hxwqx5aWacCsOJW3hTBgOhSkaYXj/GBa+leDamJZ1IUTiPWt10U7I7B/Cex/HoTdCtKkrEQq3LP74uTJXLBZTJ79PU6dn56mLXC51dVV4K/OFwp+FfD4//Rd5CSW097niowAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi Administration Panel"
+        title="Strapi Administration Panel"
+        src="/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/fcda8/strapi-new-type.png"
+        srcset="/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/12f09/strapi-new-type.png 148w,
+/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/e4a3f/strapi-new-type.png 295w,
+/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/fcda8/strapi-new-type.png 590w,
+/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/efc66/strapi-new-type.png 885w,
+/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/c83ae/strapi-new-type.png 1180w,
+/gatsby-bloga-2/static/8b3a94d1eabcd52cbae62fef84632d45/b2c3d/strapi-new-type.png 2584w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>After creating your fields, as above, save your new content type and wait for Strapi to restart.</p>
+<h4>Insert some entries</h4>
+<p>Add some articles in the database. To do so, follow these instructions:</p>
+<ol>
+<li>Visit the articles list page: <code class="language-text">http://localhost:1337/admin/plugins/content-manager/article</code>.</li>
+<li>Click on <code class="language-text">Add New Article</code>.</li>
+<li>Insert values, link to an author and submit the form.</li>
+<li>Create two other articles.</li>
+</ol>
+<p>Note: You can download the sample content from the video <a href="https://github.com/strapi/strapi-examples/tree/master/gatsby-strapi-tutorial/content-for-tutorial">here</a>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/e57e0/article-entries.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB2UlEQVQ4y5WST0sbQRTA9yt4sFqJ+dOoUWs0amwLRqSJWSmFgiAaBC/tqbcevLhQ8Op38GAFk4C0h978AJ49CNKjKAk23Wx2N392d2Z2Xmdmk5iUSM3Aj3kz+/b33u6M9HpZ3ni/9fF89/Pe2ebW9o+1tNzmbTL1JJLJ1Pd3curnenrtSArLhwfxT3lIfDmB28I96BUNyuVyF6rq0Wufz6WSClc3Glxc/jIl3/ji/qA/CuGXb+z7338wpRS7LhUzIYTFLotBgDER8OctgOVhQtFlEeC6hO6kwMSi4o+8gumFVayqGq3VamDbNjARWJYFhmkCQgiYXOybbG2aVTG39nldYMNp1IqSb2xe8Y3FYTK2gjVNp46DeCussGgJ+JowOesGsJA6bQjx9l1enY16wyqKDkcnliAyl2gKsUjmIg/cET/Kg/B5MKoMB2NCWNENyivyJIRwk864Ny1hgwuHAzPKs8AsRGaZsGJQ/hktoeMl//tym97CYLfQ7RA+lceEqNkhP5h+8f5hvVFgwqgnnEsgw6i67HApqyouVx8QLrQsu8D/4dch0eEysA7FVeg+5f/D8/nQdaMkDY68mBoYCu36QtPbx8ffMvlcPnN6ms1ks32zk8vlPvwFxFdLPv1Rd5wAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi Article Administration View"
+        title="Strapi Article Administration View"
+        src="/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/fcda8/article-entries.png"
+        srcset="/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/12f09/article-entries.png 148w,
+/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/e4a3f/article-entries.png 295w,
+/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/fcda8/article-entries.png 590w,
+/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/efc66/article-entries.png 885w,
+/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/c83ae/article-entries.png 1180w,
+/gatsby-bloga-2/static/4510d853688be11f8176ce1d750acb33/e57e0/article-entries.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>4. Roles and Permissions</h3>
+<p><a href="https://youtu.be/1jev6QRwcSo">https://youtu.be/1jev6QRwcSo</a></p>
+<h4>Allow access to Article</h4>
+<p>For security reasons, API access <code class="language-text">http://localhost:1337/articles</code> is, by default, restricted. To allow access, visit the Auth and Permissions section for Public role at <code class="language-text">http://localhost:1337/admin/plugins/users-permissions/roles</code>, click on <code class="language-text">Public</code>, select the <code class="language-text">Article - find</code> action and save. At this point, you should be able to request the list of articles with <code class="language-text">http://localhost:1337/articles</code>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/e57e0/roles-and-permissions.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAACGUlEQVQ4y5WSzWsTQRiH918Q0WhJTbfSWBubFEOR0AbUpFERBEHaIPSiJ2+CJwOCR/8IwQ9oUhA9ePPs3YN68CaaD9bsbjdfuzM7szOv78ym8aO0tMs+zO7OzDO/fWeMS6vXbt9cv/dh88GjN3fWN96V1yqaK1dLh6NUVry9USm9v14pPzdm1549zd/fhpWHr+Fn24Ke54HjOAfgjvnzrWtZ8OX7Dnz89G1gTJnZx8eTGTibKVDbcTkAHB0h2OcuwFdbNA0zU6iZCwXI5C/zru1IzlW/2IOUEhhj4PuBbtX7pF9KgWKQnHaM6bmLteTcMswvFbnn9aXuwMH7sc+lhYSGHSOVztem08twLrfK+/2BniGEPFAaJ4vbKIoUWkiV8LS5WEvM5HRC23YlfgT922ryOC381RJCodlqQbPZBAs3w3VdhfB9X5WjY5xKXaidPJPVCXe83jhhvLIUAnbfd9OFYQjD4VAzGo0gCAKFUONj4QwKU7HQdj1JKIOAhBMYixAOXC2Acobpx5IJmG6vcD5XZD9alvzlDDReP5C9QSAHIyJpGEkeCYm3DEMmUfA/QpUJ2zYKF2PhUpG12pZQgqFPpU+YDBAScjxKAoV4NlDI8YFQirX+h0htUkBIW9XwSQKF6ewK4LEBgRtGsU6Y5NCojVRXr9fvGiemZs8fS5ibSXNh48XLV9VGY7u6tVWv1utH5m6j0bj1GxOPSqQdVECwAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi Roles and Permissions View"
+        title="Strapi Roles and Permissions View"
+        src="/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/fcda8/roles-and-permissions.png"
+        srcset="/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/12f09/roles-and-permissions.png 148w,
+/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/e4a3f/roles-and-permissions.png 295w,
+/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/fcda8/roles-and-permissions.png 590w,
+/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/efc66/roles-and-permissions.png 885w,
+/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/c83ae/roles-and-permissions.png 1180w,
+/gatsby-bloga-2/static/7ff3089f44828070476c61a2dbe6beaf/e57e0/roles-and-permissions.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h4>Static website development</h4>
+<p>Great job, our API is ready! We can start developing the static website.</p>
+<h3>5. Setting up Gatsby</h3>
+<p><a href="https://youtu.be/SnrEEW1uTlU">https://youtu.be/SnrEEW1uTlU</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="/gatsby-bloga-2/docs/">Official Gatsby Documentation</a></li>
+<li><a href="/gatsby-bloga-2/packages/gatsby-plugin-offline/">Gatsby PWA support</a></li>
+</ul>
+<h4>Install Gatsby</h4>
+<p>First, install Gatsby CLI:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> --global gatsby-cli</code></pre></div>
+<h4>Generate a Gatsby project</h4>
+<p>In the folder <code class="language-text">tutorial</code> that you previously created, generate your brand new blog:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby new blog</code></pre></div>
+<h4>Start in development mode</h4>
+<p>Enter in your project’s folder:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token builtin class-name">cd</span> blog</code></pre></div>
+<p>Start the server:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">gatsby develop</code></pre></div>
+<p>At this point, you should already be able to get access to your Gatsby website at this address: <code class="language-text">http://localhost:8000</code>.</p>
+<h4>Install the Strapi source plugin</h4>
+<p>When you manage a static website, your data can come from different sources: Markdown files, CSV files, a WordPress website (using the JSON REST API plugin), etc.</p>
+<p>Gatsby understands this pretty well. So its creators decided to build a specific and independent layer: the data layer. This entire system is strongly powered by <a href="http://graphql.org">GraphQL</a>.</p>
+<p>To connect Gatsby to a new source of data, you have to <a href="/gatsby-bloga-2/docs/creating-a-source-plugin/">develop a new source plugin</a>. Fortunately, <a href="/gatsby-bloga-2/docs/plugins">several source plugins already exist</a>, so one of them should fill your needs.</p>
+<p>In this example, we are using Strapi. Obviously, we are going to need a source plugin for Strapi APIs. Good news: <a href="https://github.com/strapi/gatsby-source-strapi">we built it for you</a>!</p>
+<p>Let’s install it:</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> --save gatsby-source-strapi</code></pre></div>
+<p>This plugin needs to be configured. Replace the content of <code class="language-text">gatsby-config.js</code> with:</p>
+<div class="gatsby-highlight" data-language="js:title=/blog/gatsby-config.js"><pre class="language-js:title=/blog/gatsby-config.js"><code class="language-js:title=/blog/gatsby-config.js">module.exports = {
+  siteMetadata: {
+    title: &quot;My super blog&quot;,
+    description: &quot;Gatsby blog with Strapi&quot;,
+    author: &quot;Strapi team&quot;,
+  },
+  plugins: [
+    &quot;gatsby-plugin-react-helmet&quot;,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: &quot;gatsby-source-strapi&quot;,
+      options: {
+        apiURL: &quot;http://localhost:1337&quot;,
+        contentTypes: [
+          // List of the Content Types you want to be able to request from Gatsby.
+          &quot;article&quot;,
+          &quot;user&quot;,
+        ],
+        queryLimit: 1000,
+      },
+    },
+    &quot;gatsby-transformer-sharp&quot;,
+    &quot;gatsby-plugin-sharp&quot;,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: &quot;gatsby-starter-default&quot;,
+        short_name: &quot;starter&quot;,
+        start_url: &quot;/&quot;,
+        background_color: &quot;#663399&quot;,
+        theme_color: &quot;#663399&quot;,
+        display: &quot;minimal-ui&quot;,
+        icon: &quot;src/images/gatsby-icon.png&quot;, // This path is relative to the root of the site.
+      },
+    },
+    &quot;gatsby-plugin-offline&quot;,
+  ],
+}</code></pre></div>
+<h4>Allow access to User</h4>
+<p>Remember, when we created the content type we created a relation between User and Articles.</p>
+<p>Like <code class="language-text">Article</code>,<code class="language-text">User</code>, link <code class="language-text">http://localhost:1337/articles</code> is likewise, by default, restricted. But Gatsby needs access, so to allow access, visit the Auth and Permissions section for Public role at <code class="language-text">http://localhost:1337/admin/plugins/users-permissions/roles</code>, click on <code class="language-text">Public</code>, select the <code class="language-text">User - find</code> action and save. After saving; Gatsby will have access to all the necessary content types managed by Strapi (for this tutorial).</p>
+<p>Restart Strapi from the command line, inside the <code class="language-text">cms</code> folder - first by <code class="language-text">Ctrl</code>+ <code class="language-text">C</code> to stop the server; and then typing <code class="language-text">strapi start</code>, to restart it.</p>
+<p>Next, restart the server to ensure Gatsby registers these updates.</p>
+<h3>6. Create our Index Page</h3>
+<p><a href="https://youtu.be/UaFgCubwRD8">https://youtu.be/UaFgCubwRD8</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li>The GraphQL interface from your local host: <code class="language-text">http://localhost:8000/___graphql</code></li>
+</ul>
+<h4>Articles list</h4>
+<p>First, we want to display the list of articles. To do so, add the following content in the existing home page file:</p>
+<div class="gatsby-highlight" data-language="jsx:title=/blog/src/pages/index.js"><pre class="language-jsx:title=/blog/src/pages/index.js"><code class="language-jsx:title=/blog/src/pages/index.js">import React from &quot;react&quot;
+import { Link, graphql } from &quot;gatsby&quot;
+import Layout from &quot;../components/layout&quot;
+
+const IndexPage = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;h1&gt;Hi people&lt;/h1&gt;
+    &lt;p&gt;Welcome to your new Gatsby site.&lt;/p&gt;
+    &lt;p&gt;Now go build something great.&lt;/p&gt;
+    &lt;ul&gt;
+      {data.allStrapiArticle.edges.map(document =&gt; (
+        &lt;li key={document.node.id}&gt;
+          &lt;h2&gt;
+            &lt;Link to={`/${document.node.id}`}&gt;{document.node.title}&lt;/Link&gt;
+          &lt;/h2&gt;
+          &lt;p&gt;{document.node.content}&lt;/p&gt;
+        &lt;/li&gt;
+      ))}
+    &lt;/ul&gt;
+    &lt;Link to=&quot;/page-2/&quot;&gt;Go to page 2&lt;/Link&gt;
+  &lt;/Layout&gt;
+)
+
+export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allStrapiArticle {
+      edges {
+        node {
+          id
+          title
+          content
+        }
+      }
+    }
+  }
+`</code></pre></div>
+<h5>What are we doing here?</h5>
+<p>At the end of the file, we export <code class="language-text">pageQuery</code>, a GraphQL query which requests the entire list of articles. As you can see, we require only the <code class="language-text">id</code>, <code class="language-text">title</code> and <code class="language-text">content</code> fields, thanks to the precise GraphQL query language.</p>
+<p>Then, we pass the <code class="language-text">{ data }</code> destructured object as parameter of <code class="language-text">IndexPage</code> and loop on its <code class="language-text">allStrapiArticle</code> object to display the data.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/e57e0/what-we-are-doing.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAByklEQVQ4y6WST2vUQBiH5+t4rV1FqwhdV1YspUXBIojeeqrWk1QQBL171VZZBA/uijl486tst7bLOptkkvRPstlMJsn8nJlkq166q77w5J3AzG8e8oZcmptfrS82vy3fuv252Viy7qysWUvNFas2t2DVzi9YF+avzMIXxdeLtavvyMPLr148vfkRmze2FTvYbOxga/UDXj74hMfXt7Gx+BaP6mezUX+DJ433WL/2OiT7XbqFFAh9zhXZ6FBk7MdR9r3bV/0wGx+LLArSaYjxcY4jFg+IH3jPUFamkHrBU46hHcDzT8AFZqmifORD4rquCZRSZkUhpc5Mxjn29kJ0uyfo9UL4foh4NEIYRog0UQSecH0GsjCYQCHEkDDGTg2l3qENOUe/T2HbHih1FQyuy6D2qu4aRuqCSkQzLbA07PUiZRnh4CBCHMcmZEKapn8RmPwydByGIKgM3X80TJJcmYXY3Y0wGJRGpWE83fC3oYgqUKYpl45DZeC7kjFHrR1p26rbutsGNRhZHjM1CaTE805/G1GNXwoBmSRl+IzkOiDPc0oopc+r9Im+oSjkH+9nURRGUH8WRlqt1rlOp3O/3W7fVaz9B/dUzvJPltJ5TjZo/68AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Gatsby demo project home page view"
+        title="Gatsby demo project home page view"
+        src="/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/fcda8/what-we-are-doing.png"
+        srcset="/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/12f09/what-we-are-doing.png 148w,
+/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/e4a3f/what-we-are-doing.png 295w,
+/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/fcda8/what-we-are-doing.png 590w,
+/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/efc66/what-we-are-doing.png 885w,
+/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/c83ae/what-we-are-doing.png 1180w,
+/gatsby-bloga-2/static/6d665f183b785af6e0430ab1b246515c/e57e0/what-we-are-doing.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h5>Tip: generate your GraphQL query in seconds!</h5>
+<p>Gatsby includes a useful GraphiQL interface. It makes GraphQL queries development way easier and intuitive. Take look at it on <code class="language-text">http://localhost:8000/___graphql</code> and try to create some queries.</p>
+<h5>Adding images</h5>
+<p>To add images, we will need to import <code class="language-text">Img</code> from package <code class="language-text">gatsby-image</code> installed by default. Replace the content of <code class="language-text">blog/src/pages/index.js</code> with the following :</p>
+<div class="gatsby-highlight" data-language="jsx:title=/blog/src/pages/index.js"><pre class="language-jsx:title=/blog/src/pages/index.js"><code class="language-jsx:title=/blog/src/pages/index.js">import React from &quot;react&quot;
+import { Link, graphql } from &quot;gatsby&quot;
+import Img from &quot;gatsby-image&quot;
+import Layout from &quot;../components/layout&quot;
+
+const IndexPage = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;h1&gt;Hi people&lt;/h1&gt;
+    &lt;p&gt;Welcome to your new Gatsby site.&lt;/p&gt;
+    &lt;p&gt;Now go build something great.&lt;/p&gt;
+    &lt;ul&gt;
+      {data.allStrapiArticle.edges.map(document =&gt; (
+        &lt;li key={document.node.id}&gt;
+          &lt;h2&gt;
+            &lt;Link to={`/${document.node.id}`}&gt;{document.node.title}&lt;/Link&gt;
+          &lt;/h2&gt;
+          &lt;Img fixed={document.node.image.childImageSharp.fixed} alt=&quot;&quot; /&gt;
+          &lt;p&gt;{document.node.content}&lt;/p&gt;
+        &lt;/li&gt;
+      ))}
+    &lt;/ul&gt;
+    &lt;Link to=&quot;/page-2/&quot;&gt;Go to page 2&lt;/Link&gt;
+  &lt;/Layout&gt;
+)
+
+export default IndexPage
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allStrapiArticle {
+      edges {
+        node {
+          id
+          image {
+            childImageSharp {
+              fixed(width: 200, height: 125) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+          title
+          content
+        }
+      }
+    }
+  }
+`</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/b2c3d/adding-images.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAABuUlEQVQoz62ROUsDURSF52doIe6oKKkUDCjY+yMsBQsRCxfEbRAsbCSGKKiIYCNu6IgLNtppE7FIZiYuiaAOmEgmyax5M7ne2cSIC4oHPt7lvsPhvncpX7W/u6mq/bS+zL/rq+1gGivbmOqSFqa+vJVpqPBj3czUlLb8xB5yUlfWOkfN9K4vrtHnEBo4gIXhY5v5wWNYHj+BxbEjrA+d/tDXhNCzMnoGs/071xQx9AA40hDDwzRNQ1E0433vG3Q345LKZrNBq8IAYpoFMAzTvkkkBAgEN2Fv/wLyeShSoVCw/GD5HUwrFH35KyqXywVdE/GMljj+GkbGp2BjaxtkWYJMJvOGrutvwS52ICGkONAzWVJVAsKTCo8PKgiChKEySJKF9LtAb0L25g66+gYhtLQKXt8LeP909/x5wmxOBpZPQDzxBC8vKUilHJLJJCiK8ocnKwY83MsgigZ8pg+TFgUG3KbqLsYKJpqqkfhtnDw/CwQXQURRtEmn00TTNNvj+RHd3XKYws9ehn8S/vMdFQ6HOzmOm4lGoxMsy9IOUYSjOY6neZ6nY7FYEein0U97fqwn8ZyORCI9ryJCQVgfCpUEAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Blogroll view with images added"
+        title="Blogroll view with images added"
+        src="/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/fcda8/adding-images.png"
+        srcset="/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/12f09/adding-images.png 148w,
+/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/e4a3f/adding-images.png 295w,
+/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/fcda8/adding-images.png 590w,
+/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/efc66/adding-images.png 885w,
+/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/c83ae/adding-images.png 1180w,
+/gatsby-bloga-2/static/25ca55611b778fa96bd2664452f17dc8/b2c3d/adding-images.png 2584w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>7. Create the Article page view</h3>
+<p><a href="https://youtu.be/FTzwb49tBvw">https://youtu.be/FTzwb49tBvw</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="/gatsby-bloga-2/docs/gatsby-project-structure/#gatsby-project-structure">Gatsby Project Structure</a></li>
+</ul>
+<h4>Article view</h4>
+<p>Our website now starts looking like a blog which is a good thing. However, an important part is still missing: the article’s details page.</p>
+<p>Let’s create the template, containing a specific GraphQL request and defining the content displayed:</p>
+<p>In order to do this, first create a folder called <code class="language-text">templates</code> in your <code class="language-text">src</code> directory. Then within <code class="language-text">templates</code> create a file called <code class="language-text">article.js</code>.</p>
+<div class="gatsby-highlight" data-language="jsx:title=/blog/src/templates/article.js"><pre class="language-jsx:title=/blog/src/templates/article.js"><code class="language-jsx:title=/blog/src/templates/article.js">import React from &quot;react&quot;
+import { Link, graphql } from &quot;gatsby&quot;
+import Img from &quot;gatsby-image&quot;
+import Layout from &quot;../components/layout&quot;
+
+const ArticleTemplate = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;h1&gt;{data.strapiArticle.title}&lt;/h1&gt;
+    &lt;p&gt;
+      by{&quot; &quot;}
+      &lt;Link to={`/authors/User_${data.strapiArticle.author.id}`}&gt;
+        {data.strapiArticle.author.username}
+      &lt;/Link&gt;
+    &lt;/p&gt;
+    &lt;Img fixed={data.strapiArticle.image.childImageSharp.fixed} /&gt;
+    &lt;p&gt;{data.strapiArticle.content}&lt;/p&gt;
+  &lt;/Layout&gt;
+)
+
+export default ArticleTemplate
+
+export const query = graphql`
+  query ArticleTemplate($id: String!) {
+    strapiArticle(id: { eq: $id }) {
+      title
+      content
+      image {
+        childImageSharp {
+          fixed(width: 200, height: 125) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      author {
+        id
+        username
+      }
+    }
+  }
+`</code></pre></div>
+<p>That looks fine, but at this point, Gatsby does not know when this template should be displayed. Each article needs a specific URL. So, we are going to inform Gatsby about the new URLs we need thanks to the <a href="/gatsby-bloga-2/docs/creating-and-modifying-pages"><code class="language-text">createPage</code> function</a>.</p>
+<p>First, we are going to code a new function called <code class="language-text">makeRequest</code> to execute the GraphQL request. Then, we export a function named <code class="language-text">createPages</code> in which we get the list of articles and create a page for each of them. Here is the result:</p>
+<div class="gatsby-highlight" data-language="jsx:title=/blog/gatsby-node.js"><pre class="language-jsx:title=/blog/gatsby-node.js"><code class="language-jsx:title=/blog/gatsby-node.js">const path = require(`path`)
+
+const makeRequest = (graphql, request) =&gt;
+  new Promise((resolve, reject) =&gt; {
+    // Query for nodes to use in creating pages.
+    resolve(
+      graphql(request).then(result =&gt; {
+        if (result.errors) {
+          reject(result.errors)
+        }
+
+        return result
+      })
+    )
+  })
+
+// Implement the Gatsby API “createPages”. This is called once the
+// data layer is bootstrapped to let plugins create pages from data.
+exports.createPages = ({ boundActionCreators, graphql }) =&gt; {
+  const { createPage } = boundActionCreators
+
+  const getArticles = makeRequest(
+    graphql,
+    `
+    {
+      allStrapiArticle {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    `
+  ).then(result =&gt; {
+    // Create pages for each article.
+    result.data.allStrapiArticle.edges.forEach(({ node }) =&gt; {
+      createPage({
+        path: `/${node.id}`,
+        component: path.resolve(`src/templates/article.js`),
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  })
+
+  // Query for articles nodes to use in creating pages.
+  return getArticles
+}</code></pre></div>
+<p>Restart the Gatsby server.</p>
+<p>From now on, you should be able to visit the detail page by clicking on URLs displayed on the homepage.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/e57e0/static-page-result.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAABiElEQVQ4y72RzUsCQRTA59/pamlgRZRpBVKKUBEU3Tr14SkKgqDuXS0MO0Sg0R669Z9UUBa25n7MrlmburM7r7e7LmgUmEEPfvuGnTe/ecwj4cBAMjI2eT0bT13EpxPCXGpRiE8lhFBgWAj2DwmhgWEh5OefuUSuBoMjWbISPtjbmj6DzdgxpGNZSEezsJ08hf3lc9iYOIL1CIJ5bTzTSSTj7SHOOh09gdXRwxop3onb0ASoqY0Gwt41k1VKOnu6r7CHmxJ7vCuz4q3I6Msba9Q4+6haLobO2Btt+pj4D3TZKBGVKjvgBUO4s3g3DCg9V4DqKuA+yKoEepUiGlRfNdCRplmHtrC9j1UmkiS5Qs45s23uCuv1OlBKQaOam6lKQUUUBS9AFEVxa9xzNndwhaZploksyx0dcs/ZVfi1mL8X+jYndUNb7T8LfxsdwrahmLz38IUiwYn5HZqt8fMesByBZVkiEUVxt2Xv+u2+Yttug2AYhkxyuVxfoVBYyufz88jCH1hEz8wnXBKB8XOxBqsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Single blog post view"
+        title="Single blog post view"
+        src="/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/fcda8/static-page-result.png"
+        srcset="/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/12f09/static-page-result.png 148w,
+/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/e4a3f/static-page-result.png 295w,
+/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/fcda8/static-page-result.png 590w,
+/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/efc66/static-page-result.png 885w,
+/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/c83ae/static-page-result.png 1180w,
+/gatsby-bloga-2/static/4fc58b400d45371d610d18c15b6d5332/e57e0/static-page-result.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>8. Gatsby Images and author page</h3>
+<p><a href="https://youtu.be/mPyJrjD3oU0">https://youtu.be/mPyJrjD3oU0</a></p>
+<p><em>Important links from Video:</em></p>
+<ul>
+<li><a href="/gatsby-bloga-2/packages/gatsby-image/">Gatsby Image Plugin</a></li>
+<li><a href="https://using-gatsby-image.gatsbyjs.org/">Gatsby Image Demo</a></li>
+<li><a href="https://github.com/gatsbyjs/gatsby/tree/master/examples/using-gatsby-image/src/pages">Gatsby Code examples for Image Plugin</a></li>
+</ul>
+<h4>Author view</h4>
+<p>Articles are written by authors. They deserve a dedicated page.</p>
+<p>The processes for creating author views and article pages are very similar. First, create a new file in our <code class="language-text">templates</code> folder called, <code class="language-text">author.js</code>. Add the code below to this file.</p>
+<div class="gatsby-highlight" data-language="jsx:title=/blog/src/templates/author.js"><pre class="language-jsx:title=/blog/src/templates/author.js"><code class="language-jsx:title=/blog/src/templates/author.js">import React from &quot;react&quot;
+import { Link, graphql } from &quot;gatsby&quot;
+import Layout from &quot;../components/layout&quot;
+
+const UserTemplate = ({ data }) =&gt; (
+  &lt;Layout&gt;
+    &lt;h1&gt;{data.strapiUser.username}&lt;/h1&gt;
+    &lt;ul&gt;
+      {data.strapiUser.articles.map(article =&gt; (
+        &lt;li key={article.id}&gt;
+          &lt;h2&gt;
+            &lt;Link to={`/Article_${article.id}`}&gt;{article.title}&lt;/Link&gt;
+          &lt;/h2&gt;
+          &lt;p&gt;{article.content}&lt;/p&gt;
+        &lt;/li&gt;
+      ))}
+    &lt;/ul&gt;
+  &lt;/Layout&gt;
+)
+
+export default UserTemplate
+
+export const query = graphql`
+  query UserTemplate($id: String!) {
+    strapiUser(id: { eq: $id }) {
+      id
+      username
+      articles {
+        id
+        title
+        content
+      }
+    }
+  }
+`</code></pre></div>
+<p>Second, we update the <code class="language-text">gatsby-node.js</code> file to create the URLs (with the below code):</p>
+<div class="gatsby-highlight" data-language="js:title=/blog/gatsby-node.js"><pre class="language-js:title=/blog/gatsby-node.js"><code class="language-js:title=/blog/gatsby-node.js">/**
+ * Implement Gatsby&#39;s Node APIs in this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/node-apis/
+ */
+
+// You can delete this file if you&#39;re not using it
+
+const path = require(`path`)
+
+const makeRequest = (graphql, request) =&gt;
+  new Promise((resolve, reject) =&gt; {
+    // Query for article nodes to use in creating pages.
+    resolve(
+      graphql(request).then(result =&gt; {
+        if (result.errors) {
+          reject(result.errors)
+        }
+
+        return result
+      })
+    )
+  })
+
+// Implement the Gatsby API “createPages”. This is called once the
+// data layer is bootstrapped to let plugins create pages from data.
+exports.createPages = ({ boundActionCreators, graphql }) =&gt; {
+  const { createPage } = boundActionCreators
+
+  const getArticles = makeRequest(
+    graphql,
+    `
+    {
+      allStrapiArticle {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    `
+  ).then(result =&gt; {
+    // Create pages for each article.
+    result.data.allStrapiArticle.edges.forEach(({ node }) =&gt; {
+      createPage({
+        path: `/${node.id}`,
+        component: path.resolve(`src/templates/article.js`),
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  })
+
+  const getAuthors = makeRequest(
+    graphql,
+    `
+    {
+      allStrapiUser {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+    `
+  ).then(result =&gt; {
+    // Create pages for each user.
+    result.data.allStrapiUser.edges.forEach(({ node }) =&gt; {
+      createPage({
+        path: `/authors/${node.id}`,
+        component: path.resolve(`src/templates/author.js`),
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  })
+
+  // Queries for articles and authors nodes to use in creating pages.
+  return Promise.all([getArticles, getAuthors])
+}</code></pre></div>
+<p>Finally, restart the server and visit the author page from the article view’s links.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/e57e0/restart-server.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAB4ElEQVQ4y6WSzWsTQRiH99/x2jYKtSIaWy1+VoUWRejNkx85iQXBQ+9eW4kEQYRE3IM3/w8PNkltSjLZ7Gy+ujO72d2Z3Z8zu0kaVPyoLzy7L8PLw2/2XWNxbmEtf+Hy55tX73y4duWWuX73vnl9dc3MzS2Zufmz5un5pYyF3/JR8elM7lzR2Fzcfvls9R2errxGYaWIwnIRW7ffYnvzvTrbxZNLO3ic38Gji4rZd16f76bovrD8Bg/Pv3KNgyp5jhBwu0GgELwfCkqOxNcvLdH6diQGthRuVwh/KIQ3OIb3I8F64YTIH0oMqNc0uj1nC1kJRaKbIJTYq/VRqw9x0GDoDxn8gIP7LMXzOYSMMFNx9pBtw7btVJgkiYjjJBMGAZpNCx2rC0Io2sQBpRMoqE3BGYeeTuJEkwqjKGobamCaUEnHQon9fRf1OkO1ytBouPA8D5zzKWEYYhxE8wfhKMDhIYFlOeh0KHo9Clul0unUjVK09K+Fo5FUyVzUakxdPUukE3rcO1nCMAxUspZKZsOhHdUfY1lWCmPs18KZpUTJTOkFZbPp5n/ih5oIieE4098mGq8/OQFSC6SUxCCEvBjbMY30j8RxGlB/Z2qUSqVTlUrlQblcXlds/Af3lOfGd4Okekm1CpnGAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Page view showing all articles by Author"
+        title="Page view showing all articles by Author"
+        src="/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/fcda8/restart-server.png"
+        srcset="/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/12f09/restart-server.png 148w,
+/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/e4a3f/restart-server.png 295w,
+/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/fcda8/restart-server.png 590w,
+/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/efc66/restart-server.png 885w,
+/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/c83ae/restart-server.png 1180w,
+/gatsby-bloga-2/static/e8af58b4fbe6ea6adbaef345f7106771/e57e0/restart-server.png 4064w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2>Conclusion</h2>
+<p>Congrats! You’ve successfully built a super fast and easy-to-maintain blog!</p>
+<p>Since the content is managed by Strapi, the authors can write articles through a nice UI and developers only have to rebuild the Gatsby blog in order to update the content.</p>
+<p><strong><em>Where to go next?</em></strong></p>
+<p>Feel free to continue this project to discover both Gatsby and Strapi advantages. Here are some features you can add: list of authors, article’s categories, and comment system with the Strapi API or Disqus. You can also create other types of websites (e-commerce shop, corporate website, etc.).</p>
+<p>When your project is achieved, you will probably want to deploy it. The static website generated by Gatsby can <a href="/gatsby-bloga-2/docs/deploying-and-hosting/">easily be published on storage providers</a>: Netlify, S3/CloudFront, GitHub Pages, GitLab Pages, Heroku, etc. The Strapi API is a headless CMS, so it can be hosted on Heroku or any Linux instance that has Node.js installed.</p>
+<p>The <a href="https://github.com/strapi/strapi-examples/tree/master/gatsby-strapi-tutorial">code source of this tutorial is available on GitHub</a>. To see it live, clone the repository, run <code class="language-text">npm run setup</code>, start the Strapi server (<code class="language-text">cd cms &amp;&amp; strapi start</code>) and the Gatsby server (<code class="language-text">cd blog &amp;&amp; gatsby develop</code>).</p>
+<p>We hope you enjoyed this tutorial. Feel free to comment on it, share it, and let us know how you create sites built with React and how you manage their content.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2017-12-20-introducing-the-gatsby-ux-research-program/">← <!-- -->Introducing the Gatsby UX Research Program</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/2018-01-18-how-boston-gov-used-gatsby-to-be-selected-as-an-amazon-hq2-candidate-city/">How Boston.gov used Gatsby to be selected as an Amazon HQ2 candidate city<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/2018-1-18-strapi-and-gatsby/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>

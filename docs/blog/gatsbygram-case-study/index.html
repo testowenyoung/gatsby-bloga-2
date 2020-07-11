@@ -1,0 +1,534 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/gatsby-bloga-2/styles.09c3923add382dea93b1.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/gatsby-bloga-2/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/gatsby-bloga-2/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/gatsby-bloga-2/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/gatsby-bloga-2/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/gatsby-bloga-2/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/gatsby-bloga-2/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/gatsby-bloga-2/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/gatsby-bloga-2/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/gatsby-bloga-2/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/gatsby-bloga-2/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/gatsby-bloga-2/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/gatsby-bloga-2/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/gatsby-bloga-2/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/gatsby-bloga-2/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/gatsby-bloga-2/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.23.12"/><link rel="alternate" type="application/rss+xml" href="/gatsby-bloga-2/rss.xml"/><link rel="icon" href="/gatsby-bloga-2/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="manifest" href="/gatsby-bloga-2/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/gatsby-bloga-2/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/gatsby-bloga-2/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/gatsby-bloga-2/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/gatsby-bloga-2/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/gatsby-bloga-2/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/gatsby-bloga-2/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/gatsby-bloga-2/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/gatsby-bloga-2/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">Gatsbygram Case Study | Gatsby Starter Blog</title><meta data-react-helmet="true" name="description" content="Gatsbygram is a clone of Instagram built with
+Gatsby v1. The
+source code for Gatsbygram
+lives in the Gatsby monorepo. See the instructions at the end for how to…"/><meta data-react-helmet="true" property="og:title" content="Gatsbygram Case Study"/><meta data-react-helmet="true" property="og:description" content="Gatsbygram is a clone of Instagram built with
+Gatsby v1. The
+source code for Gatsbygram
+lives in the Gatsby monorepo. See the instructions at the end for how to…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="kylemathews"/><meta data-react-helmet="true" name="twitter:title" content="Gatsbygram Case Study"/><meta data-react-helmet="true" name="twitter:description" content="Gatsbygram is a clone of Instagram built with
+Gatsby v1. The
+source code for Gatsbygram
+lives in the Gatsby monorepo. See the instructions at the end for how to…"/><link as="script" rel="preload" href="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js"/><link as="script" rel="preload" href="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/docs/blog/gatsbygram-case-study/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/gatsby-bloga-2/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;color:inherit" href="/gatsby-bloga-2/">Gatsby Starter Blog</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Gatsbygram Case Study</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">March 09, 2017</p></header><section><p><a href="https://gatsbygram.gatsbyjs.org">Gatsbygram</a> is a clone of Instagram built with
+Gatsby v1.</p>
+<p>The
+<a href="https://github.com/gatsbyjs/gatsby/tree/master/examples/gatsbygram">source code for Gatsbygram</a>
+lives in the Gatsby monorepo. See the instructions at the end for how to start
+playing with the code!</p>
+<div>
+  <video controls="controls" autoplay="true" loop="true">
+    <source type="video/mp4" src="/gatsby-bloga-2/d4f438269c390a06747141d48f2fc896/gatsbygram.mp4" />
+    <p>Your browser does not support the video element.</p>
+  </video>
+</div>
+<h2>What is Gatsby</h2>
+<p>Gatsby is a JavaScript web framework that lets you build fast, dynamic,
+mobile-ready websites <em>without</em> an advanced degree in JavaScript wizardry.</p>
+<p>It combines the fast performance of static websites with the powerful
+abstractions, tools, and client capabilities of the React.js world.</p>
+<h3>Gatsby is fast</h3>
+<p><a href="/gatsby-bloga-2/docs/prpl-pattern/">Gatsby automatically optimizes your site for the modern web</a>.
+You provide pages and Gatsby stitches them together so they load as fast as
+possible.</p>
+<p>As proof of this, Gatsbygram loads <em>2-3x faster</em> than the real Instagram site.</p>
+<p>I tested Gatsbygram and Instagram on
+<a href="https://www.webpagetest.org/">webpagetest.org</a> using a simulated 3G network and
+a Moto G4 smartphone—a budget Android typical of many lower-end phones used
+today. The median
+<a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index">speed index</a>
+score for <a href="http://www.webpagetest.org/result/170310_XP_11AS/">Gatsbygram</a> was
+3151 vs. 8251 for
+<a href="http://www.webpagetest.org/result/170310_PC_11AZ/">Instagram</a>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/97a96/gatsbygram-instagram.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 10.81081081081081%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAArUlEQVQI1wGiAF3/AMfHx//Ly8v/xsbG/8fFwv/Avbb/v727+8TCvv+mo56bAAAAAEwGFwwgAAAJFgAACUcAAAlXAAAJWwAHCU4AAAlkARYJfyJACXwXOAl/IEQJANDQ0P/V1dX/zs7P/9TU0v/Qz83/09LR/s3Myv/Pz83zzszM4c7AwOPMv7/iy7y54r6wsOK3qKTiuays4rqsquK2qKnirJ2b4q+gouKsnZziCDheIfbfDSsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gatsbygram vs. instagram filmstrip"
+        title="gatsbygram vs. instagram filmstrip"
+        src="/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/fcda8/gatsbygram-instagram.png"
+        srcset="/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/12f09/gatsbygram-instagram.png 148w,
+/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/e4a3f/gatsbygram-instagram.png 295w,
+/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/fcda8/gatsbygram-instagram.png 590w,
+/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/efc66/gatsbygram-instagram.png 885w,
+/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/c83ae/gatsbygram-instagram.png 1180w,
+/gatsby-bloga-2/static/ed76f20169cf493d7595a15391f8ca8a/97a96/gatsbygram-instagram.png 2400w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span><em>Filmstrip of
+Gatsbygram (top) and Instagram (bottom) loading on webpagetest.org</em></p>
+<p>The second repeat view is even faster for Gatsbygram as it now loads from its
+service worker. It has <em>pixels on the screen in under a 1/2 second on a budget
+Android device</em>! And for both the initial and repeat view, Gatsbygram <em>finishes</em>
+loading a full second before Instagram gets started.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/cf899/gatsbygram-instagram-repeat-load.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABYlAAAWJQFJUiTwAAABgElEQVQY042QPS9DYRiG39BJDBhqNxj9AH/AYjLbJGgrhMnAwCAn9LTpx6k2px8iQTEgdnSlpdUP9eogEaEtqietOsd5z+1tjSJxJ1fuJ0+e5XqIz+dDJBKG17WKcFCCy7kGSfJCctsRCXpYOOCE7HcroyOD/YRneGiwzWRqJ+YuE+nt/sHc1U56e3jzmeg6QzPl0hO+NBXVShGq2kCl8ga1UWO6VkdVUZTTQ6GP/CexWAzx+Dmi2xs4OtjHztYG9najWBWW4RAW2PzcOKwTYwo/HeC0cTo5HX/i8XggyzJXbiquQxTtXFmCw76CgCQaorAEl0Ngfr//PhQK3QaDobuwHKDOyTnqtlmo1zJDXVYLlSzT1DE5RYmmaS3lWq3e6nr9o9Wf6s9e1w0Dv2Lg+bGId/6Wl6cSf1cZymsF9w9FkFQqhUKhwLXjrU4kEqCU4uryEvl83kglk8jlckY6nWbZbJZlMll2c5Nm1xfnLHNxxjZliZ0c7zGfuMIWZ23sG6gQJzMZihc7AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="gatsbygram vs. instagram filmstrip repeat
+load"
+        title="gatsbygram vs. instagram filmstrip repeat
+load"
+        src="/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/fcda8/gatsbygram-instagram-repeat-load.png"
+        srcset="/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/12f09/gatsbygram-instagram-repeat-load.png 148w,
+/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/e4a3f/gatsbygram-instagram-repeat-load.png 295w,
+/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/fcda8/gatsbygram-instagram-repeat-load.png 590w,
+/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/efc66/gatsbygram-instagram-repeat-load.png 885w,
+/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/c83ae/gatsbygram-instagram-repeat-load.png 1180w,
+/gatsby-bloga-2/static/14335d63b8d7a07b951f781833ab5bdb/cf899/gatsbygram-instagram-repeat-load.png 1513w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span><em>Filmstrip
+of a repeat view of Gatsbygram (top) and Instagram (bottom) loading on
+webpagetest.org</em></p>
+<p>The difference in Time to Interactivity (TTI) (measure of how long before the
+user can actually interact with the page e.g. click on a link) between the sites
+is just as dramatic. Gatsbygram’s TTI is 6.1s vs 14.1s for Instagram.</p>
+<ul>
+<li><a href="http://www.webpagetest.org/result/170310_XP_11AS/">Gatsbygram’s WebPagetest results</a></li>
+<li><a href="http://www.webpagetest.org/result/170310_PC_11AZ/">Instagram’s WebPagetest results</a></li>
+</ul>
+<h3>Gatsby is built for the next billion internet users</h3>
+<p>As
+<a href="http://ben-evans.com/benedictevans/2015/5/13/the-smartphone-and-the-sun">Benedict Evans has noted</a>,
+the next billion people poised to come online will be using the internet almost
+exclusively through smartphones.</p>
+<p>Smartphones with decent specs (as good or better than the Moto G4), a great
+browser, but <em>without</em> a reliable internet connection.</p>
+<p>Gatsby uses modern web performance ideas (e.g.
+<a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL</a>)
+developed by the Google Chrome Developer Relations team and others to help
+websites work well on modern browsers with unreliable networks.</p>
+<p>Sites built with Gatsby run as much as possible in the client so regardless of
+the network conditions—good, bad, or nonexistent—things will keep working.</p>
+<p>Many of the top e-commerce websites in areas where people are coming online for
+the first time are developing their websites using these techniques.</p>
+<p>Read Google’s case studies on:</p>
+<ul>
+<li><a href="https://developers.google.com/web/showcase/2016/flipkart">Flipkart (India)</a></li>
+<li><a href="https://developers.google.com/web/showcase/2016/konga">Konga (Nigeria)</a></li>
+<li><a href="https://developers.google.com/web/showcase/2016/housing">Housing.com (India)</a></li>
+</ul>
+<h3>Gatsby is simple</h3>
+<p>Modern JavaScript websites are too complex to rely on developers always
+configuring things correctly. Gatsby simplifies website development by
+extracting configuration out of your site and moving it into the framework and
+community plugins.</p>
+<p>You give Gatsby React.js components, data, and styles and Gatsby gives you back
+an optimized website.</p>
+<p>Gatsbygram is a completely vanilla Gatsby site. Its optimizations are from the
+framework.</p>
+<p>Gatsby includes a full modern JavaScript toolchain (Babel/webpack/Uglify) with
+optimized production builds and an innovative <em>declarative</em> asset pipeline.</p>
+<p>For Gatsbygram, Gatsby generates over <em>1000</em> image thumbnails for responsive
+images without <em>any</em> custom scripting by leveraging the Gatsby image processing
+plugin <a href="/gatsby-bloga-2/packages/gatsby-transformer-sharp/">gatsby-transformer-sharp</a>.</p>
+<p>Stop wasting time and build something!</p>
+<h2>App structure</h2>
+<p>All static site generators create a set of files that determine the routing in
+your site. Typically, you define the output file structure (and thus URL
+structure) of your site by way of the input structure. For example the input
+structure:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">my-site/
+  index.md
+  blogs/
+    blog1.md</code></pre></div>
+<p>…would be transformed to:</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">my-site/
+  index.html
+  blogs/
+    blog1.html</code></pre></div>
+<p>This is fine at first, but can be limiting. For example, in Gatsbygram, we have
+a JSON data blob scraped from an Instagram user profile. From this we want to
+generate a page for each image. We couldn’t do this with a typical static site
+generator, but Gatsby lets you define routes programmatically through the
+<code class="language-text">createPages</code> API using any data you have available.</p>
+<p>Here is how we define pages from our JSON data for Gatsbygram at build time in
+the site’s
+<a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/gatsby-node.js"><code class="language-text">gatsby-node.js</code> file</a>:</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-node.js"><pre class="language-javascript:title=gatsby-node.js"><code class="language-javascript:title=gatsby-node.js">const path = require(`path`)
+const slug = require(`slug`)
+const { slash } = require(`gatsby-core-utils`)
+
+// Implement the Gatsby API “createPages”. This is
+// called after the Gatsby bootstrap is finished so you have
+// access to any information necessary to programmatically
+// create pages.
+exports.createPages = async ({ graphql, actions, reporter }) =&gt; {
+  const { createPage } = actions
+
+  // The “graphql” function allows us to run arbitrary
+  // queries against this Gatsbygram&#39;s graphql schema. Think of
+  // it like Gatsbygram has a built-in database constructed
+  // from static data that you can run queries against.
+  //
+  // Post is a data node type derived from data/posts.json
+  // which is created when scraping Instagram. “allPostsJson”
+  // is a &quot;connection&quot; (a GraphQL convention for accessing
+  // a list of nodes) gives us an easy way to query all
+  // Post nodes.
+  const result = await graphql(
+    `
+      {
+        allPostsJson(limit: 1000) {
+          edges {
+            node {
+              id
+            }
+          }
+        }
+      }
+    `
+  )
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  // Create image post pages.
+  const postTemplate = path.resolve(`src/templates/post-page.js`)
+  // We want to create a detailed page for each
+  // Instagram post. Since the scraped Instagram data
+  // already includes an ID field, we just use that for
+  // each page&#39;s path.
+  result.data.allPostsJson.edges.forEach(edge =&gt; {
+    // Gatsby uses Redux to manage its internal state.
+    // Plugins and sites can use functions like &quot;createPage&quot;
+    // to interact with Gatsby.
+    createPage({
+      // Each page is required to have a `path` as well
+      // as a template component. The `context` is
+      // optional but is often necessary so the template
+      // can query data specific to each page.
+      path: `/${slug(edge.node.id)}/`,
+      component: slash(postTemplate),
+      context: {
+        id: edge.node.id,
+      },
+    })
+  })
+}</code></pre></div>
+<h2>Using templates</h2>
+<p>Gatsby uses standard React.js components to render pages. When you define a page
+in the <code class="language-text">createPages</code> API, you specify its component. Those components, usually
+called templates, get reused with page-specific data to generate the different
+pages.</p>
+<p>As you can see above, when defining a page, we can set “context” data, which is
+passed as a <code class="language-text">prop</code> to the component and as a
+<a href="https://graphql.org/learn/queries/#variables">GraphQL variable</a> in our <code class="language-text">GraphQL</code>
+query. For the
+”<a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/src/templates/post-page.js">post template</a>”,
+we pass the id to the post. Below we use that id to query our <code class="language-text">GraphQL</code> schema
+and return a fully formed page:</p>
+<div class="gatsby-highlight" data-language="jsx:title=src/templates/post-page.js"><pre class="language-jsx:title=src/templates/post-page.js"><code class="language-jsx:title=src/templates/post-page.js">import React from &quot;react&quot;
+import PostDetail from &quot;../components/post-detail&quot;
+
+class PostTemplate extends React.Component {
+  render() {
+    return (
+      // PostDetail is used for this detail page and
+      // also in the modal.
+      &lt;PostDetail post={this.props.data.posts} /&gt;
+    )
+  }
+}
+
+export default PostTemplate
+
+// The post template&#39;s GraphQL query. Notice the “id”
+// variable which is passed in. We set this on the page
+// context in gatsby-node.js.
+//
+// All GraphQL queries in Gatsby are run at build-time and
+// loaded as plain JSON files so have minimal client cost.
+export const pageQuery = `
+  query PostPage($id: String!) {
+    # Select the post which equals this id.
+    posts(id: { eq: $id }) {
+      # Specify the fields from the post we need.
+      username
+      avatar
+      likes
+      id
+      text
+      # Date fields have special arguments. This one computes
+      # how many weeks have passed since the post was created.
+      # All calculations like this (like all GraphQL query
+      # activity) happens at build-time! So has minimal cost
+      # for the client.
+      weeksAgo: time(difference: &quot;weeks&quot;)
+      image {
+        children {
+          ... on ImageSharp {
+            # Here we query for *multiple* image thumbnails to be
+            # created. So with no effort on our part, 100s of
+            # thumbnails are created. This makes iterating on
+            # designs effortless as we simply change the args
+            # for the query and we get new thumbnails.
+            big: fluid(maxWidth: 640) {
+              src
+              srcSet
+            }
+          }
+        }
+      }
+    }
+  }
+`</code></pre></div>
+<h2>Creating React.js component pages</h2>
+<p>In addition to creating pages for our Instagram photos, we want to make an index
+page for browsing all photos. To build this index page, Gatsby lets us create
+pages using React.js components.</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">pages/
+  index.js
+  about.js</code></pre></div>
+<p>These React component pages can query the Gatsbygram GraphQL schema for data and
+are automatically converted into their own pages at <code class="language-text">gatsbygram.gatsbyjs.org/</code>
+and <code class="language-text">gatsbygram.gatsbyjs.org/about/</code>.</p>
+<p>Gatsbygram’s <code class="language-text">about.js</code> is a plain React component with no query. <code class="language-text">index.js</code> is
+more complex. It queries for thumbnails for all images and has an infinite
+scroll implementation to lazy load in image thumbnails.</p>
+<p><a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/src/pages/index.js">Read pages/index.js on GitHub</a>
+<a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/src/pages/about.js">Read pages/about.js on GitHub</a></p>
+<h2>The Layout Component</h2>
+<p>Each Gatsby site has a top-level layout component at <code class="language-text">layouts/index.js</code>. This
+layout component is used on every page of your site so can contain things like
+your header, footer, and default page structure. It is also used as the
+”<a href="https://developers.google.com/web/updates/2015/11/app-shell">app shell</a>” when
+loading your site from a service worker.</p>
+<p>A small layout component might look something like this.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Link <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"gatsby"</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Layout</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Link</span></span> <span class="token attr-name">to</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token plain-text">Home</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Link</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/></span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token comment">/* Render children pages */</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span><span class="token function">children</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> Layout</code></pre></div>
+<p>Every page will be rendered as children of the <code class="language-text">Layout</code> component:</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Layout</span></span><span class="token punctuation">></span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Page</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Layout</span></span><span class="token punctuation">></span></span></code></pre></div>
+<p>Gatsbygram’s layout component is somewhat more complicated than most sites as it
+has logic to show clicked images in either a modal on larger screens or on their
+own page on smaller screens.</p>
+<p><a href="https://github.com/gatsbyjs/gatsby/blob/master/examples/gatsbygram/src/layouts/index.js">Read Gatsbygram’s Layout component on GitHub</a>.</p>
+<h2>Client routing and pre-caching</h2>
+<p>Gatsby loads first a static server-rendered HTML page and then the JavaScript
+to convert the site into a web application. Which means that clicking around the
+site doesn’t require a page reload. Gatsby <em>pre-caches</em> code and data needed for
+other pages so that clicking on a link loads the next page instantly.</p>
+<p>All the setup for this is handled behind the scenes. Gatsby uses
+<a href="https://reach.tech/router/">@reach/router</a> under the hood but
+generates all the configuration for you.</p>
+<p>Normally page resources are pre-cached with a service worker. But as several
+browsers (Safari/Microsoft Edge) still don’t support Service Workers, the
+<a href="/gatsby-bloga-2/docs/linking-between-pages/#the-gatsby-link-component">Gatsby <code class="language-text">&lt;Link&gt;</code> component</a> pre-caches resources for
+pages it links to by loading them into memory.</p>
+<h2>Plugins</h2>
+<p>Gatsby has always had a rich set of lifecycle APIs to allow you to hook into
+various events during development, building, and in the client.</p>
+<p>Gatsby 1.0 adds new APIs and also adds a
+<a href="/gatsby-bloga-2/docs/plugins/">new plugin architecture</a>. So functionality can now be extracted
+from sites and made reusable. Most of the new functionality in Gatsby 1.0 is
+powered by plugins.</p>
+<p>Plugins are added to a site in its <code class="language-text">gatsby-config.js</code>. Here’s what Gatsbygram’s
+config file looks like:</p>
+<div class="gatsby-highlight" data-language="javascript:title=gatsby-config.js"><pre class="language-javascript:title=gatsby-config.js"><code class="language-javascript:title=gatsby-config.js">module.exports = {
+  siteMetadata: {
+    title: `Gatsbygram`,
+  },
+  plugins: [
+    /*
+     * Gatsby&#39;s data processing layer begins with “source”
+     * plugins.  You can source data nodes from anywhere but
+     * most sites, like Gatsbygram, will include data from
+     * the filesystem so we start here with
+     * “gatsby-source-filesystem”.
+     *
+     * A site can have as many instances of
+     * gatsby-source-filesystem as you need.  Each plugin
+     * instance is configured with a root path where it then
+     * recursively reads in files and adds them to the data
+     * tree.
+     */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data`,
+      },
+    },
+    // This plugin exposes helper functions for processing
+    // images with the NPM package “sharp”. It&#39;s used by
+    // several other plugins.
+    `gatsby-plugin-sharp`,
+    // This plugin identifies file nodes that are images and
+    // transforms these to create new “ImageSharp” nodes.
+    // With them you can resize images and
+    // generate responsive image thumbnails.
+    `gatsby-transformer-sharp`,
+    // This plugin transforms JSON file nodes.
+    `gatsby-transformer-json`,
+    // This plugin sets up the popular CSS-in-JS library
+    // Glamor. It handles adding a Babel plugin and webpack
+    // configuration as well as setting up optimized server
+    // rendering and client re-hydration.
+    `gatsby-plugin-glamor`,
+    // This plugin takes your configuration and generates a
+    // web manifest file so Gatsbygram can be added to your
+    // homescreen on Android.
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsbygram`,
+        short_name: `Gatsbygram`,
+        start_url: `/`,
+        background_color: `#f7f7f7`,
+        theme_color: `#191919`,
+        display: `minimal-ui`,
+      },
+    },
+    // This plugin generates a service worker and AppShell
+    // html file so the site works offline and is otherwise
+    // resistant to bad networks. Works with almost any
+    // site!
+    `gatsby-plugin-offline`,
+    // This plugin sets up Google Analytics for you.
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-91652198-1`,
+      },
+    },
+  ],
+}</code></pre></div>
+<h2>Styles</h2>
+<p>Gatsbygram uses two popular and complementary CSS-in-JS libraries,
+<a href="https://github.com/KyleAMathews/typography.js">Typography.js</a> and
+<a href="https://github.com/threepointone/glamor">Glamor</a>.</p>
+<p>Typography.js is a powerful toolkit for building websites with beautiful design.</p>
+<p>Gatsbygram uses Typography.js to generate the <em>global</em> styles for the site
+helping set the overall feel of the design.</p>
+<p>Glamor lets you write <em>real CSS</em> in JavaScript inline in your React.js
+components. It is used for <em>component</em> styles.</p>
+<p>Typography.js exposes two helper JavaScript functions, <code class="language-text">rhythm</code> and <code class="language-text">scale</code> to
+help keep your design in sync as you make changes. Instead of using hard-coded
+spacing values (which break as soon as you change your global theme), you use
+the Typography.js helper functions e.g.</p>
+<div class="gatsby-highlight" data-language="jsx"><pre class="language-jsx"><code class="language-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> rhythm<span class="token punctuation">,</span> scale <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"../utils/typography"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">SampleComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div
+        <span class="token punctuation">{</span><span class="token comment">/* The “css” prop works the same as the built-in “style” prop */</span><span class="token punctuation">}</span>
+        css<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+          <span class="token comment">// 1 rhythm is equal to the height of the line-height of</span>
+          <span class="token comment">// normal body text.</span>
+          padding<span class="token operator">:</span> <span class="token function">rhythm</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span>
+      <span class="token operator">></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span>
+          <span class="token attr-name">css</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span>
+            <span class="token comment">// Make this h1 slightly larger than normal.</span>
+            <span class="token comment">// By default, h1 is set to a scale value of 1.</span>
+            <span class="token operator">...</span><span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token operator">/</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+        <span class="token punctuation">></span></span><span class="token plain-text">
+          My sweet title
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span><span class="token plain-text">Hello friends</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p>Together they allow you to quickly iterate on designs.</p>
+<p>They also contribute to Gatsbygram’s excellent loading speed. The holy grail of
+CSS performance is <em>inlined critical CSS</em>. Meaning a) only ship a page with the
+CSS necessary to render that page and b) inline it in the <code class="language-text">&lt;head&gt;</code> instead of
+putting it in a separate file. There are various tools to make this happen but
+they tend to involve extensive configuration and heavy post-processing.</p>
+<p>But with Typography.js and Glamor you get optimized CSS with no tedious,
+error-prone bookkeeping. Typography.js (by definition) generates only global
+styles so its styles are included on every page. Glamor includes some
+<a href="https://github.com/threepointone/glamor/blob/master/docs/server.md">clever server-rendering optimizations</a>
+which I’ve implemented in the
+<a href="/gatsby-bloga-2/packages/gatsby-plugin-glamor/">Gatsby Glamor plugin</a> where it automatically
+extracts out the CSS used <em>in components on the page being server rendered</em> and
+automatically inlines those styles in the generated HTML page.</p>
+<p>Super fast CSS by default. 👏👏👏</p>
+<h2>Creating your own Gatsbygram</h2>
+<p>It’s easy to create your own “Gatsbygram” site from an Instagram account.</p>
+<h3>Instructions on setting up your own Gatsbygram site</h3>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell"><span class="token comment"># Clone the Gatsby repo.</span>
+<span class="token function">git</span> clone -b <span class="token number">1.0</span> git@github.com:gatsbyjs/gatsby.git
+<span class="token builtin class-name">cd</span> gatsby/examples/gatsbygram
+<span class="token function">npm</span> <span class="token function">install</span>
+
+<span class="token comment"># Remove the committed scrapped Instagram data</span>
+<span class="token function">rm</span> -r data
+
+<span class="token comment"># Scrape a new account</span>
+node scrape.js INSTAGRAM_USERNAME
+
+<span class="token comment"># Wait for pictures to download...</span>
+
+<span class="token comment"># Start the Gatsby development server. The initial</span>
+<span class="token comment"># run will take extra time as it processes</span>
+<span class="token comment"># images the first time.</span>
+<span class="token function">npm</span> run develop</code></pre></div>
+<p>While writing this post I scraped a few accounts and published their resulting
+“Gatsbygram” sites:</p>
+<ul>
+<li><a href="https://iceland-gatsbygram.netlify.app">https://iceland-gatsbygram.netlify.app</a></li>
+<li><a href="https://tinyhouses-gatsbygram.netlify.app">https://tinyhouses-gatsbygram.netlify.app</a></li>
+</ul>
+<p><em>With thanks to Sam Bhagwat, Sunil Pai, Nolan Lawson, Nik Graf, Jeff Posnick,
+and Addy Osmani for their reviews.</em></p>
+<p><em>And a special thanks to Kristo Jorgenson for his
+<a href="https://github.com/gatsbyjs/gatsby/pull/708">refactor of the “App structure” section</a>.</em></p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGQABAQADAQAAAAAAAAAAAAAAAAUBAgME/8QAFwEBAAMAAAAAAAAAAAAAAAAAAgABA//aAAwDAQACEAMQAAABtTuWpVlGVPBk0HAFf//EABsQAAICAwEAAAAAAAAAAAAAAAECAxMAESMk/9oACAEBAAEFAnOlgZ7cvIZnEYuxj6ZjxjOh/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAEQEiH/2gAIAQMBAT8BwqOP/8QAGREAAQUAAAAAAAAAAAAAAAAAAAEQEiEx/9oACAECAQE/AbJCY3//xAAgEAABAgUFAAAAAAAAAAAAAAABABECAxASITFBYYGR/9oACAEBAAY/Ai2qYx3A0tPifYlsLBBT8qX3T//EABoQAQADAQEBAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hRVcZF9KXnJkRaRWsbCd3oQNMD6x1eoRshVw76T//2gAMAwEAAgADAAAAENvoAP/EABkRAAIDAQAAAAAAAAAAAAAAAAABESExUf/aAAgBAwEBPxCEpsj00xYf/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAEQESExUf/aAAgBAgEBPxBNs0X5A9n/xAAeEAEBAQACAQUAAAAAAAAAAAABEQAhMUFRYXGBkf/aAAgBAQABPxClwdnV0whQo4lO/wAzyyrjkGw+cZbkILxecbfXBH7zSeBntAmta2n5uEBbXZ4N/9k=" alt="Kyle Mathews" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg 1x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/aba1d/profile-pic.jpg 1.5x,
+/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/b315d/profile-pic.jpg 2x" src="/gatsby-bloga-2/static/4f27694bd7811d13157e5e488ad64f43/99438/profile-pic.jpg" alt="Kyle Mathews" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Kyle Mathews</strong> <!-- -->who lives and works in San Francisco building useful things.<!-- --> <a href="https://twitter.com/kylemathews">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/gatsby-bloga-2/docs/blog/2017-02-21-1-0-progress-update-where-came-from-where-going/">← <!-- -->What&#x27;s coming in Gatsby 1.0</a></li><li><a rel="next" href="/gatsby-bloga-2/docs/blog/gatsby-first-beta-release/">Gatsby&#x27;s first beta release<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2020<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/docs/blog/gatsbygram-case-study/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1dd216b13c1c346b517d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9578b926700cf49bb4fc.js"],"component---src-pages-index-js":["/component---src-pages-index-js-753a3f9bde0636fce206.js"],"component---src-pages-using-typescript-tsx":["/component---src-pages-using-typescript-tsx-f16d60f62c7d2b3e9bcc.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-e4c781a4720974cc2679.js"]};/*]]>*/</script><script src="/gatsby-bloga-2/component---src-templates-blog-post-js-e4c781a4720974cc2679.js" async=""></script><script src="/gatsby-bloga-2/cd7d5f864fc9e15ed8adef086269b0aeff617554-4885479f74730369d2ec.js" async=""></script><script src="/gatsby-bloga-2/commons-8d5dfd2292edbe3658b2.js" async=""></script><script src="/gatsby-bloga-2/app-1dd216b13c1c346b517d.js" async=""></script><script src="/gatsby-bloga-2/styles-cd63080e784be7b7e7cf.js" async=""></script><script src="/gatsby-bloga-2/framework-5fc6169171e885c3b522.js" async=""></script><script src="/gatsby-bloga-2/webpack-runtime-10a8bb2e4373c9b4e228.js" async=""></script></body></html>
